@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-11-15T02:13:12.758940+00:00",
+  "json_files_parsed": 46,
+  "local_markdown_links_checked": 39,
+  "checkpoint_references_checked": 22,
+  "p0_only": true,
+  "public_resource_ids": 83,
+  "recovery_hash_counts": [
+    745,
+    405
+  ],
+  "preserved_pending_heads": 17,
+  "heartbeat_configuration_unchanged": true,
+  "credential_scan_scope": "bounded patterns in current inventory/docs; no full-history absence guarantee",
+  "profile_and_global_config_minimization": "passed",
+  "application_code_changed": false,
+  "errors": []
+}

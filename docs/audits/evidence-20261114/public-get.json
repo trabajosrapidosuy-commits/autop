@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://victoriosas.online/api/health",
+    "status": 200,
+    "observed": {
+      "commit": "9d6bbdb5f7c7200fe62463cd904314edbb9f86f0",
+      "enabled": null,
+      "privacyVersion": null,
+      "retentionDays": null,
+      "unavailableReason": null
+    }
+  },
+  {
+    "url": "https://victoriosas.online/api/beauty/inquiries/config",
+    "status": 200,
+    "observed": {
+      "commit": null,
+      "enabled": true,
+      "privacyVersion": "consultation-v1",
+      "retentionDays": 30,
+      "unavailableReason": null
+    }
+  },
+  {
+    "url": "https://victoriosas.online/api/beauty/inquiries/admin",
+    "status": 401,
+    "observed": null
+  }
+]

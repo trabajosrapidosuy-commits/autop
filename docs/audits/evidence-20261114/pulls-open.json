@@ -1,0 +1,2510 @@
+{
+  "exit_code": 0,
+  "data": [
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "docs/PERMANENT_SUPERVISOR_P0D_20261114.md",
+          "additions": 9,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/autopilot/permanentSupervisor.test.ts",
+          "additions": 32,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/autopilot/permanentSupervisor.ts",
+          "additions": 57,
+          "deletions": 0,
+          "changeType": "ADDED"
+        }
+      ],
+      "headRefName": "codex/permanent-supervisor-p0d-20261114",
+      "headRefOid": "3ce7fdf6f3e7ea955a705f20f771a91ec8cb1f14",
+      "isDraft": true,
+      "mergeStateStatus": "CLEAN",
+      "mergeable": "MERGEABLE",
+      "number": 234,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:43:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659543644/job/132645544882",
+          "name": "validate",
+          "startedAt": "2026-11-15T00:42:56Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:43:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659525104/job/132645487955",
+          "name": "validate",
+          "startedAt": "2026-11-15T00:42:42Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:43:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659542270/job/132645543989",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-15T00:42:56Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:43:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659543658/job/132645544887",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-15T00:42:56Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:43:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659542270/job/132645543847",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-15T00:42:56Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:43:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659542270/job/132645544076",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-15T00:42:56Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:44:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659543644/job/132645545083",
+          "name": "postgres",
+          "startedAt": "2026-11-15T00:42:56Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:44:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43659525104/job/132645487709",
+          "name": "postgres",
+          "startedAt": "2026-11-15T00:42:42Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:42:54Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/jfjzpwlrhzqbcrvqxhzf/settings/integrations",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-15T00:42:54Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:43:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/132645664894",
+          "name": "CodeQL",
+          "startedAt": "2026-11-15T00:43:22Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-15T00:42:58Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/22aD6CWArUjfbf9KxVMb6TUGq5mm"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-15T00:42:59Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-15T00:42:59Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "P0D: supervisor determinista de objetivos permanentes",
+      "url": "https://github.com/Victoriosas/autopilot/pull/234"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": ".github/workflows/beauty-supabase.yml",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": ".gitignore",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 8,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/CONSULTATION_ADMIN_D_CHECKPOINT.md",
+          "additions": 66,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "scripts/test-consultation-material-browser.ts",
+          "additions": 77,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/components/admin/ConsultationInbox.tsx",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/components/admin/ConsultationMaterialPanel.tsx",
+          "additions": 85,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationMaterialAdmin.test.ts",
+          "additions": 49,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationMaterialAdmin.ts",
+          "additions": 23,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationMaterialAdminRouter.ts",
+          "additions": 47,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationRouter.ts",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "supabase/staged/consultation_material_admin_v1.sql",
+          "additions": 48,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "supabase/staged/rollback/consultation_material_admin_v1.sql",
+          "additions": 5,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tests/consultation-material-postgres.test.ts",
+          "additions": 28,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tests/consultation-material-supabase.test.ts",
+          "additions": 22,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "vercel.json",
+          "additions": 2,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/consultation-admin-integration-v1",
+      "headRefOid": "d666cccfc49f6fea183b1cb5f8e028f839628881",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 229,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:39:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321861775/job/131544278984",
+          "name": "validate",
+          "startedAt": "2026-11-12T22:39:09Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:39:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321852661/job/131544248528",
+          "name": "validate",
+          "startedAt": "2026-11-12T22:39:05Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:39:41Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321854493/job/131544260224",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-12T22:39:07Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:39:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321861839/job/131544278910",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-12T22:39:09Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:40:18Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321854493/job/131544260317",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-12T22:39:07Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:39:56Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321854493/job/131544259734",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-12T22:39:07Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:40:51Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321861775/job/131544278384",
+          "name": "postgres",
+          "startedAt": "2026-11-12T22:39:09Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:41:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43321852661/job/131544248754",
+          "name": "postgres",
+          "startedAt": "2026-11-12T22:39:06Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:39:02Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-12T22:39:02Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-12T22:39:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/131544480400",
+          "name": "CodeQL",
+          "startedAt": "2026-11-12T22:39:31Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "Ciclo D: interfaz administrativa de solicitudes de material",
+      "url": "https://github.com/Victoriosas/autopilot/pull/229"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 6,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/ord204g-preflight-handoff-20261110",
+      "headRefOid": "9042122323887939b95ab7c9dc653742e0073517",
+      "isDraft": true,
+      "mergeStateStatus": "BEHIND",
+      "mergeable": "MERGEABLE",
+      "number": 224,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:51:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42941818171/job/130265174529",
+          "name": "validate",
+          "startedAt": "2026-11-11T01:50:30Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:50:57Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42941787126/job/130265074910",
+          "name": "validate",
+          "startedAt": "2026-11-11T01:50:14Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:51:05Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42941814666/job/130265167781",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-11T01:50:29Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:51:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42941814666/job/130265167751",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-11T01:50:29Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:51:19Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42941814666/job/130265167656",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-11T01:50:29Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:52:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42941818171/job/130265174140",
+          "name": "postgres",
+          "startedAt": "2026-11-11T01:50:29Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:51:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42941787126/job/130265075417",
+          "name": "postgres",
+          "startedAt": "2026-11-11T01:50:14Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:50:11Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-11T01:50:11Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:50:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/130265343505",
+          "name": "CodeQL",
+          "startedAt": "2026-11-11T01:50:55Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-11T01:50:34Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/CSFKEysk8cNpyrVpFGRYTi5SZxHQ"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:50:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-11T01:50:35Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "docs: registrar preflight y reanudación de ORD-204G",
+      "url": "https://github.com/Victoriosas/autopilot/pull/224"
+    },
+    {
+      "baseRefName": "codex/ord204g-early-diagnostics-20261110",
+      "files": [
+        {
+          "path": ".github/workflows/ord204g-viki-readonly.yml",
+          "additions": 52,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 6,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tools/camelrun-bridge/README.md",
+          "additions": 42,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tools/camelrun-bridge/bridge.mjs",
+          "additions": 104,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tools/camelrun-bridge/bridge.test.mjs",
+          "additions": 74,
+          "deletions": 0,
+          "changeType": "ADDED"
+        }
+      ],
+      "headRefName": "codex/ord204g-viki-bridge-20261110",
+      "headRefOid": "e034db1dd1e28f71febd895c19d62d20ff5616bd",
+      "isDraft": true,
+      "mergeStateStatus": "CLEAN",
+      "mergeable": "MERGEABLE",
+      "number": 223,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:59:39Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42935525452/job/130245476120",
+          "name": "validate",
+          "startedAt": "2026-11-11T00:58:58Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:59:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42935518640/job/130244522548",
+          "name": "validate",
+          "startedAt": "2026-11-11T00:58:54Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:59:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42935525647/job/130244546716",
+          "name": "readonly-evidence",
+          "startedAt": "2026-11-11T00:58:58Z",
+          "status": "COMPLETED",
+          "workflowName": "ORD-204G - viki readonly evidence bridge"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:03:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42935525452/job/130245473016",
+          "name": "postgres",
+          "startedAt": "2026-11-11T01:01:11Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T01:00:39Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42935518640/job/130244522319",
+          "name": "postgres",
+          "startedAt": "2026-11-11T00:58:55Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:58:51Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-11T00:58:51Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-11T00:59:12Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/4RYQrmFGEyYvhfe1cgdVupM5M7UL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:59:13Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-11T00:59:13Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "feat(ORD-204G): bridge read-only para evidencia GitHub y supervisor camelRun",
+      "url": "https://github.com/Victoriosas/autopilot/pull/223"
+    },
+    {
+      "baseRefName": "codex/ord204g-early-diagnostics-20261110",
+      "files": [
+        {
+          "path": ".github/workflows/autopilot-core-v4.yml",
+          "additions": 10,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 4,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/ORD204G_TEST_WINDOW_MANAGER.md",
+          "additions": 31,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "scripts/observe-ord204g-native-window.ts",
+          "additions": 176,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "scripts/ord204g-test-window-manager.ts",
+          "additions": 171,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/autopilot/ord204gObserverHook.ts",
+          "additions": 23,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/autopilot/ord204gWindowManager.test.ts",
+          "additions": 67,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/autopilot/ord204gWindowManager.ts",
+          "additions": 126,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tests/ord204g-window-observer-postgres.test.ts",
+          "additions": 30,
+          "deletions": 0,
+          "changeType": "ADDED"
+        }
+      ],
+      "headRefName": "codex/ord204g-window-manager-20261110",
+      "headRefOid": "e2f68d2c9be7423755c2b88d4ab5ee579f1bc65c",
+      "isDraft": true,
+      "mergeStateStatus": "CLEAN",
+      "mergeable": "MERGEABLE",
+      "number": 222,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:26:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42931204855/job/130230097484",
+          "name": "validate",
+          "startedAt": "2026-11-11T00:25:19Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:25:55Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42931197466/job/130230074064",
+          "name": "validate",
+          "startedAt": "2026-11-11T00:25:16Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:25:51Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42931204904/job/130230097276",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-11T00:25:18Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:27:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42931204855/job/130230097838",
+          "name": "postgres",
+          "startedAt": "2026-11-11T00:25:18Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:27:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42931197466/job/130230074659",
+          "name": "postgres",
+          "startedAt": "2026-11-11T00:25:16Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:25:12Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-11T00:25:12Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-11T00:25:36Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/7Qp3pbkXRJB9hjxdqbWpyZHGaRHb"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T00:25:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-11T00:25:36Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "ORD-204G: gestionar ventanas y preparar la observación nativa",
+      "url": "https://github.com/Victoriosas/autopilot/pull/222"
+    },
+    {
+      "baseRefName": "codex/mission-native-host-20261109",
+      "files": [
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 4,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/ORD204G_RECOVERY_DIAGNOSTICS_20261110.md",
+          "additions": 24,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "scripts/autopilot-native-host.ts",
+          "additions": 53,
+          "deletions": 7,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/autopilot/nativeHost.test.ts",
+          "additions": 133,
+          "deletions": 2,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/autopilot/nativeHost.ts",
+          "additions": 66,
+          "deletions": 14,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tests/mission-operator-postgres.test.ts",
+          "additions": 15,
+          "deletions": 3,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tools/native-host/Demo-LabWindow.ps1",
+          "additions": 21,
+          "deletions": 5,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tools/native-host/Prepare-NativeDemo.ps1",
+          "additions": 68,
+          "deletions": 28,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tools/native-host/Read-TaskOrigin.ps1",
+          "additions": 25,
+          "deletions": 11,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tools/native-host/mission-request.json",
+          "additions": 1,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tools/native-host/task.disabled.xml",
+          "additions": 3,
+          "deletions": 3,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/ord204g-early-diagnostics-20261110",
+      "headRefOid": "633faa7f9517a6d6edc82158cd125b09a66f6312",
+      "isDraft": true,
+      "mergeStateStatus": "CLEAN",
+      "mergeable": "MERGEABLE",
+      "number": 220,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T23:05:13Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42920233469/job/130192931691",
+          "name": "validate",
+          "startedAt": "2026-11-10T23:04:36Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T23:05:15Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42920225638/job/130192903892",
+          "name": "validate",
+          "startedAt": "2026-11-10T23:04:32Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T23:05:25Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42920233240/job/130192931008",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-10T23:04:36Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T23:06:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42920233469/job/130192932147",
+          "name": "postgres",
+          "startedAt": "2026-11-10T23:04:36Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T23:06:31Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42920225638/job/130192904399",
+          "name": "postgres",
+          "startedAt": "2026-11-10T23:04:32Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T23:04:30Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-10T23:04:30Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "fix(ORD-204G): diagnósticos durables del host y preparación de recuperación",
+      "url": "https://github.com/Victoriosas/autopilot/pull/220"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 10,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/ORD204G_NATIVE_WINDOW_20261110.md",
+          "additions": 56,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "docs/ORD204G_NATIVE_WINDOW_RESULT_20261110.json",
+          "additions": 29,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "vercel.json",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/native-window-evidence-20261110",
+      "headRefOid": "ca7f4237211ac6e001eaa81a5ee4239f709f8bab",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 219,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:25:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42904839853/job/130140014208",
+          "name": "validate",
+          "startedAt": "2026-11-10T21:25:07Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:25:19Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42904743653/job/130139673888",
+          "name": "validate",
+          "startedAt": "2026-11-10T21:24:32Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:28:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42904832812/job/130139997827",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-10T21:25:05Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:28:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42904832812/job/130139998213",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-10T21:25:06Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:28:26Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42904832812/job/130139998303",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-10T21:25:05Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:26:51Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42904839853/job/130140014850",
+          "name": "postgres",
+          "startedAt": "2026-11-10T21:25:07Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:26:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42904743653/job/130139673382",
+          "name": "postgres",
+          "startedAt": "2026-11-10T21:24:32Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:25:04Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/settings/integrations",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-10T21:25:04Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T21:31:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/130140292854",
+          "name": "CodeQL",
+          "startedAt": "2026-11-10T21:25:35Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "ORD-204G: registrar arranque nativo, recuperación fallida y cierre parcial",
+      "url": "https://github.com/Victoriosas/autopilot/pull/219"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 13,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+          "additions": 117,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "scripts/autopilot-native-host.ts",
+          "additions": 9,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/autopilot/localMissionStore.ts",
+          "additions": 2,
+          "deletions": 2,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/autopilot/managedProcesses.ts",
+          "additions": 5,
+          "deletions": 4,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/autopilot/nativeHost.test.ts",
+          "additions": 41,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/autopilot/nativeHost.ts",
+          "additions": 130,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tests/mission-operator-postgres.test.ts",
+          "additions": 29,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "tools/native-host/Demo-LabWindow.ps1",
+          "additions": 29,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tools/native-host/Prepare-NativeDemo.ps1",
+          "additions": 32,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tools/native-host/Read-TaskOrigin.ps1",
+          "additions": 17,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tools/native-host/execution-host.json",
+          "additions": 14,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tools/native-host/mission-request.json",
+          "additions": 12,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "tools/native-host/task.disabled.xml",
+          "additions": 8,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "vercel.json",
+          "additions": 2,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/mission-native-host-20261109",
+      "headRefOid": "15720289647da59c19cc2c19c7f123ee84259a31",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 213,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T00:05:05Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42725423516/job/129529687721",
+          "name": "validate",
+          "startedAt": "2026-11-10T00:04:13Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T00:04:19Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42725337223/job/129529399477",
+          "name": "validate",
+          "startedAt": "2026-11-10T00:03:34Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T00:04:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42725423890/job/129529689083",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-10T00:04:13Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T00:05:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42725423516/job/129529688075",
+          "name": "postgres",
+          "startedAt": "2026-11-10T00:04:13Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T00:05:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42725337223/job/129529400114",
+          "name": "postgres",
+          "startedAt": "2026-11-10T00:03:34Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-10T00:04:10Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/settings/integrations",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-10T00:04:10Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "ORD-204G: preparar lanzamiento nativo de Windows sin activar",
+      "url": "https://github.com/Victoriosas/autopilot/pull/213"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 12,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/security/adminAuth.test.ts",
+          "additions": 71,
+          "deletions": 2,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/security/adminAuth.ts",
+          "additions": 11,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/admin-auth-upstream-status-20261108",
+      "headRefOid": "eb92a0cef9c5d50ea578f4a532e7b56cb600cdab",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 202,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:27:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42573096942/job/129014721083",
+          "name": "validate",
+          "startedAt": "2026-11-09T06:27:09Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:27:54Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42573097971/job/129014728381",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-09T06:27:10Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:28:37Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42573097971/job/129014728150",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-09T06:27:11Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:28:20Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42573097971/job/129014728331",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-09T06:27:10Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:28:28Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42573096942/job/129014721256",
+          "name": "postgres",
+          "startedAt": "2026-11-09T06:27:09Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:27:06Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-09T06:27:06Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:27:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/129014924512",
+          "name": "CodeQL",
+          "startedAt": "2026-11-09T06:27:45Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-09T06:27:30Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/9B2n6bU4wNSszRXmKUPy8RqHF8Vi"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-09T06:27:31Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-09T06:27:31Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "Distinguir caídas de Supabase de rechazos en el panel",
+      "url": "https://github.com/Victoriosas/autopilot/pull/202"
+    },
+    {
+      "baseRefName": "codex/shared-api-mount-20261108",
+      "files": [
+        {
+          "path": ".dockerignore",
+          "additions": 13,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": ".github/workflows/autopilot-core-v4.yml",
+          "additions": 3,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": ".gitignore",
+          "additions": 1,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "Dockerfile",
+          "additions": 8,
+          "deletions": 5,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "api-app.ts",
+          "additions": 2,
+          "deletions": 2,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 12,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "package.json",
+          "additions": 4,
+          "deletions": 4,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "scripts/check-built-api.mjs",
+          "additions": 90,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "server.ts",
+          "additions": 15,
+          "deletions": 5,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/http/createApp.ts",
+          "additions": 4,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/api-404-build-isolation-20261108",
+      "headRefOid": "7da72d3634c378d4cd1f6b41aa99b30f0a6001ce",
+      "isDraft": true,
+      "mergeStateStatus": "CLEAN",
+      "mergeable": "MERGEABLE",
+      "number": 201,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:54:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42537361479/job/128904520011",
+          "name": "validate",
+          "startedAt": "2026-11-08T23:53:57Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:54:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42537356956/job/128904506435",
+          "name": "validate",
+          "startedAt": "2026-11-08T23:53:53Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:54:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42537361374/job/128904519500",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-08T23:53:57Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:55:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42537361479/job/128904520216",
+          "name": "postgres",
+          "startedAt": "2026-11-08T23:53:57Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:55:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42537356956/job/128904506300",
+          "name": "postgres",
+          "startedAt": "2026-11-08T23:53:54Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:53:51Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-08T23:53:51Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-08T23:54:14Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/8jpv6DMm1Ssms7J7jvrz7Dd7doZD"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:54:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-08T23:54:14Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "Corregir el 404 de API en Node y separar los builds",
+      "url": "https://github.com/Victoriosas/autopilot/pull/201"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "api-app.ts",
+          "additions": 11,
+          "deletions": 21,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 8,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "server.ts",
+          "additions": 15,
+          "deletions": 29,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/http/createApp.ts",
+          "additions": 38,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/vercelHealth.test.ts",
+          "additions": 53,
+          "deletions": 11,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/shared-api-mount-20261108",
+      "headRefOid": "039ecf3503cb74b8f7c32b1fd4e8d71b7fa2f72a",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 200,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:42Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535703548/job/128899405399",
+          "name": "validate",
+          "startedAt": "2026-11-08T23:33:05Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:19Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535684590/job/128899348397",
+          "name": "validate",
+          "startedAt": "2026-11-08T23:32:51Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:38Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535700405/job/128899399386",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-08T23:33:04Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535703576/job/128899405132",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-08T23:33:05Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:34:11Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535700405/job/128899398926",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-08T23:33:04Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535700405/job/128899399088",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-08T23:33:04Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:34:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535703548/job/128899405167",
+          "name": "postgres",
+          "startedAt": "2026-11-08T23:33:05Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:34:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42535684590/job/128899348616",
+          "name": "postgres",
+          "startedAt": "2026-11-08T23:32:52Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:02Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/settings/integrations",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-08T23:33:02Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/128899510435",
+          "name": "CodeQL",
+          "startedAt": "2026-11-08T23:33:28Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-08T23:33:12Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/4BQuckhdzDnwEaJ2kNDs7Hg7Qs8R"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:33:13Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-08T23:33:13Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "Compartir el montaje de la API entre Node y Vercel",
+      "url": "https://github.com/Victoriosas/autopilot/pull/200"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 8,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/consultation-agents/camelrun-agent-manifest.json",
+          "additions": 3,
+          "deletions": 3,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationAgentEval.test.ts",
+          "additions": 9,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationAgentPrompts.ts",
+          "additions": 2,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "codex/f3-guardian-injection-20261108",
+      "headRefOid": "2607a427d77f3b523de120a2d41ae1f1898b146f",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 199,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:59Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534680935/job/128896249788",
+          "name": "validate",
+          "startedAt": "2026-11-08T23:20:17Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:41Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534656800/job/128896181605",
+          "name": "validate",
+          "startedAt": "2026-11-08T23:20:01Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534678690/job/128896247338",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-08T23:20:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:47Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534680940/job/128896249825",
+          "name": "validate",
+          "startedAt": "2026-11-08T23:20:16Z",
+          "status": "COMPLETED",
+          "workflowName": "Consultation agents evaluator (safe check)"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:59Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534680947/job/128896249506",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-08T23:20:17Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:22:31Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534656804/job/128896181733",
+          "name": "beauty-stack",
+          "startedAt": "2026-11-08T23:20:01Z",
+          "status": "COMPLETED",
+          "workflowName": "Isolated Beauty Supabase"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:21:07Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534678690/job/128896247095",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-08T23:20:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:21:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534678690/job/128896247425",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-08T23:20:16Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:21:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534680935/job/128896249413",
+          "name": "postgres",
+          "startedAt": "2026-11-08T23:20:16Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:21:12Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42534656800/job/128896181355",
+          "name": "postgres",
+          "startedAt": "2026-11-08T23:20:01Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:14Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/settings/integrations",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-08T23:20:14Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/128896398146",
+          "name": "CodeQL",
+          "startedAt": "2026-11-08T23:20:49Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-08T23:20:22Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/56B2gBhpH1fDfRUphTUa8QP2sonr"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-08T23:20:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-08T23:20:22Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "F3: aclarar bloqueo de inyecciones en el Guardián",
+      "url": "https://github.com/Victoriosas/autopilot/pull/199"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "additions": 1,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 10,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/F3_EVALUACION_AUTORIZADA_20261106.md",
+          "additions": 88,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "docs/consultation-agents/results/development-20261106-42326025668.json",
+          "additions": 549,
+          "deletions": 0,
+          "changeType": "ADDED"
+        }
+      ],
+      "headRefName": "codex/f3-authorized-evaluation-20261106",
+      "headRefOid": "9d7edf1cfe90562cad29771738b038f06f7f3696",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 198,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:51Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327329314/job/128265528197",
+          "name": "validate",
+          "startedAt": "2026-11-07T02:04:07Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:32Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327296275/job/128265419583",
+          "name": "validate",
+          "startedAt": "2026-11-07T02:03:45Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:37Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327326667/job/128265522751",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-11-07T02:04:06Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327329298/job/128265528009",
+          "name": "validate",
+          "startedAt": "2026-11-07T02:04:07Z",
+          "status": "COMPLETED",
+          "workflowName": "Consultation agents evaluator (safe check)"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:58Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327326667/job/128265523019",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-11-07T02:04:07Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327326667/job/128265522979",
+          "name": "Analyze (python)",
+          "startedAt": "2026-11-07T02:04:06Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:05:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327329314/job/128265527971",
+          "name": "postgres",
+          "startedAt": "2026-11-07T02:04:07Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42327296275/job/128265419937",
+          "name": "postgres",
+          "startedAt": "2026-11-07T02:03:45Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:41Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/settings/integrations",
+          "name": "Supabase Preview",
+          "startedAt": "2026-11-07T02:04:41Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/128265632510",
+          "name": "CodeQL",
+          "startedAt": "2026-11-07T02:04:28Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-07T02:04:06Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/3WkhG7fP6bSo2cj44cv16Co2kYyq"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-07T02:04:08Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-07T02:04:08Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "F3: registrar publicación autorizada y evaluación real 18/32, sin envíos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/198"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "package-lock.json",
+          "additions": 271,
+          "deletions": 303,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "package.json",
+          "additions": 2,
+          "deletions": 2,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "dependabot/npm_and_yarn/multi-766765435e",
+      "headRefOid": "f9924558237d033cfae7f530524fa72348ea4297",
+      "isDraft": true,
+      "mergeStateStatus": "BEHIND",
+      "mergeable": "MERGEABLE",
+      "number": 169,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T06:08:34Z",
+          "conclusion": "FAILURE",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42970301796/job/130356980522",
+          "name": "validate",
+          "startedAt": "2026-11-11T06:08:18Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T06:08:46Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42970301698/job/130356979620",
+          "name": "public-browser-smoke",
+          "startedAt": "2026-11-11T06:08:13Z",
+          "status": "COMPLETED",
+          "workflowName": "ECC Browser Smoke"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T06:09:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/42970301796/job/130356980128",
+          "name": "postgres",
+          "startedAt": "2026-11-11T06:08:14Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T06:08:10Z",
+          "conclusion": "NEUTRAL",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/130356960532",
+          "name": "CodeQL",
+          "startedAt": "2026-11-11T06:08:08Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-11-11T06:08:32Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/4pPbg2GfV5kE4mbedzyeLxLXgref"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-11T06:08:33Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-11-11T06:08:33Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "chore(deps): bump express and @types/express",
+      "url": "https://github.com/Victoriosas/autopilot/pull/169"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "src/components/admin/ConsultationInbox.tsx",
+          "additions": 22,
+          "deletions": 5,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/components/public/ConsultationForm.tsx",
+          "additions": 1,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/components/public/serviceDetails.ts",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/components/public/serviceDirectory.ts",
+          "additions": 3,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/components/public/servicesDirectory.test.ts",
+          "additions": 6,
+          "deletions": 5,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/careDiscovery.test.ts",
+          "additions": 6,
+          "deletions": 4,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationAnswerOptions.test.ts",
+          "additions": 41,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationAnswerOptions.ts",
+          "additions": 51,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationFrontend.test.ts",
+          "additions": 1,
+          "deletions": 1,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationOperationsAgents.test.ts",
+          "additions": 34,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationOperationsAgents.ts",
+          "additions": 106,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationReplyDelivery.ts",
+          "additions": 4,
+          "deletions": 3,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationRouter.ts",
+          "additions": 12,
+          "deletions": 4,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/serviceConsultation.test.ts",
+          "additions": 2,
+          "deletions": 2,
+          "changeType": "MODIFIED"
+        }
+      ],
+      "headRefName": "feature/victoriosas-agents-catalog-email-20261024",
+      "headRefOid": "253309a253d7c467d1286710c391817a87339d9e",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 124,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-31T16:09:27Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/41218241354/job/124587185251",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-10-31T16:08:51Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-31T16:09:44Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/41218241354/job/124587185405",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-10-31T16:08:51Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-31T16:09:37Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/41218241354/job/124587185528",
+          "name": "Analyze (python)",
+          "startedAt": "2026-10-31T16:08:52Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-10-31T16:08:47Z",
+          "state": "FAILURE",
+          "targetUrl": "https://vercel.com/knowledge/why-is-my-account-deployment-blocked"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-31T16:08:47Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-10-31T16:08:47Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-31T16:09:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/124587302200",
+          "name": "CodeQL",
+          "startedAt": "2026-10-31T16:09:17Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "Ampliar catálogo, separar correos y preparar agentes operativos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/124"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": ".env.example",
+          "additions": 2,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 13,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationAutoReply.test.ts",
+          "additions": 93,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationAutoReply.ts",
+          "additions": 25,
+          "deletions": 8,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationPricePolicy.test.ts",
+          "additions": 66,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationPricePolicy.ts",
+          "additions": 48,
+          "deletions": 0,
+          "changeType": "ADDED"
+        },
+        {
+          "path": "src/storefront/consultationResponseAgents.test.ts",
+          "additions": 6,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationResponseAgents.ts",
+          "additions": 4,
+          "deletions": 5,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "src/storefront/consultationSafety.ts",
+          "additions": 21,
+          "deletions": 0,
+          "changeType": "ADDED"
+        }
+      ],
+      "headRefName": "codex/consultation-price-phase2-20261024",
+      "headRefOid": "0623fbc41b1c0aba0a1c6131698acbdb106fd0e5",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 122,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:20:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/40057855155/job/120764709843",
+          "name": "validate",
+          "startedAt": "2026-10-24T03:19:53Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:20:10Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/40057827914/job/120764623918",
+          "name": "validate",
+          "startedAt": "2026-10-24T03:19:29Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:20:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/40057851023/job/120764699717",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-10-24T03:19:51Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:22:04Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/40057827917/job/120764623793",
+          "name": "beauty-stack",
+          "startedAt": "2026-10-24T03:19:29Z",
+          "status": "COMPLETED",
+          "workflowName": "Isolated Beauty Supabase"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:20:50Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/40057851023/job/120764699833",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-10-24T03:19:50Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:20:59Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/40057855155/job/120764710007",
+          "name": "postgres",
+          "startedAt": "2026-10-24T03:19:53Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:20:35Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/40057827914/job/120764623676",
+          "name": "postgres",
+          "startedAt": "2026-10-24T03:19:29Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:19:49Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/settings/integrations",
+          "name": "Supabase Preview",
+          "startedAt": "2026-10-24T03:19:49Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:20:27Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/120764828033",
+          "name": "CodeQL",
+          "startedAt": "2026-10-24T03:20:24Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-10-24T03:19:46Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/AohfDt9SNyHBFSG85pQCqMsDHMpi"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-24T03:19:53Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-10-24T03:19:53Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "Ampliar consultas de precios con Guardián y derivación sensible (fase 2)",
+      "url": "https://github.com/Victoriosas/autopilot/pull/122"
+    },
+    {
+      "baseRefName": "main",
+      "files": [
+        {
+          "path": "docs/AUTOPILOT_STATE.md",
+          "additions": 15,
+          "deletions": 0,
+          "changeType": "MODIFIED"
+        },
+        {
+          "path": "docs/SOCIAL_PROFILE_ALIGNMENT_20261019.md",
+          "additions": 44,
+          "deletions": 0,
+          "changeType": "ADDED"
+        }
+      ],
+      "headRefName": "codex/social-profile-alignment-20261019",
+      "headRefOid": "b12c7da28b7b862d656681465954e48dfa8932b1",
+      "isDraft": true,
+      "mergeStateStatus": "DIRTY",
+      "mergeable": "CONFLICTING",
+      "number": 90,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:42:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/39502457249/job/118903091036",
+          "name": "validate",
+          "startedAt": "2026-10-20T21:42:01Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:42:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/39502450671/job/118903068004",
+          "name": "validate",
+          "startedAt": "2026-10-20T21:41:59Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:42:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/39502451789/job/118903077034",
+          "name": "Analyze (actions)",
+          "startedAt": "2026-10-20T21:42:00Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:42:43Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/39502451789/job/118903076516",
+          "name": "Analyze (javascript-typescript)",
+          "startedAt": "2026-10-20T21:42:00Z",
+          "status": "COMPLETED",
+          "workflowName": "CodeQL"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:43:01Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/39502457249/job/118903091468",
+          "name": "postgres",
+          "startedAt": "2026-10-20T21:42:05Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:43:06Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/39502450671/job/118903068220",
+          "name": "postgres",
+          "startedAt": "2026-10-20T21:41:59Z",
+          "status": "COMPLETED",
+          "workflowName": "Autopilot Core v4"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:41:55Z",
+          "conclusion": "SKIPPED",
+          "detailsUrl": "https://supabase.com/dashboard/project/uunygxsjzavzmfqfijka/branches",
+          "name": "Supabase Preview",
+          "startedAt": "2026-10-20T21:41:55Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:42:29Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/118903294971",
+          "name": "CodeQL",
+          "startedAt": "2026-10-20T21:42:27Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        },
+        {
+          "__typename": "StatusContext",
+          "context": "Vercel",
+          "startedAt": "2026-10-20T21:42:15Z",
+          "state": "SUCCESS",
+          "targetUrl": "https://vercel.com/autopilot12/autopilot/ANXYPovB4i9kRv2tSns1gHgLDH68"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-10-20T21:42:16Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://vercel.com/github",
+          "name": "Vercel Preview Comments",
+          "startedAt": "2026-10-20T21:42:16Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "title": "Preparar alineación revisable de perfiles sociales",
+      "url": "https://github.com/Victoriosas/autopilot/pull/90"
+    }
+  ],
+  "snapshot_semantics": "Historical initial open-PR snapshot, not current state; all17 closed externally during P0 follow-up; see p0-pending-prs-baseline.json"
+}

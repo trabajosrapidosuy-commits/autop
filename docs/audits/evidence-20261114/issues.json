@@ -1,0 +1,47 @@
+{
+  "exit_code": 0,
+  "data": [
+    {
+      "labels": [],
+      "number": 180,
+      "state": "OPEN",
+      "title": "Supabase Preview en PR omitido y enlazado al proyecto histórico; main ya correcto",
+      "url": "https://github.com/Victoriosas/autopilot/issues/180"
+    },
+    {
+      "labels": [],
+      "number": 175,
+      "state": "OPEN",
+      "title": "Supabase P1: revisar EXECUTE de función privilegiada y habilitación de protección de contraseñas",
+      "url": "https://github.com/Victoriosas/autopilot/issues/175"
+    },
+    {
+      "labels": [],
+      "number": 146,
+      "state": "OPEN",
+      "title": "Diagnosticar DEP0169 en Vercel Node 24 sin alterar camelRun ni consultas",
+      "url": "https://github.com/Victoriosas/autopilot/issues/146"
+    },
+    {
+      "labels": [],
+      "number": 104,
+      "state": "OPEN",
+      "title": "Beauty: formulario privado de consultas con notificación segura a Gmail",
+      "url": "https://github.com/Victoriosas/autopilot/issues/104"
+    },
+    {
+      "labels": [],
+      "number": 84,
+      "state": "OPEN",
+      "title": "Marketing orgánico octubre: preparar contenidos, reel y auditoría SEO sin publicar",
+      "url": "https://github.com/Victoriosas/autopilot/issues/84"
+    },
+    {
+      "labels": [],
+      "number": 81,
+      "state": "OPEN",
+      "title": "Brand launch noviembre: unificar Facebook y redes con victoriosas.online",
+      "url": "https://github.com/Victoriosas/autopilot/issues/81"
+    }
+  ]
+}

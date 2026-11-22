@@ -1,4 +1,3 @@
-import { beautyServerDatabase } from './beautyDatabase';
 import type { ConsultationInput } from './consultationRequest';
 import { draftConsultationResponse } from './consultationResponseAgents';
 import { buildAutomaticPriceReply, classifyPriceInquiry, guardAutomaticPriceReply } from './consultationPricePolicy';
@@ -10,9 +9,9 @@ type ReplyDatabase = { from(table: string): {
   } };
 } };
 
-/** Opt-in, fail-closed, one-time acknowledgement for new, routine WEB email consultations.
- * Runs only for the first successfully delivered notification; never processes historic records.
- * The outbox unique request ID is the durable idempotency fence.
+/** Retired acknowledgement path. Historical outbox records remain unchanged.
+ * Environment flags cannot authorize a new customer reply: it must go through
+ * the authenticated, explicit human-approval route. No database/provider calls.
  */
 export async function maybeSendAutomaticConsultationReply(
   input: ConsultationInput,

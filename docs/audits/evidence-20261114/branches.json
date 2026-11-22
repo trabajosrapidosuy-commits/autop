@@ -1,0 +1,840 @@
+{
+  "exit_code": 0,
+  "data": [
+    [
+      {
+        "name": "chatgpt/provider-agnostic-consultations-20261024",
+        "commit": {
+          "sha": "9c5dd3b871891a87eb6581caa1397ee320652b94",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/9c5dd3b871891a87eb6581caa1397ee320652b94"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/chatgpt/provider-agnostic-consultations-20261024/protection"
+      },
+      {
+        "name": "codex/admin-auth-upstream-status-20261108",
+        "commit": {
+          "sha": "eb92a0cef9c5d50ea578f4a532e7b56cb600cdab",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/eb92a0cef9c5d50ea578f4a532e7b56cb600cdab"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/admin-auth-upstream-status-20261108/protection"
+      },
+      {
+        "name": "codex/admin-lockdown",
+        "commit": {
+          "sha": "d2e0425d85df15c4d98ec8b20944dcb744016585",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/d2e0425d85df15c4d98ec8b20944dcb744016585"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/admin-lockdown/protection"
+      },
+      {
+        "name": "codex/align-cj-mcp-tools",
+        "commit": {
+          "sha": "b301db010b1b6912b4af5a27ee4261c0a5d55f8f",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/b301db010b1b6912b4af5a27ee4261c0a5d55f8f"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/align-cj-mcp-tools/protection"
+      },
+      {
+        "name": "codex/api-404-build-isolation-20261108",
+        "commit": {
+          "sha": "7da72d3634c378d4cd1f6b41aa99b30f0a6001ce",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/7da72d3634c378d4cd1f6b41aa99b30f0a6001ce"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/api-404-build-isolation-20261108/protection"
+      },
+      {
+        "name": "codex/autopilot-core-v4-phase3b",
+        "commit": {
+          "sha": "f5364ea50197e209110d8ab1a5ab69569ab57333",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/f5364ea50197e209110d8ab1a5ab69569ab57333"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/autopilot-core-v4-phase3b/protection"
+      },
+      {
+        "name": "codex/autopilot-core-v4",
+        "commit": {
+          "sha": "835f4aeadece30f66736600c39ecfd4db4cec561",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/835f4aeadece30f66736600c39ecfd4db4cec561"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/autopilot-core-v4/protection"
+      },
+      {
+        "name": "codex/cj-mcp-direct-token-validation",
+        "commit": {
+          "sha": "448ce1718669b8c445a620629d45b70736ba6d8f",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/448ce1718669b8c445a620629d45b70736ba6d8f"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/cj-mcp-direct-token-validation/protection"
+      },
+      {
+        "name": "codex/consultation-admin-integration-v1",
+        "commit": {
+          "sha": "d666cccfc49f6fea183b1cb5f8e028f839628881",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/d666cccfc49f6fea183b1cb5f8e028f839628881"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/consultation-admin-integration-v1/protection"
+      },
+      {
+        "name": "codex/consultation-eval-20261024",
+        "commit": {
+          "sha": "45e22a94cb95c01586efe7d6964914700881d9d7",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/45e22a94cb95c01586efe7d6964914700881d9d7"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/consultation-eval-20261024/protection"
+      },
+      {
+        "name": "codex/consultation-price-phase2-20261024",
+        "commit": {
+          "sha": "0623fbc41b1c0aba0a1c6131698acbdb106fd0e5",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/0623fbc41b1c0aba0a1c6131698acbdb106fd0e5"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/consultation-price-phase2-20261024/protection"
+      },
+      {
+        "name": "codex/consultation-reading-release-20261024",
+        "commit": {
+          "sha": "42da44279426d39a6f3d4054f6f67ceaf698ca69",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/42da44279426d39a6f3d4054f6f67ceaf698ca69"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/consultation-reading-release-20261024/protection"
+      },
+      {
+        "name": "codex/data-truth-revenue-score",
+        "commit": {
+          "sha": "42e312d31bab424425e60f14e02b66be6c6ba2b8",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/42e312d31bab424425e60f14e02b66be6c6ba2b8"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/data-truth-revenue-score/protection"
+      },
+      {
+        "name": "codex/f3-authorized-evaluation-20261106",
+        "commit": {
+          "sha": "9d7edf1cfe90562cad29771738b038f06f7f3696",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/9d7edf1cfe90562cad29771738b038f06f7f3696"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/f3-authorized-evaluation-20261106/protection"
+      },
+      {
+        "name": "codex/f3-guardian-injection-20261108",
+        "commit": {
+          "sha": "2607a427d77f3b523de120a2d41ae1f1898b146f",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/2607a427d77f3b523de120a2d41ae1f1898b146f"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/f3-guardian-injection-20261108/protection"
+      },
+      {
+        "name": "codex/harden-v4-task-policy",
+        "commit": {
+          "sha": "369dc77fbbcb06eead5e870b000307a7d37952df",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/369dc77fbbcb06eead5e870b000307a7d37952df"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/harden-v4-task-policy/protection"
+      },
+      {
+        "name": "codex/mission-checkpoint-recovery-20261109",
+        "commit": {
+          "sha": "1b588f71f3194845f7f5a5e9287d436140a88464",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/1b588f71f3194845f7f5a5e9287d436140a88464"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/mission-checkpoint-recovery-20261109/protection"
+      },
+      {
+        "name": "codex/mission-native-activation-20261109",
+        "commit": {
+          "sha": "cc7f753605f3e718e727d7c151f5e1af321b79ad",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/cc7f753605f3e718e727d7c151f5e1af321b79ad"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/mission-native-activation-20261109/protection"
+      },
+      {
+        "name": "codex/mission-native-host-20261109",
+        "commit": {
+          "sha": "15720289647da59c19cc2c19c7f123ee84259a31",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/15720289647da59c19cc2c19c7f123ee84259a31"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/mission-native-host-20261109/protection"
+      },
+      {
+        "name": "codex/native-window-evidence-20261110",
+        "commit": {
+          "sha": "ca7f4237211ac6e001eaa81a5ee4239f709f8bab",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/ca7f4237211ac6e001eaa81a5ee4239f709f8bab"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/native-window-evidence-20261110/protection"
+      },
+      {
+        "name": "codex/ord204g-early-diagnostics-20261110",
+        "commit": {
+          "sha": "633faa7f9517a6d6edc82158cd125b09a66f6312",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/633faa7f9517a6d6edc82158cd125b09a66f6312"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/ord204g-early-diagnostics-20261110/protection"
+      },
+      {
+        "name": "codex/ord204g-preflight-handoff-20261110",
+        "commit": {
+          "sha": "9042122323887939b95ab7c9dc653742e0073517",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/9042122323887939b95ab7c9dc653742e0073517"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/ord204g-preflight-handoff-20261110/protection"
+      },
+      {
+        "name": "codex/ord204g-viki-bridge-20261110",
+        "commit": {
+          "sha": "e034db1dd1e28f71febd895c19d62d20ff5616bd",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/e034db1dd1e28f71febd895c19d62d20ff5616bd"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/ord204g-viki-bridge-20261110/protection"
+      },
+      {
+        "name": "codex/ord204g-window-manager-20261110",
+        "commit": {
+          "sha": "e2f68d2c9be7423755c2b88d4ab5ee579f1bc65c",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/e2f68d2c9be7423755c2b88d4ab5ee579f1bc65c"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/ord204g-window-manager-20261110/protection"
+      },
+      {
+        "name": "codex/payment-hardening",
+        "commit": {
+          "sha": "57c8706fe7cf96a2fd7f14d8ae297cdd5df877e7",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/57c8706fe7cf96a2fd7f14d8ae297cdd5df877e7"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/payment-hardening/protection"
+      },
+      {
+        "name": "codex/permanent-supervisor-p0d-20261114",
+        "commit": {
+          "sha": "3ce7fdf6f3e7ea955a705f20f771a91ec8cb1f14",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/3ce7fdf6f3e7ea955a705f20f771a91ec8cb1f14"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/permanent-supervisor-p0d-20261114/protection"
+      },
+      {
+        "name": "codex/pricing-engine-v2",
+        "commit": {
+          "sha": "a9255b9569336a0a46dd0067380dd3cdb1335bd1",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/a9255b9569336a0a46dd0067380dd3cdb1335bd1"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/pricing-engine-v2/protection"
+      },
+      {
+        "name": "codex/queue-fencing-20261109",
+        "commit": {
+          "sha": "ccde407db280e11f85ab93e81690ae867b33a002",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/ccde407db280e11f85ab93e81690ae867b33a002"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/queue-fencing-20261109/protection"
+      },
+      {
+        "name": "codex/revenue-sprint-1",
+        "commit": {
+          "sha": "455a11112efb0ae494c27b9b23832ffc3cdf6374",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/455a11112efb0ae494c27b9b23832ffc3cdf6374"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/revenue-sprint-1/protection"
+      },
+      {
+        "name": "codex/service-discovery-20261031",
+        "commit": {
+          "sha": "ad30a5758c4bbc6e3cda8c3c6ffa1d2885e87d7e",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/ad30a5758c4bbc6e3cda8c3c6ffa1d2885e87d7e"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/service-discovery-20261031/protection"
+      },
+      {
+        "name": "codex/shared-api-mount-20261108",
+        "commit": {
+          "sha": "039ecf3503cb74b8f7c32b1fd4e8d71b7fa2f72a",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/039ecf3503cb74b8f7c32b1fd4e8d71b7fa2f72a"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/shared-api-mount-20261108/protection"
+      },
+      {
+        "name": "codex/social-profile-alignment-20261019",
+        "commit": {
+          "sha": "b12c7da28b7b862d656681465954e48dfa8932b1",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/b12c7da28b7b862d656681465954e48dfa8932b1"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/social-profile-alignment-20261019/protection"
+      },
+      {
+        "name": "codex/vercel-boot-fix",
+        "commit": {
+          "sha": "4e60923616e0bfe8fdbd49a487c89a84d846e955",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/4e60923616e0bfe8fdbd49a487c89a84d846e955"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/vercel-boot-fix/protection"
+      },
+      {
+        "name": "codex/victoriosas-copy-remoto-20261018",
+        "commit": {
+          "sha": "965f1c8a43c2568db458401c56547fe885bcb638",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/965f1c8a43c2568db458401c56547fe885bcb638"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/victoriosas-copy-remoto-20261018/protection"
+      },
+      {
+        "name": "codex/victoriosas-functional-audit-20261017",
+        "commit": {
+          "sha": "c132ed0efcad02593f9b348141d96c28b25c9af7",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/c132ed0efcad02593f9b348141d96c28b25c9af7"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/codex/victoriosas-functional-audit-20261017/protection"
+      },
+      {
+        "name": "dependabot/npm_and_yarn/multi-766765435e",
+        "commit": {
+          "sha": "f9924558237d033cfae7f530524fa72348ea4297",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/f9924558237d033cfae7f530524fa72348ea4297"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/dependabot/npm_and_yarn/multi-766765435e/protection"
+      },
+      {
+        "name": "docs/consultation-activation-20261023",
+        "commit": {
+          "sha": "6f8c8cfaafce9a511e81d3dd31541c9b7d07ed1c",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/6f8c8cfaafce9a511e81d3dd31541c9b7d07ed1c"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/docs/consultation-activation-20261023/protection"
+      },
+      {
+        "name": "feat/editorial-hero-reference",
+        "commit": {
+          "sha": "914f63f4325cdf696e38f5476f39369fdecbd2b1",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/914f63f4325cdf696e38f5476f39369fdecbd2b1"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/feat/editorial-hero-reference/protection"
+      },
+      {
+        "name": "feature/consultas-menu-web-whatsapp-20261023",
+        "commit": {
+          "sha": "b0aee74087e56be181a78a9c94c989006ecdad21",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/b0aee74087e56be181a78a9c94c989006ecdad21"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/feature/consultas-menu-web-whatsapp-20261023/protection"
+      },
+      {
+        "name": "feature/victoriosas-agents-catalog-email-20261024",
+        "commit": {
+          "sha": "253309a253d7c467d1286710c391817a87339d9e",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/253309a253d7c467d1286710c391817a87339d9e"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/feature/victoriosas-agents-catalog-email-20261024/protection"
+      },
+      {
+        "name": "fix/approved-evidence-disclaimers-20261105",
+        "commit": {
+          "sha": "8f1afe45035358b2accbee735c11061fef45652f",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/8f1afe45035358b2accbee735c11061fef45652f"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/fix/approved-evidence-disclaimers-20261105/protection"
+      },
+      {
+        "name": "fix/seo-retired-routes-82",
+        "commit": {
+          "sha": "66251e3cf08bf9eb4e6fd881ce2a36d96b811929",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/66251e3cf08bf9eb4e6fd881ce2a36d96b811929"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/fix/seo-retired-routes-82/protection"
+      },
+      {
+        "name": "main",
+        "commit": {
+          "sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c"
+        },
+        "protected": true,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/main/protection"
+      },
+      {
+        "name": "owner/authorized-keyword-shadow",
+        "commit": {
+          "sha": "3e8dcdf0215e22568b4891f50f3f8567e397e44c",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/3e8dcdf0215e22568b4891f50f3f8567e397e44c"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/owner/authorized-keyword-shadow/protection"
+      },
+      {
+        "name": "owner/market-memory-bilingual",
+        "commit": {
+          "sha": "ac0d70ed6bf3157aa32ed6fb41db42d55d08a7a9",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/ac0d70ed6bf3157aa32ed6fb41db42d55d08a7a9"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/owner/market-memory-bilingual/protection"
+      },
+      {
+        "name": "owner/one-shot-keyword-campaign",
+        "commit": {
+          "sha": "99fcfa31da9e2341c4ca6adc52b257562a5f6059",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/99fcfa31da9e2341c4ca6adc52b257562a5f6059"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/owner/one-shot-keyword-campaign/protection"
+      },
+      {
+        "name": "owner/production-promotion-manual-release",
+        "commit": {
+          "sha": "48b45641f6fd9a6dfce208e44e0502a41d335202",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/48b45641f6fd9a6dfce208e44e0502a41d335202"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/owner/production-promotion-manual-release/protection"
+      },
+      {
+        "name": "owner/shadow-campaign-authorizations",
+        "commit": {
+          "sha": "99fcfa31da9e2341c4ca6adc52b257562a5f6059",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/99fcfa31da9e2341c4ca6adc52b257562a5f6059"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/owner/shadow-campaign-authorizations/protection"
+      },
+      {
+        "name": "v0/fix-supabase-env",
+        "commit": {
+          "sha": "5b8f6dd80388a0a8a81932cf7e003bd3869c7f5e",
+          "url": "https://api.github.com/repos/Victoriosas/autopilot/commits/5b8f6dd80388a0a8a81932cf7e003bd3869c7f5e"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Victoriosas/autopilot/branches/v0/fix-supabase-env/protection"
+      }
+    ]
+  ]
+}

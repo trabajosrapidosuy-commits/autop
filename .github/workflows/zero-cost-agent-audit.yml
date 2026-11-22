@@ -1,0 +1,28 @@
+name: Victoriosas zero-cost operational audit
+on:
+  workflow_dispatch:
+  schedule:
+    # 19:00 Uruguay (UTC-3), schedule may be delayed by GitHub
+    - cron: '0 22 * * *'
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+concurrency:
+  group: victoriosas-operational-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Read-only GitHub evidence, no model requests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/zero-cost-agent-audit.mjs

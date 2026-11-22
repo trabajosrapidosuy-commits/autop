@@ -1,0 +1,971 @@
+{
+  "method": "regex relative imports including types; excludes test.ts; no alias or dynamic expression resolution",
+  "graph": {
+    "src/App.tsx": [
+      "src/context/AppContext.tsx",
+      "src/components/store/StoreHeader.tsx",
+      "src/components/store/HeroBanner.tsx",
+      "src/components/store/StoreExperienceSections.tsx",
+      "src/components/store/ProductGrid.tsx",
+      "src/components/store/ProductDetailModal.tsx",
+      "src/components/store/CartDrawer.tsx",
+      "src/components/store/CheckoutModal.tsx",
+      "src/components/store/CustomerAccountModal.tsx",
+      "src/components/store/StoreFooter.tsx",
+      "src/components/store/WaitlistSection.tsx",
+      "src/components/store/PaymentReturn.tsx",
+      "src/storefront/catalogLocation.ts",
+      "src/components/admin/ProfessionalAdminHub.tsx",
+      "src/components/admin/BeautyEvaluationPanel.tsx",
+      "src/components/auth/AuthModal.tsx",
+      "src/types.ts"
+    ],
+    "src/InternalEntry.tsx": [
+      "src/App.tsx",
+      "src/context/AppContext.tsx",
+      "src/components/auth/AuthModal.tsx"
+    ],
+    "src/main.tsx": [
+      "src/components/public/ProfessionalSite.tsx",
+      "src/InternalEntry.tsx"
+    ],
+    "src/types.ts": [
+      "src/storefront/salesChannel.ts"
+    ],
+    "src/vite-env.d.ts": [],
+    "src/autopilot/agentRegistry.ts": [
+      "src/autopilot/policyEngine.ts"
+    ],
+    "src/autopilot/api.ts": [
+      "src/autopilot/agentRegistry.ts",
+      "src/autopilot/auth.ts",
+      "src/autopilot/modelRouter.ts",
+      "src/autopilot/modelTelemetry.ts",
+      "src/autopilot/orchestrator.ts",
+      "src/autopilot/policyEngine.ts",
+      "src/autopilot/reranker.ts",
+      "src/autopilot/taskStore.ts"
+    ],
+    "src/autopilot/approvalCouncil.ts": [
+      "src/services/aiClient.ts",
+      "src/autopilot/draftBuilder.ts"
+    ],
+    "src/autopilot/auth.ts": [],
+    "src/autopilot/beautyDiscoveryPlan.ts": [
+      "src/autopilot/sourcingEvidence.ts"
+    ],
+    "src/autopilot/catalogGovernanceRouter.ts": [
+      "src/autopilot/auth.ts",
+      "src/autopilot/catalogMonitor.ts",
+      "src/autopilot/catalogObservationStore.ts",
+      "src/autopilot/repricingProposal.ts",
+      "src/autopilot/repricingCouncil.ts",
+      "src/autopilot/promotionEngine.ts",
+      "src/autopilot/dormancyEngine.ts",
+      "src/autopilot/profitEngine.ts",
+      "src/autopilot/repricingStore.ts"
+    ],
+    "src/autopilot/catalogMonitor.ts": [
+      "src/services/cjDropshipping.ts"
+    ],
+    "src/autopilot/catalogObservationStore.ts": [
+      "src/autopilot/catalogMonitor.ts"
+    ],
+    "src/autopilot/cjMcpRouter.ts": [
+      "src/security/adminAuth.ts",
+      "src/services/cjMcp.ts"
+    ],
+    "src/autopilot/cjSourcingRouter.ts": [
+      "src/services/cjDropshipping.ts",
+      "src/autopilot/auth.ts"
+    ],
+    "src/autopilot/cloudMissionStore.ts": [
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/localMissionConfig.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/localMissionConfig.ts"
+    ],
+    "src/autopilot/codexGovernor.ts": [],
+    "src/autopilot/developmentAccess.ts": [],
+    "src/autopilot/dormancyEngine.ts": [],
+    "src/autopilot/draftBuilder.ts": [
+      "src/services/aiClient.ts",
+      "src/autopilot/opportunityEngine.ts"
+    ],
+    "src/autopilot/draftRouter.ts": [
+      "src/autopilot/approvalCouncil.ts",
+      "src/autopilot/auth.ts",
+      "src/autopilot/draftBuilder.ts",
+      "src/autopilot/draftStore.ts",
+      "src/autopilot/opportunityEngine.ts"
+    ],
+    "src/autopilot/draftStore.ts": [
+      "src/autopilot/draftBuilder.ts"
+    ],
+    "src/autopilot/executorAdapter.ts": [
+      "src/autopilot/sixAgentControlPlane.ts",
+      "src/autopilot/missionPlanner.ts"
+    ],
+    "src/autopilot/localMissionConfig.ts": [],
+    "src/autopilot/localMissionStore.ts": [
+      "src/autopilot/localMissionConfig.ts",
+      "src/autopilot/missionPlanner.ts",
+      "src/autopilot/managedProcesses.ts"
+    ],
+    "src/autopilot/managedProcesses.ts": [],
+    "src/autopilot/manualCatalog.ts": [
+      "src/security/adminAuth.ts",
+      "src/storefront/salesChannel.ts"
+    ],
+    "src/autopilot/marketEvidence.ts": [
+      "src/integrations/mercadoLibre.ts",
+      "src/autopilot/opportunityEngine.ts"
+    ],
+    "src/autopilot/missionContinuation.ts": [
+      "src/autopilot/localMissionStore.ts"
+    ],
+    "src/autopilot/missionPlanner.ts": [
+      "src/autopilot/executorAdapter.ts"
+    ],
+    "src/autopilot/missionRuntime.ts": [
+      "src/autopilot/sixAgentControlPlane.ts",
+      "src/autopilot/executorAdapter.ts",
+      "src/autopilot/sixAgentPersistence.ts",
+      "src/autopilot/missionPlanner.ts"
+    ],
+    "src/autopilot/modelRouter.ts": [],
+    "src/autopilot/modelTelemetry.ts": [],
+    "src/autopilot/mount.ts": [
+      "src/autopilot/sixAgentStatusRouter.ts",
+      "src/integrations/affiliateResearch.ts",
+      "src/autopilot/manualCatalog.ts",
+      "src/connectors/router.ts",
+      "src/payments/mercadoPago.ts",
+      "src/payments/paypalV2.ts",
+      "src/integrations/mercadoLibreRouter.ts",
+      "src/payments/commerceMaintenance.ts",
+      "src/security/adminAuth.ts",
+      "src/security/legacySafety.ts",
+      "src/storefront/waitlistRouter.ts",
+      "src/storefront/beautyRouter.ts",
+      "src/autopilot/api.ts",
+      "src/autopilot/catalogGovernanceRouter.ts",
+      "src/autopilot/draftRouter.ts",
+      "src/autopilot/opportunityRouter.ts",
+      "src/autopilot/pricingRouter.ts",
+      "src/autopilot/cjSourcingRouter.ts",
+      "src/autopilot/cjMcpRouter.ts",
+      "src/autopilot/releaseOperationsRouter.ts",
+      "src/autopilot/releaseReadinessRouter.ts",
+      "src/autopilot/sourcingRouter.ts"
+    ],
+    "src/autopilot/opportunityEngine.ts": [
+      "src/autopilot/pricingEngine.ts"
+    ],
+    "src/autopilot/opportunityRouter.ts": [
+      "src/autopilot/auth.ts",
+      "src/autopilot/opportunityEngine.ts",
+      "src/autopilot/reranker.ts"
+    ],
+    "src/autopilot/orchestrator.ts": [
+      "src/autopilot/policyEngine.ts"
+    ],
+    "src/autopilot/policyEngine.ts": [],
+    "src/autopilot/pricingEngine.ts": [],
+    "src/autopilot/pricingRouter.ts": [
+      "src/autopilot/auth.ts",
+      "src/autopilot/pricingEngine.ts"
+    ],
+    "src/autopilot/profitEngine.ts": [],
+    "src/autopilot/promotionEngine.ts": [],
+    "src/autopilot/readinessDevelopment.ts": [
+      "src/autopilot/developmentAccess.ts",
+      "src/autopilot/selfDevelopment.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/missionRuntime.ts",
+      "src/autopilot/executorAdapter.ts"
+    ],
+    "src/autopilot/releaseCheckout.ts": [
+      "src/payments/availability.ts"
+    ],
+    "src/autopilot/releaseOperationsRouter.ts": [
+      "src/security/adminAuth.ts",
+      "src/autopilot/draftStore.ts"
+    ],
+    "src/autopilot/releaseReadiness.ts": [
+      "src/services/cjSourcingProvider.ts",
+      "src/integrations/mercadoLibre.ts",
+      "src/autopilot/marketEvidence.ts",
+      "src/autopilot/releaseCheckout.ts"
+    ],
+    "src/autopilot/releaseReadinessRouter.ts": [
+      "src/security/adminAuth.ts",
+      "src/autopilot/releaseReadiness.ts"
+    ],
+    "src/autopilot/repricingCouncil.ts": [
+      "src/services/aiClient.ts",
+      "src/autopilot/repricingProposal.ts"
+    ],
+    "src/autopilot/repricingProposal.ts": [
+      "src/autopilot/pricingEngine.ts",
+      "src/autopilot/catalogMonitor.ts"
+    ],
+    "src/autopilot/repricingStore.ts": [
+      "src/autopilot/repricingCouncil.ts",
+      "src/autopilot/repricingProposal.ts"
+    ],
+    "src/autopilot/reranker.ts": [
+      "src/autopilot/modelRouter.ts",
+      "src/autopilot/modelTelemetry.ts"
+    ],
+    "src/autopilot/searchKeywordOptimizer.ts": [],
+    "src/autopilot/selfDevelopment.ts": [
+      "src/autopilot/developmentAccess.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/missionRuntime.ts",
+      "src/autopilot/executorAdapter.ts"
+    ],
+    "src/autopilot/shadowDiagnostics.ts": [],
+    "src/autopilot/shadowInspector.ts": [
+      "src/autopilot/shadowDiagnostics.ts"
+    ],
+    "src/autopilot/shadowRunAuthorization.ts": [],
+    "src/autopilot/sixAgentControlPlane.ts": [],
+    "src/autopilot/sixAgentPersistence.ts": [
+      "src/autopilot/sixAgentControlPlane.ts",
+      "src/autopilot/executorAdapter.ts"
+    ],
+    "src/autopilot/sixAgentStatusRouter.ts": [
+      "src/security/adminAuth.ts",
+      "src/autopilot/sixAgentControlPlane.ts"
+    ],
+    "src/autopilot/sourcingEvidence.ts": [
+      "src/services/cjDropshipping.ts",
+      "src/autopilot/opportunityEngine.ts",
+      "src/autopilot/draftBuilder.ts"
+    ],
+    "src/autopilot/sourcingModelBudget.ts": [],
+    "src/autopilot/sourcingOrchestrator.ts": [
+      "src/services/cjSourcingProvider.ts",
+      "src/autopilot/approvalCouncil.ts",
+      "src/autopilot/draftBuilder.ts",
+      "src/autopilot/opportunityEngine.ts",
+      "src/autopilot/marketEvidence.ts",
+      "src/autopilot/sourcingEvidence.ts",
+      "src/autopilot/sourcingModelBudget.ts",
+      "src/autopilot/victoriosaProductFilter.ts",
+      "src/autopilot/sourcingStore.ts"
+    ],
+    "src/autopilot/sourcingRouter.ts": [
+      "src/security/adminAuth.ts",
+      "src/services/cjSourcingProvider.ts",
+      "src/autopilot/auth.ts",
+      "src/autopilot/marketEvidence.ts",
+      "src/autopilot/sourcingEvidence.ts",
+      "src/autopilot/beautyDiscoveryPlan.ts",
+      "src/autopilot/sourcingOrchestrator.ts",
+      "src/autopilot/sourcingStore.ts",
+      "src/autopilot/shadowInspector.ts",
+      "src/autopilot/searchKeywordOptimizer.ts",
+      "src/autopilot/shadowRunAuthorization.ts"
+    ],
+    "src/autopilot/sourcingStore.ts": [
+      "src/autopilot/sourcingEvidence.ts",
+      "src/autopilot/approvalCouncil.ts"
+    ],
+    "src/autopilot/syntheticMissionExecutor.ts": [
+      "src/autopilot/executorAdapter.ts",
+      "src/autopilot/missionPlanner.ts",
+      "src/autopilot/managedProcesses.ts"
+    ],
+    "src/autopilot/taskStore.ts": [
+      "src/autopilot/orchestrator.ts"
+    ],
+    "src/autopilot/ventureLab.ts": [],
+    "src/autopilot/victoriosaProductFilter.ts": [
+      "src/autopilot/opportunityEngine.ts",
+      "src/autopilot/draftBuilder.ts"
+    ],
+    "src/connectors/router.ts": [
+      "src/security/adminAuth.ts"
+    ],
+    "src/context/AppContext.tsx": [
+      "src/lib/supabase.ts",
+      "src/storefront/cartState.ts",
+      "src/lib/api.ts",
+      "src/data/initialProducts.ts",
+      "src/data/initialSuppliers.ts",
+      "src/lib/imageEnhancer.ts",
+      "src/types.ts"
+    ],
+    "src/data/initialProducts.ts": [
+      "src/types.ts"
+    ],
+    "src/data/initialSuppliers.ts": [
+      "src/types.ts"
+    ],
+    "src/http/createApp.ts": [
+      "src/autopilot/mount.ts",
+      "src/payments/mercadoPago.ts",
+      "src/storefront/consultationRouter.ts"
+    ],
+    "src/integrations/affiliateResearch.ts": [
+      "src/security/adminAuth.ts",
+      "src/storefront/salesChannel.ts"
+    ],
+    "src/integrations/mercadoLibre.ts": [],
+    "src/integrations/mercadoLibreRouter.ts": [
+      "src/security/adminAuth.ts",
+      "src/integrations/mercadoLibre.ts"
+    ],
+    "src/lib/api.ts": [
+      "src/lib/supabase.ts"
+    ],
+    "src/lib/imageEnhancer.ts": [
+      "src/types.ts",
+      "src/lib/supabase.ts"
+    ],
+    "src/lib/supabase.ts": [
+      "src/types.ts"
+    ],
+    "src/payments/atomicCheckout.ts": [],
+    "src/payments/availability.ts": [
+      "src/payments/catalogChannelGuard.ts",
+      "src/payments/safety.ts",
+      "src/payments/atomicCheckout.ts",
+      "src/payments/shipping.ts"
+    ],
+    "src/payments/catalogChannelGuard.ts": [
+      "src/storefront/salesChannel.ts"
+    ],
+    "src/payments/checkoutIdentity.ts": [],
+    "src/payments/commerceMaintenance.ts": [
+      "src/security/adminAuth.ts",
+      "src/payments/atomicCheckout.ts",
+      "src/payments/availability.ts",
+      "src/payments/mercadoPago.ts"
+    ],
+    "src/payments/mercadoPago.ts": [
+      "src/payments/safety.ts",
+      "src/payments/atomicCheckout.ts",
+      "src/payments/availability.ts",
+      "src/payments/shipping.ts",
+      "src/payments/checkoutIdentity.ts"
+    ],
+    "src/payments/paypalV2.ts": [
+      "src/payments/safety.ts",
+      "src/payments/mercadoPago.ts"
+    ],
+    "src/payments/safety.ts": [],
+    "src/payments/shipping.ts": [],
+    "src/security/adminAuth.ts": [],
+    "src/security/legacySafety.ts": [],
+    "src/services/aiClient.ts": [
+      "src/autopilot/modelRouter.ts",
+      "src/autopilot/modelTelemetry.ts",
+      "src/autopilot/sourcingModelBudget.ts"
+    ],
+    "src/services/autoPublisher.ts": [
+      "src/services/productAnalyzer.ts",
+      "src/services/productSourcingService.ts"
+    ],
+    "src/services/cjDropshipping.ts": [],
+    "src/services/cjMcp.ts": [],
+    "src/services/cjSourcingProvider.ts": [
+      "src/services/cjDropshipping.ts",
+      "src/services/cjMcp.ts",
+      "src/autopilot/sourcingEvidence.ts"
+    ],
+    "src/services/priceMonitor.ts": [
+      "src/services/cjDropshipping.ts"
+    ],
+    "src/services/productAnalyzer.ts": [
+      "src/services/aiClient.ts"
+    ],
+    "src/services/productSourcingService.ts": [
+      "src/services/cjDropshipping.ts",
+      "src/services/productAnalyzer.ts",
+      "src/services/autoPublisher.ts"
+    ],
+    "src/services/revenue.ts": [
+      "src/lib/supabase.ts",
+      "src/types.ts"
+    ],
+    "src/services/sourcingScheduler.ts": [
+      "src/services/productSourcingService.ts"
+    ],
+    "src/storefront/beautyDatabase.ts": [],
+    "src/storefront/beautyManagement.ts": [
+      "src/storefront/beautyRequests.ts"
+    ],
+    "src/storefront/beautyManagementRouter.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/security/adminAuth.ts",
+      "src/storefront/beautyManagement.ts",
+      "src/storefront/beautyRequests.ts"
+    ],
+    "src/storefront/beautyRequests.ts": [],
+    "src/storefront/beautyRouter.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/beautyManagementRouter.ts",
+      "src/security/adminAuth.ts",
+      "src/storefront/beautyRequests.ts"
+    ],
+    "src/storefront/careCatalog.ts": [
+      "src/components/public/ContactLink.tsx"
+    ],
+    "src/storefront/careDiscovery.ts": [
+      "src/components/public/serviceDirectory.ts",
+      "src/components/public/serviceDetails.ts",
+      "src/storefront/editorial.ts"
+    ],
+    "src/storefront/cartState.ts": [
+      "src/types.ts",
+      "src/storefront/salesChannel.ts"
+    ],
+    "src/storefront/catalogDiscovery.ts": [
+      "src/types.ts",
+      "src/storefront/salesChannel.ts"
+    ],
+    "src/storefront/catalogLocation.ts": [],
+    "src/storefront/checkoutKey.ts": [],
+    "src/storefront/clientEditorial.ts": [
+      "src/storefront/editorial.ts"
+    ],
+    "src/storefront/consultationAgentEval.ts": [
+      "src/storefront/consultationCamelRun.ts",
+      "src/storefront/consultationAgentPrompts.ts",
+      "src/storefront/consultationModelGateway.ts",
+      "src/storefront/consultationAgentSchemas.ts"
+    ],
+    "src/storefront/consultationAgentManifest.ts": [
+      "src/storefront/consultationAgentPrompts.ts",
+      "src/storefront/consultationAgentSchemas.ts"
+    ],
+    "src/storefront/consultationAgentPrompts.ts": [],
+    "src/storefront/consultationAgentSchemas.ts": [],
+    "src/storefront/consultationAutoReply.ts": [
+      "src/storefront/consultationRequest.ts"
+    ],
+    "src/storefront/consultationCamelRun.ts": [],
+    "src/storefront/consultationDelivery.ts": [
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/beautyDatabase.ts"
+    ],
+    "src/storefront/consultationEvidence.ts": [
+      "src/storefront/consultationKnowledge.ts",
+      "src/components/public/serviceDetails.ts"
+    ],
+    "src/storefront/consultationEvidencePolicy.ts": [
+      "src/storefront/consultationEvidence.ts"
+    ],
+    "src/storefront/consultationFAQ.ts": [
+      "src/storefront/consultationFAQCorpus.ts",
+      "src/storefront/consultationUnderstanding.ts",
+      "src/storefront/consultationKnowledge.ts",
+      "src/storefront/consultationEvidence.ts",
+      "src/storefront/consultationEvidencePolicy.ts",
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationServiceKnowledge.ts"
+    ],
+    "src/storefront/consultationFAQCases.ts": [],
+    "src/storefront/consultationFAQCorpus.ts": [],
+    "src/storefront/consultationGroundedComposer.ts": [
+      "src/storefront/consultationGroundedPolicy.ts",
+      "src/storefront/consultationRequest.ts"
+    ],
+    "src/storefront/consultationGroundedGuardian.ts": [
+      "src/storefront/consultationAgentEval.ts",
+      "src/storefront/consultationGroundedPolicy.ts",
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationGroundedComposer.ts"
+    ],
+    "src/storefront/consultationGroundedPolicy.ts": [
+      "src/storefront/consultationFAQ.ts",
+      "src/storefront/consultationKnowledge.ts",
+      "src/storefront/consultationUnderstanding.ts",
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationEvidence.ts"
+    ],
+    "src/storefront/consultationIntelligence.eval.ts": [],
+    "src/storefront/consultationIntelligence.fixtures.ts": [
+      "src/storefront/consultationSupabase.ts"
+    ],
+    "src/storefront/consultationIntelligence.ts": [
+      "src/storefront/consultationSupabase.ts",
+      "src/storefront/consultationEvidence.ts",
+      "src/storefront/consultationEvidencePolicy.ts",
+      "src/storefront/consultationUnderstanding.ts",
+      "src/storefront/consultationIntelligenceContracts.ts"
+    ],
+    "src/storefront/consultationIntelligenceContracts.ts": [],
+    "src/storefront/consultationIntelligenceDispatch.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/consultationReplyDelivery.ts",
+      "src/storefront/consultationIntelligence.ts",
+      "src/storefront/consultationSupabase.ts"
+    ],
+    "src/storefront/consultationIntelligenceOperations.ts": [
+      "src/storefront/consultationEvidence.ts",
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationIntelligenceContracts.ts"
+    ],
+    "src/storefront/consultationIntelligenceProviders.ts": [
+      "src/storefront/consultationIntelligenceContracts.ts",
+      "src/storefront/consultationModelGateway.ts"
+    ],
+    "src/storefront/consultationIntelligenceRouter.ts": [
+      "src/storefront/consultationSupabase.ts",
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationIntelligenceContracts.ts",
+      "src/storefront/consultationIntelligenceProviders.ts",
+      "src/storefront/consultationIntelligenceStore.ts",
+      "src/storefront/consultationIntelligenceOperations.ts",
+      "src/storefront/consultationIntelligenceDispatch.ts"
+    ],
+    "src/storefront/consultationIntelligenceStore.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/consultationSupabase.ts",
+      "src/storefront/consultationIntelligence.ts",
+      "src/storefront/consultationIntelligenceContracts.ts",
+      "src/storefront/consultationIntelligenceOperations.ts"
+    ],
+    "src/storefront/consultationKnowledge.ts": [
+      "src/components/public/serviceDirectory.ts"
+    ],
+    "src/storefront/consultationKnowledgeReview.ts": [
+      "src/storefront/consultationServiceKnowledge.ts"
+    ],
+    "src/storefront/consultationLab.ts": [
+      "src/storefront/consultationLabCases.ts",
+      "src/storefront/consultationIntelligence.ts",
+      "src/storefront/consultationUnderstanding.ts",
+      "src/storefront/consultationSupabase.ts",
+      "src/storefront/consultationEvidence.ts",
+      "src/storefront/consultationIntelligenceContracts.ts"
+    ],
+    "src/storefront/consultationLabCases.ts": [],
+    "src/storefront/consultationLabRouter.ts": [
+      "src/storefront/consultationIntelligenceContracts.ts",
+      "src/storefront/consultationLab.ts",
+      "src/storefront/consultationLabCases.ts",
+      "src/storefront/consultationKnowledge.ts",
+      "src/storefront/consultationServiceKnowledge.ts"
+    ],
+    "src/storefront/consultationLocalModelCheck.ts": [
+      "src/storefront/consultationIntelligence.ts",
+      "src/storefront/consultationIntelligence.ts",
+      "src/storefront/consultationIntelligenceProviders.ts",
+      "src/storefront/consultationModelGateway.ts"
+    ],
+    "src/storefront/consultationMaterial.ts": [
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationGroundedGuardian.ts",
+      "src/storefront/consultationGroundedComposer.ts",
+      "src/storefront/consultationGroundedPolicy.ts",
+      "src/storefront/consultationMaterialStore.ts"
+    ],
+    "src/storefront/consultationMaterialStore.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/consultationRequest.ts"
+    ],
+    "src/storefront/consultationModelGateway.ts": [],
+    "src/storefront/consultationReadiness.ts": [],
+    "src/storefront/consultationReading.ts": [
+      "src/storefront/beautyDatabase.ts"
+    ],
+    "src/storefront/consultationReplyDelivery.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/consultationResponseAgents.ts",
+      "src/storefront/consultationSupabase.ts",
+      "src/storefront/consultationRequest.ts"
+    ],
+    "src/storefront/consultationReplyStatus.ts": [],
+    "src/storefront/consultationRequest.ts": [
+      "src/components/public/serviceDirectory.ts"
+    ],
+    "src/storefront/consultationResponseAgents.ts": [
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationKnowledge.ts"
+    ],
+    "src/storefront/consultationRouter.ts": [
+      "src/security/adminAuth.ts",
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationSupabase.ts",
+      "src/storefront/consultationDelivery.ts",
+      "src/storefront/consultationResponseAgents.ts",
+      "src/storefront/consultationCamelRun.ts",
+      "src/storefront/consultationReplyDelivery.ts",
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/consultationReading.ts",
+      "src/storefront/consultationIntelligenceRouter.ts",
+      "src/storefront/consultationIntelligenceStore.ts",
+      "src/storefront/consultationLabRouter.ts",
+      "src/storefront/consultationServiceKnowledge.ts",
+      "src/storefront/consultationReadiness.ts"
+    ],
+    "src/storefront/consultationServiceKnowledge.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/consultationKnowledge.ts",
+      "src/storefront/consultationEvidence.ts",
+      "src/storefront/consultationIntelligenceContracts.ts"
+    ],
+    "src/storefront/consultationSupabase.ts": [
+      "src/storefront/beautyDatabase.ts",
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationReadiness.ts"
+    ],
+    "src/storefront/consultationUnderstanding.ts": [
+      "src/storefront/consultationRequest.ts",
+      "src/storefront/consultationKnowledge.ts",
+      "src/storefront/consultationIntelligenceContracts.ts"
+    ],
+    "src/storefront/editorial.ts": [
+      "src/storefront/clientEditorial.ts"
+    ],
+    "src/storefront/publicPageLocation.ts": [],
+    "src/storefront/publicRouting.ts": [
+      "src/storefront/editorial.ts"
+    ],
+    "src/storefront/routeMetadata.ts": [],
+    "src/storefront/salesChannel.ts": [
+      "src/types.ts"
+    ],
+    "src/storefront/waitlistRouter.ts": [],
+    "src/services/connectors/AlibabaConnector.ts": [
+      "src/types.ts",
+      "src/services/connectors/types.ts"
+    ],
+    "src/services/connectors/AliExpressConnector.ts": [
+      "src/types.ts",
+      "src/services/connectors/types.ts"
+    ],
+    "src/services/connectors/AmazonConnector.ts": [
+      "src/types.ts",
+      "src/services/connectors/types.ts"
+    ],
+    "src/services/connectors/DirectUrlConnector.ts": [
+      "src/types.ts",
+      "src/services/connectors/types.ts"
+    ],
+    "src/services/connectors/registry.ts": [
+      "src/types.ts",
+      "src/services/connectors/types.ts",
+      "src/services/connectors/SupplierHubConnector.ts",
+      "src/services/connectors/AmazonConnector.ts",
+      "src/services/connectors/AliExpressConnector.ts",
+      "src/services/connectors/AlibabaConnector.ts",
+      "src/services/connectors/DirectUrlConnector.ts"
+    ],
+    "src/services/connectors/SupplierHubConnector.ts": [
+      "src/types.ts",
+      "src/services/connectors/types.ts"
+    ],
+    "src/services/connectors/types.ts": [
+      "src/types.ts"
+    ],
+    "src/components/admin/AdminGlobalSearch.tsx": [
+      "src/context/AppContext.tsx",
+      "src/types.ts"
+    ],
+    "src/components/admin/AdminHeader.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/admin/AffiliateResearchPanel.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/AutopilotDashboard.tsx": [
+      "src/components/admin/SixAgentStatusPanel.tsx",
+      "src/components/admin/ManualCatalogPanel.tsx",
+      "src/context/AppContext.tsx",
+      "src/types.ts",
+      "src/components/admin/SystemAlertsBanner.tsx"
+    ],
+    "src/components/admin/AutopilotHistoryModal.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/admin/AutopilotRunnerModal.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/AutopilotSettingsModal.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/admin/BeautyCatalogPanel.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/BeautyEvaluationPanel.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/BeautyRequestsPanel.tsx": [
+      "src/lib/api.ts",
+      "src/components/admin/BeautyEvaluationPanel.tsx"
+    ],
+    "src/components/admin/CandidateDetailModal.tsx": [
+      "src/context/AppContext.tsx",
+      "src/components/admin/ImageStudioModal.tsx",
+      "src/types.ts"
+    ],
+    "src/components/admin/ConnectorsDirectoryModal.tsx": [
+      "src/lib/api.ts",
+      "src/context/AppContext.tsx",
+      "src/types.ts"
+    ],
+    "src/components/admin/ConsultationBell.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/ConsultationInbox.tsx": [
+      "src/lib/api.ts",
+      "src/storefront/consultationSupabase.ts",
+      "src/components/public/serviceDirectory.ts",
+      "src/components/admin/ConsultationReadControl.tsx",
+      "src/components/admin/ConsultationIntelligencePanel.tsx",
+      "src/components/admin/ConsultationIntelligenceReport.tsx",
+      "src/storefront/consultationReplyStatus.ts",
+      "src/storefront/consultationRequest.ts"
+    ],
+    "src/components/admin/ConsultationIntelligencePanel.tsx": [
+      "src/storefront/consultationIntelligence.ts",
+      "src/storefront/consultationIntelligenceOperations.ts",
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/ConsultationIntelligenceReport.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/ConsultationLabPanel.tsx": [
+      "src/lib/api.ts",
+      "src/storefront/consultationLabCases.ts",
+      "src/storefront/consultationLab.ts",
+      "src/storefront/consultationServiceKnowledge.ts",
+      "src/storefront/consultationKnowledgeReview.ts"
+    ],
+    "src/components/admin/ConsultationReadControl.tsx": [],
+    "src/components/admin/DiscoveryModal.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/admin/FulfillmentOrdersTable.tsx": [
+      "src/context/AppContext.tsx",
+      "src/types.ts"
+    ],
+    "src/components/admin/GlobalAdminSearchModal.tsx": [
+      "src/context/AppContext.tsx",
+      "src/types.ts"
+    ],
+    "src/components/admin/ImageStudioModal.tsx": [
+      "src/lib/api.ts",
+      "src/context/AppContext.tsx",
+      "src/lib/imageEnhancer.ts",
+      "src/types.ts"
+    ],
+    "src/components/admin/ManualCatalogPanel.tsx": [
+      "src/components/admin/AffiliateResearchPanel.tsx",
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/ProfessionalAdminHub.tsx": [
+      "src/components/admin/ConsultationBell.tsx",
+      "src/components/admin/ConsultationInbox.tsx",
+      "src/components/admin/BeautyRequestsPanel.tsx",
+      "src/components/admin/BeautyCatalogPanel.tsx",
+      "src/components/admin/ConsultationLabPanel.tsx",
+      "src/components/admin/SixAgentStatusPanel.tsx"
+    ],
+    "src/components/admin/ReleaseReadinessCard.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/SixAgentStatusPanel.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/SourcingPanel.tsx": [
+      "src/lib/api.ts"
+    ],
+    "src/components/admin/SupplierManagement.tsx": [
+      "src/lib/api.ts",
+      "src/context/AppContext.tsx",
+      "src/components/admin/SupplierModal.tsx",
+      "src/types.ts"
+    ],
+    "src/components/admin/SupplierModal.tsx": [
+      "src/types.ts"
+    ],
+    "src/components/admin/SystemAlertsBanner.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/auth/AuthModal.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/public/CareFinderModal.tsx": [
+      "src/storefront/careDiscovery.ts",
+      "src/components/public/ConsultationDialog.tsx",
+      "src/components/public/ContactLink.tsx"
+    ],
+    "src/components/public/ConsultationDialog.tsx": [],
+    "src/components/public/ConsultationForm.tsx": [
+      "src/components/public/serviceDirectory.ts",
+      "src/components/public/ContactLink.tsx",
+      "src/storefront/consultationRequest.ts"
+    ],
+    "src/components/public/ContactLink.tsx": [
+      "src/components/public/serviceDirectory.ts"
+    ],
+    "src/components/public/CopyMessageButton.tsx": [],
+    "src/components/public/EditorialPage.tsx": [
+      "src/storefront/editorial.ts",
+      "src/components/public/ContactLink.tsx",
+      "src/components/public/PrintableRitualModal.tsx",
+      "src/components/public/NewsletterSubscribe.tsx",
+      "src/components/public/serviceDirectory.ts"
+    ],
+    "src/components/public/GiftVoucherModal.tsx": [
+      "src/storefront/careDiscovery.ts",
+      "src/components/public/ConsultationDialog.tsx",
+      "src/components/public/ContactLink.tsx",
+      "src/components/public/CopyMessageButton.tsx"
+    ],
+    "src/components/public/NewsletterSubscribe.tsx": [
+      "src/components/public/ContactLink.tsx"
+    ],
+    "src/components/public/PrintableRitualModal.tsx": [
+      "src/components/public/ConsultationDialog.tsx"
+    ],
+    "src/components/public/PrivacyPage.tsx": [
+      "src/components/public/ContactLink.tsx"
+    ],
+    "src/components/public/ProfessionalSite.tsx": [
+      "src/storefront/publicPageLocation.ts",
+      "src/components/public/ConsultationForm.tsx",
+      "src/components/public/EditorialPage.tsx",
+      "src/components/public/ContactLink.tsx",
+      "src/components/public/PublicNavigation.tsx",
+      "src/components/public/TreatmentsPage.tsx",
+      "src/components/public/TechnologyPage.tsx",
+      "src/components/public/GiftVoucherModal.tsx",
+      "src/components/public/PrivacyPage.tsx"
+    ],
+    "src/components/public/PublicNavigation.tsx": [
+      "src/components/public/ConsultationDialog.tsx",
+      "src/components/public/serviceDirectory.ts",
+      "src/components/public/QuickSearchDialog.tsx",
+      "src/components/public/CareFinderModal.tsx"
+    ],
+    "src/components/public/QuickSearchDialog.tsx": [
+      "src/storefront/editorial.ts",
+      "src/storefront/careDiscovery.ts",
+      "src/components/public/ConsultationDialog.tsx",
+      "src/components/public/ContactLink.tsx"
+    ],
+    "src/components/public/ServiceCatalog.tsx": [
+      "src/storefront/careCatalog.ts",
+      "src/storefront/careCatalog.ts",
+      "src/components/public/ContactLink.tsx",
+      "src/components/public/ConsultationDialog.tsx"
+    ],
+    "src/components/public/serviceDetails.ts": [],
+    "src/components/public/serviceDirectory.ts": [],
+    "src/components/public/serviceQuestions.ts": [],
+    "src/components/public/ServicesDirectory.tsx": [
+      "src/components/public/serviceSearch.ts",
+      "src/components/public/ContactLink.tsx",
+      "src/components/public/serviceDirectory.ts",
+      "src/components/public/serviceDetails.ts",
+      "src/storefront/editorial.ts",
+      "src/components/public/serviceQuestions.ts"
+    ],
+    "src/components/public/serviceSearch.ts": [],
+    "src/components/public/TechnologyPage.tsx": [],
+    "src/components/public/TreatmentsPage.tsx": [
+      "src/components/public/serviceDirectory.ts",
+      "src/components/public/serviceDetails.ts",
+      "src/components/public/serviceSearch.ts",
+      "src/components/public/ServicesDirectory.tsx"
+    ],
+    "src/components/store/CartDrawer.tsx": [
+      "src/components/store/useStoreDialog.ts",
+      "src/services/revenue.ts",
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/store/CheckoutModal.tsx": [
+      "src/lib/api.ts",
+      "src/components/store/useStoreDialog.ts",
+      "src/storefront/checkoutKey.ts",
+      "src/context/AppContext.tsx",
+      "src/types.ts",
+      "src/services/revenue.ts"
+    ],
+    "src/components/store/CustomerAccountModal.tsx": [
+      "src/services/revenue.ts",
+      "src/context/AppContext.tsx",
+      "src/types.ts"
+    ],
+    "src/components/store/HeroBanner.tsx": [],
+    "src/components/store/PaymentReturn.tsx": [
+      "src/lib/api.ts",
+      "src/storefront/checkoutKey.ts"
+    ],
+    "src/components/store/ProductCard.tsx": [
+      "src/storefront/salesChannel.ts",
+      "src/components/store/SalesChannelAction.tsx",
+      "src/services/revenue.ts",
+      "src/context/AppContext.tsx",
+      "src/types.ts"
+    ],
+    "src/components/store/ProductDetailModal.tsx": [
+      "src/storefront/salesChannel.ts",
+      "src/components/store/SalesChannelAction.tsx",
+      "src/context/AppContext.tsx",
+      "src/services/revenue.ts",
+      "src/types.ts",
+      "src/components/store/useStoreDialog.ts",
+      "src/storefront/cartState.ts"
+    ],
+    "src/components/store/ProductGrid.tsx": [
+      "src/components/store/ProductCard.tsx",
+      "src/services/revenue.ts",
+      "src/context/AppContext.tsx",
+      "src/types.ts",
+      "src/storefront/catalogDiscovery.ts"
+    ],
+    "src/components/store/SalesChannelAction.tsx": [
+      "src/types.ts",
+      "src/storefront/salesChannel.ts"
+    ],
+    "src/components/store/StoreExperienceSections.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/store/StoreFooter.tsx": [
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/store/StoreHeader.tsx": [
+      "src/storefront/catalogLocation.ts",
+      "src/context/AppContext.tsx"
+    ],
+    "src/components/store/useStoreDialog.ts": [],
+    "src/components/store/WaitlistSection.tsx": []
+  },
+  "strongly_connected_components": [
+    [
+      "src/storefront/salesChannel.ts",
+      "src/types.ts"
+    ],
+    [
+      "src/storefront/clientEditorial.ts",
+      "src/storefront/editorial.ts"
+    ],
+    [
+      "src/autopilot/executorAdapter.ts",
+      "src/autopilot/missionPlanner.ts"
+    ],
+    [
+      "src/services/productSourcingService.ts",
+      "src/services/autoPublisher.ts"
+    ]
+  ],
+  "unresolved": [
+    {
+      "file": "src/autopilot/readinessDevelopment.ts",
+      "import": "./consultationReadiness"
+    },
+    {
+      "file": "src/autopilot/selfDevelopment.ts",
+      "import": "./subject.mjs"
+    }
+  ]
+}

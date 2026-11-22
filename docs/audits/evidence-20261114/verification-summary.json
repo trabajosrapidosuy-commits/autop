@@ -1,0 +1,213 @@
+{
+  "base_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+  "observed_utc": "2026-11-15T01:19:26.111551+00:00",
+  "npm_ci": {
+    "exit_code": 0,
+    "flags": [
+      "--ignore-scripts"
+    ],
+    "packages_added": 225,
+    "audit_reported_vulnerabilities": 0,
+    "not_a_security_certification": true
+  },
+  "first_verify": {
+    "exit_code": 1,
+    "tests": 513,
+    "pass": 512,
+    "fail": 1,
+    "failed_file": "src/autopilot/beautyDiscoveryPlan.test.ts",
+    "cause": "not established"
+  },
+  "isolated_retry": {
+    "pass": 4,
+    "fail": 0
+  },
+  "second_verify": {
+    "exit_code": 0,
+    "tests": 516,
+    "pass": 516,
+    "fail": 0,
+    "skipped": 0,
+    "includes": [
+      "skills",
+      "TypeScript",
+      "Node build",
+      "Vercel build",
+      "compiled API smoke"
+    ]
+  },
+  "p0d": {
+    "head_sha": "3ce7fdf6f3e7ea955a705f20f771a91ec8cb1f14",
+    "unit_pass": 8,
+    "unit_fail": 0,
+    "runtime_probe": {
+      "input_state": "unexpected",
+      "returned_action": "propose_resume",
+      "scope": "read-only pure function; no dispatch"
+    }
+  },
+  "git_fsck_connectivity": {
+    "exit_code": 0,
+    "flags": [
+      "--connectivity-only",
+      "--no-dangling"
+    ],
+    "not_full_object_integrity_scan": true
+  },
+  "public_node_monitor": {
+    "exit_code": 1,
+    "error": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  "public_powershell_get": "public-get.json",
+  "local_sql_tests": "not rerun; exact base main postgres CI SUCCESS; documentation changes only",
+  "main_checks": [
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646097516",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "hosted-ledger",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646072020",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "inventory",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646071750",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "codex",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646071371",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "ipv6-probe",
+      "status": "completed"
+    },
+    {
+      "conclusion": "failure",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646070577",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "continuation",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646041486",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "inventory",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646041457",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "codex",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646041438",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "hosted-ledger",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646040912",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "ipv6-probe",
+      "status": "completed"
+    },
+    {
+      "conclusion": "failure",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646040114",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "continuation",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641318512",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "inventory",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641296635",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "codex",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641296473",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "ipv6-probe",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641296339",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "hosted-ledger",
+      "status": "completed"
+    },
+    {
+      "conclusion": "failure",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641295232",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "continuation",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "details_url": "https://supabase.com/dashboard/project/jfjzpwlrhzqbcrvqxhzf",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "Supabase Preview",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963677/job/132640659787",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "Analyze (python)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963677/job/132640659746",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "Analyze (javascript-typescript)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963677/job/132640659738",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "Analyze (actions)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963656/job/132640656335",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "postgres",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963656/job/132640656184",
+      "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+      "name": "validate",
+      "status": "completed"
+    }
+  ],
+  "logs_preservation": "local evidence retained; raw local paths omitted"
+}

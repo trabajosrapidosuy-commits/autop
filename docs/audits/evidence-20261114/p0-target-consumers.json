@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "observed_utc": "2026-11-15T01:49:36.730002+00:00",
+  "order": "ORD-P0-RECONCILE-LOCAL-20261114",
+  "resources": [
+    {
+      "alias": "alignment-audit",
+      "project_owner": "Victoriosas/autopilot",
+      "filesystem_custodian_matches_current_windows_identity": true,
+      "uncommitted_human_author": "not established; ACL and Git authors are not attribution of dirty edits",
+      "git_base_head": "48a6f2f3fde5ac48e7664f0b47143ac385dcae7d",
+      "merged_origin_pr": 195,
+      "merge_commit": "bf2a989e65533f415ef1be0c0551b4fa3d0f79e4",
+      "head_ancestor_of_main": false,
+      "status_paths": 13,
+      "categories": {
+        "qa_report_or_session": 13
+      },
+      "local_blobs_absent_from_main_history": 13,
+      "staged_changes": false,
+      "runtime_consumer_search": {
+        "main": {
+          "method": "literal dirty relative paths + worktree alias in tracked runtime/build/workflow files",
+          "matches": [],
+          "scope": "src/scripts/.github/package/server/vite/vercel; not proof against dynamic/external consumers"
+        },
+        "worktree_base": {
+          "method": "literal dirty relative paths + worktree alias in tracked runtime/build/workflow files",
+          "matches": [],
+          "scope": "src/scripts/.github/package/server/vite/vercel; not proof against dynamic/external consumers"
+        }
+      },
+      "local_qa_scripts": [],
+      "ignored_files_not_backed_up": 10228,
+      "scheduled_task_target_reference_matches": 0,
+      "action": "CONSERVAR; encrypted preservation and in-memory recovery verified; do not delete on this evidence alone"
+    },
+    {
+      "alias": "diseno",
+      "project_owner": "Victoriosas/autopilot",
+      "filesystem_custodian_matches_current_windows_identity": true,
+      "uncommitted_human_author": "not established; ACL and Git authors are not attribution of dirty edits",
+      "git_base_head": "c132ed0efcad02593f9b348141d96c28b25c9af7",
+      "merged_origin_pr": 79,
+      "merge_commit": "7d8519844a6691ee2c39adbf28f65662e8854d87",
+      "head_ancestor_of_main": false,
+      "status_paths": 48,
+      "categories": {
+        "capture": 23,
+        "qa_report_or_session": 22,
+        "qa_script": 3
+      },
+      "local_blobs_absent_from_main_history": 47,
+      "staged_changes": false,
+      "runtime_consumer_search": {
+        "main": {
+          "method": "literal dirty relative paths + worktree alias in tracked runtime/build/workflow files",
+          "matches": [],
+          "scope": "src/scripts/.github/package/server/vite/vercel; not proof against dynamic/external consumers"
+        },
+        "worktree_base": {
+          "method": "literal dirty relative paths + worktree alias in tracked runtime/build/workflow files",
+          "matches": [],
+          "scope": "src/scripts/.github/package/server/vite/vercel; not proof against dynamic/external consumers"
+        }
+      },
+      "local_qa_scripts": [
+        {
+          "path": "output/audit-a16-quality.cjs",
+          "manual_browser_qa": true,
+          "can_contact_network": true,
+          "writes_evidence": true,
+          "executed_during_p0": false
+        },
+        {
+          "path": "output/audit-cold-performance.cjs",
+          "manual_browser_qa": false,
+          "can_contact_network": true,
+          "writes_evidence": false,
+          "executed_during_p0": false
+        },
+        {
+          "path": "output/final-release-browser.cjs",
+          "manual_browser_qa": true,
+          "can_contact_network": true,
+          "writes_evidence": true,
+          "executed_during_p0": false
+        }
+      ],
+      "ignored_files_not_backed_up": 9649,
+      "scheduled_task_target_reference_matches": 0,
+      "action": "CONSERVAR; encrypted preservation and in-memory recovery verified; do not delete on this evidence alone"
+    }
+  ],
+  "writer_assessment": {
+    "process_commandline_mentions_other_than_current_inspection": 0,
+    "recent_app_sample_limit": 30,
+    "active_codex_chats_matching_target_worktrees": 0,
+    "active_codex_chats_for_current_audit": 1,
+    "unknowns": [
+      "Process cwd and all external machines not exhaustively observable",
+      "Recent app list is a bounded sample; not a global writer lock"
+    ],
+    "scoped_edit_decision": "only audit documents in PR235; target worktrees remain read-only; captured status and file hashes stayed stable"
+  }
+}

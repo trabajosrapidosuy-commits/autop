@@ -1,0 +1,9 @@
+{
+  "publication_schema": "minimized-v1",
+  "resource_alias": "unversioned-source-export",
+  "scope": "selected source trees, regular files <=2MB; secrets not read; not full backup",
+  "difference_count": 157,
+  "paths_already_on_main": 138,
+  "decision": "CONSERVAR; owner/purpose unknown, no deletion proposed",
+  "private_path_and_file_inventory": "encrypted original audit archive"
+}

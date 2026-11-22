@@ -1,0 +1,53 @@
+{
+  "exit_code": 0,
+  "data": {
+    "total_count": 5,
+    "environments": [
+      {
+        "name": "OPENAI_API_KEY",
+        "can_admins_bypass": true,
+        "protection_rules": [],
+        "deployment_branch_policy": null
+      },
+      {
+        "name": "p0c-hosted-ledger",
+        "can_admins_bypass": true,
+        "protection_rules": [
+          {
+            "type": "required_reviewers",
+            "prevent_self_review": true,
+            "reviewer_count": 1
+          },
+          {
+            "type": "branch_policy",
+            "prevent_self_review": null,
+            "reviewer_count": 0
+          }
+        ],
+        "deployment_branch_policy": {
+          "protected_branches": false,
+          "custom_branch_policies": true
+        }
+      },
+      {
+        "name": "Preview",
+        "can_admins_bypass": true,
+        "protection_rules": [],
+        "deployment_branch_policy": null
+      },
+      {
+        "name": "Production",
+        "can_admins_bypass": true,
+        "protection_rules": [],
+        "deployment_branch_policy": null
+      },
+      {
+        "name": "VERCEL",
+        "can_admins_bypass": true,
+        "protection_rules": [],
+        "deployment_branch_policy": null
+      }
+    ]
+  },
+  "publication_policy": "reviewer identities/account IDs omitted"
+}

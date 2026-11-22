@@ -1,7 +1,20 @@
 # Victoriosas / Autopilot: guía de trabajo
 
+## Dirección y fases del producto
+- **Fuente principal de visión**: `docs/PROJECT_DIRECTION.md`, con roles, límites, fases F0–F8, criterios de salida y prioridad activa; leerla antes de crear trabajo nuevo.
+- **Secuencia técnica única**: `docs/MASTER_LINEAR_DEVELOPMENT_PLAN.md`; recuperar la única orden en `docs/CODEX_CONTINUATION.json` usando `docs/CODEX_LINEAR_CONTINUATION_PROMPT.md`. Una sola fase P0–P6 activa, subordinada a las puertas F0–F8 de producto. No crear planes ni cadenas paralelas.
+- **Estado auditado 3–4/11/2026**: `docs/AUDITORIA_DIRECCION_20261104.md`. Confirmar HEAD y servicios: el informe es una foto, no un estado permanente.
+- **PC/GitHub**: `docs/SYNC_PC_GITHUB_SEGURO.md`. Si Desktop Commander está desconectado, no afirmar PC sincronizada.
+- Usar `$victoriosas-control-de-fases` para impedir que tareas laterales desplacen la ruta crítica. Codex, OpenCode y Work comparten el objetivo, pero no comparten necesariamente sesiones, permisos o estado de ejecución.
+
+## Herramienta principal: Codex (decisión 2026-11-05)
+- **Codex es el ejecutor técnico principal** de Victoriosas: planificación del cambio, edición, pruebas y preparación de PR. Respetar las fases y aprobaciones de `docs/PROJECT_DIRECTION.md`.
+- OpenCode queda **secundario, opcional y bajo demanda**. No delegarle tareas paralelas a Codex sobre los mismos archivos, no arrancar procesos de OpenCode automáticamente ni utilizarlo como director del proyecto.
+- Si se demuestra interferencia real (procesos simultáneos, sobreescritura de archivos, consumo indebido, conflicto de worktrees o permisos), detener primero la ejecución de OpenCode, preservar su trabajo local y deshabilitar su arranque de forma reversible. Solo desinstalar después de inventariar respaldos y comprobar que Codex no depende de sus herramientas. No borrar worktrees, sesiones, skills ni credenciales por presunción.
+- `.github/workflows/opencode-workstation.yml` valida su configuración solo al cambiar los archivos relevantes o mediante ejecución manual; no equivale a un agente ejecutándose en segundo plano.
+
 ## Antes de actuar
-- Leer este archivo, `docs/AUTOPILOT_STATE.md` y `.github/copilot-instructions.md`.
+- Leer este archivo, docs/OPENCODE_CHECKPOINT.md y .github/copilot-instructions.md. Consultar el historial solo en rangos necesarios para la tarea.
 - Las notas de continuidad están fechadas: comprobar código, main, PR abiertas y CI actuales. No tratar entradas históricas como estado vigente.
 - Revisar issues y ramas antes de crear trabajo; conservar cambios ajenos y archivos sin seguimiento.
 - Marca: **Victoriosas**. Web oficial: https://victoriosas.online. Contenido visible en español.
@@ -22,14 +35,23 @@
 - Evaluación estética inicial remota; no inventar credenciales, tarifas, disponibilidad ni resultados garantizados.
 - Mantener borradores editoriales y controles comerciales según configuración vigente.
 
-## Perfiles existentes
-Los archivos de `.opencode/agent/` son instrucciones para un runtime OpenCode, no procesos autónomos de GitHub.
-| Perfil | Uso | Límite |
-| --- | --- | --- |
-| sourcing | Descubrir candidatos de proveedores | No importar ni publicar sin autorización y evidencia |
-| analyzer | Examinar costos, margen y riesgos | No inventar precios, stock o rentabilidad |
-| seo | Preparar metadatos y contenido | Respetar identidad y textos aprobados |
-| monitor | Diagnosticar salud pública e integraciones | No exponer datos ni duplicar el monitor de seis horas |
-| deploy | Revisar build, preview y recuperación | No cambiar DNS ni producción por iniciativa propia |
+## OpenCode: perfiles vigentes
 
-Copilot y Codex utilizan sus propias integraciones. Verificar cuota y permisos; no comprar créditos ni habilitar servicios pagos.
+Leer docs/OPENCODE_DIRECTIVES.md y tools/opencode-workstation/README.md. Los perfiles no son procesos permanentes.
+
+- ingeniero: cambios locales y pruebas.
+- director: planificación y delegación secuencial.
+- arquitecto: arquitectura y nuevos proyectos.
+- revisor, seguridad y datos: revisión en lectura.
+- qa: pruebas y navegador aislado.
+- operaciones: estado de GitHub, Vercel y gateway en lectura.
+- documentacion: documentación oficial y borradores.
+- consulta: conversación sin herramientas.
+
+Los perfiles históricos de dropshipping y ECC quedan deshabilitados en la configuración de OpenCode; no son instrucciones comerciales actuales. Copilot y Codex conservan sus propias integraciones. No comprar cuotas ni habilitar proveedores pagos.
+
+## Habilidades de Codex
+
+- Para desarrollo sostenido o mantenimiento de Autopilot, usar `$victoriosas-desarrollo-autonomo` como guía del ciclo técnico. Seleccionar la fase con `$victoriosas-control-de-fases` y cargar los apoyos pertinentes según la tarea.
+- Para tareas repetidas usar las habilidades específicas en `.agents/skills/` descritas en `docs/CODEX_SKILLS.md`.
+- Seleccionar una habilidad pertinente y leer sus referencias bajo demanda; no cargar todas ni tomar una skill como autorización para gastar, publicar o desplegar.

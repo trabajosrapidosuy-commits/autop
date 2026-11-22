@@ -1,0 +1,9 @@
+{
+  "publication_schema": "minimized-v1",
+  "historical_observed_utc": "2026-11-15T01:19:26.111551+00:00",
+  "registered_count": 72,
+  "accessible_count": 71,
+  "absent_count": 1,
+  "raw_paths_published": false,
+  "limits": "historical accessibility snapshot only; no restoration guarantee"
+}

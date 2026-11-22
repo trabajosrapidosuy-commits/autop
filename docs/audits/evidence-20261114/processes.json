@@ -1,0 +1,11 @@
+{
+  "publication_schema": "minimized-v1",
+  "observed_utc": "2026-11-15T01:52:34.881449+00:00",
+  "purpose": "bounded active-writer review for P0",
+  "other_process_target_mentions_observed": 0,
+  "current_audit_active_in_recent_app_sample": true,
+  "other_active_codex_chat_in_target_worktrees_observed": false,
+  "recent_app_sample_limit": 30,
+  "raw_process_ids_commandlines_and_thread_ids_published": false,
+  "limits": "No global cwd/open-handle/external-host lock proof. Only audit checkout is edited; target status and hashes rechecked."
+}

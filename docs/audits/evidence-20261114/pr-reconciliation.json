@@ -1,0 +1,688 @@
+[
+  {
+    "number": 234,
+    "head_sha": "3ce7fdf6f3e7ea955a705f20f771a91ec8cb1f14",
+    "base_ref": "main",
+    "merge_base": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "docs/PERMANENT_SUPERVISOR_P0D_20261114.md",
+      "src/autopilot/permanentSupervisor.test.ts",
+      "src/autopilot/permanentSupervisor.ts"
+    ],
+    "code_paths": [
+      "src/autopilot/permanentSupervisor.test.ts",
+      "src/autopilot/permanentSupervisor.ts"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 3ce7fdf6f3e7ea955a705f20f771a91ec8cb1f14"
+    ],
+    "classification": "Requiere investigación",
+    "decision_reason": "Pura y sin integración; 8/8 unitarias. Una observación con state inesperado devuelve propose_resume. Validar frontera runtime antes de conectar.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 229,
+    "head_sha": "d666cccfc49f6fea183b1cb5f8e028f839628881",
+    "base_ref": "main",
+    "merge_base": "30e9f41c0713ee1692aeefe0a26e16931d0fe4b1",
+    "depends_on_pr": [],
+    "changed_paths": [
+      ".github/workflows/beauty-supabase.yml",
+      ".gitignore",
+      "docs/AUTOPILOT_STATE.md",
+      "docs/CONSULTATION_ADMIN_D_CHECKPOINT.md",
+      "scripts/test-consultation-material-browser.ts",
+      "src/components/admin/ConsultationInbox.tsx",
+      "src/components/admin/ConsultationMaterialPanel.tsx",
+      "src/storefront/consultationMaterialAdmin.test.ts",
+      "src/storefront/consultationMaterialAdmin.ts",
+      "src/storefront/consultationMaterialAdminRouter.ts",
+      "src/storefront/consultationRouter.ts",
+      "supabase/staged/consultation_material_admin_v1.sql",
+      "supabase/staged/rollback/consultation_material_admin_v1.sql",
+      "tests/consultation-material-postgres.test.ts",
+      "tests/consultation-material-supabase.test.ts",
+      "vercel.json"
+    ],
+    "code_paths": [
+      ".github/workflows/beauty-supabase.yml",
+      "scripts/test-consultation-material-browser.ts",
+      "src/components/admin/ConsultationInbox.tsx",
+      "src/components/admin/ConsultationMaterialPanel.tsx",
+      "src/storefront/consultationMaterialAdmin.test.ts",
+      "src/storefront/consultationMaterialAdmin.ts",
+      "src/storefront/consultationMaterialAdminRouter.ts",
+      "src/storefront/consultationRouter.ts",
+      "supabase/staged/consultation_material_admin_v1.sql",
+      "supabase/staged/rollback/consultation_material_admin_v1.sql",
+      "tests/consultation-material-postgres.test.ts",
+      "tests/consultation-material-supabase.test.ts",
+      "vercel.json"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 1908a3f757ef003281e9f9ce9bdc01d5cd2af14a",
+      "+ 66065535b28fd1b0ce34a41aecee78394fafc57a",
+      "+ d666cccfc49f6fea183b1cb5f8e028f839628881"
+    ],
+    "classification": "En conflicto",
+    "decision_reason": "UI material pendiente; main ya incluye #225–#227. Reconciliar solo la UI y contratos actuales, sin reintroducir lógica anterior.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 224,
+    "head_sha": "9042122323887939b95ab7c9dc653742e0073517",
+    "base_ref": "main",
+    "merge_base": "1c44a6389a7bbd6ac9157ac087269e216e654373",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "docs/AUTOPILOT_STATE.md"
+    ],
+    "code_paths": [],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 9042122323887939b95ab7c9dc653742e0073517"
+    ],
+    "classification": "Integrable",
+    "decision_reason": "Solo evidencia histórica de preflight. Integrable documentalmente tras actualizar referencias, no acredita host recuperado.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 223,
+    "head_sha": "e034db1dd1e28f71febd895c19d62d20ff5616bd",
+    "base_ref": "codex/ord204g-early-diagnostics-20261110",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "depends_on_pr": [
+      220
+    ],
+    "changed_paths": [
+      ".github/workflows/ord204g-viki-readonly.yml",
+      "docs/AUTOPILOT_STATE.md",
+      "docs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "docs/ORD204G_RECOVERY_DIAGNOSTICS_20261110.md",
+      "scripts/autopilot-native-host.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tools/camelrun-bridge/README.md",
+      "tools/camelrun-bridge/bridge.mjs",
+      "tools/camelrun-bridge/bridge.test.mjs",
+      "tools/native-host/Demo-LabWindow.ps1",
+      "tools/native-host/Prepare-NativeDemo.ps1",
+      "tools/native-host/Read-TaskOrigin.ps1",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "tools/native-host/task.disabled.xml",
+      "vercel.json"
+    ],
+    "code_paths": [
+      ".github/workflows/ord204g-viki-readonly.yml",
+      "scripts/autopilot-native-host.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tools/camelrun-bridge/bridge.mjs",
+      "tools/camelrun-bridge/bridge.test.mjs",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "vercel.json"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 10a72568d1d36e617ea6ac5c5ba48dd66a44d6aa",
+      "+ 15720289647da59c19cc2c19c7f123ee84259a31",
+      "+ 2fd58de581a2184ff7b8815e6587a672165d6572",
+      "+ 633faa7f9517a6d6edc82158cd125b09a66f6312",
+      "+ ba4b82e4f8c5865bd36bf625dd7f82f91450429c",
+      "+ e034db1dd1e28f71febd895c19d62d20ff5616bd"
+    ],
+    "classification": "Dependiente de otra",
+    "decision_reason": "#220; bridge read-only y misma cuenta camelRun/viki. Sin herramientas conectadas hoy.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 222,
+    "head_sha": "e2f68d2c9be7423755c2b88d4ab5ee579f1bc65c",
+    "base_ref": "codex/ord204g-early-diagnostics-20261110",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "depends_on_pr": [
+      220
+    ],
+    "changed_paths": [
+      ".github/workflows/autopilot-core-v4.yml",
+      "docs/AUTOPILOT_STATE.md",
+      "docs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "docs/ORD204G_RECOVERY_DIAGNOSTICS_20261110.md",
+      "docs/ORD204G_TEST_WINDOW_MANAGER.md",
+      "scripts/autopilot-native-host.ts",
+      "scripts/observe-ord204g-native-window.ts",
+      "scripts/ord204g-test-window-manager.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "src/autopilot/ord204gObserverHook.ts",
+      "src/autopilot/ord204gWindowManager.test.ts",
+      "src/autopilot/ord204gWindowManager.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tests/ord204g-window-observer-postgres.test.ts",
+      "tools/native-host/Demo-LabWindow.ps1",
+      "tools/native-host/Prepare-NativeDemo.ps1",
+      "tools/native-host/Read-TaskOrigin.ps1",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "tools/native-host/task.disabled.xml",
+      "vercel.json"
+    ],
+    "code_paths": [
+      ".github/workflows/autopilot-core-v4.yml",
+      "scripts/autopilot-native-host.ts",
+      "scripts/observe-ord204g-native-window.ts",
+      "scripts/ord204g-test-window-manager.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "src/autopilot/ord204gObserverHook.ts",
+      "src/autopilot/ord204gWindowManager.test.ts",
+      "src/autopilot/ord204gWindowManager.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tests/ord204g-window-observer-postgres.test.ts",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "vercel.json"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 10a72568d1d36e617ea6ac5c5ba48dd66a44d6aa",
+      "+ 15720289647da59c19cc2c19c7f123ee84259a31",
+      "+ 2fd58de581a2184ff7b8815e6587a672165d6572",
+      "+ 633faa7f9517a6d6edc82158cd125b09a66f6312",
+      "+ bb9777402202e8fdb67604668b7703e9166579c4",
+      "+ 18001946d65925dce06ff167eeda84883cce9996",
+      "+ 350115a291b2b2e4bfb35797ddb4868c66dc665a",
+      "+ e2f68d2c9be7423755c2b88d4ab5ee579f1bc65c"
+    ],
+    "classification": "Dependiente de otra",
+    "decision_reason": "#220; gestor de ventanas no sustituye ledger ni garantiza recuperación Windows.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 220,
+    "head_sha": "633faa7f9517a6d6edc82158cd125b09a66f6312",
+    "base_ref": "codex/mission-native-host-20261109",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "depends_on_pr": [
+      213
+    ],
+    "changed_paths": [
+      "docs/AUTOPILOT_STATE.md",
+      "docs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "docs/ORD204G_RECOVERY_DIAGNOSTICS_20261110.md",
+      "scripts/autopilot-native-host.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tools/native-host/Demo-LabWindow.ps1",
+      "tools/native-host/Prepare-NativeDemo.ps1",
+      "tools/native-host/Read-TaskOrigin.ps1",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "tools/native-host/task.disabled.xml",
+      "vercel.json"
+    ],
+    "code_paths": [
+      "scripts/autopilot-native-host.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "vercel.json"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 10a72568d1d36e617ea6ac5c5ba48dd66a44d6aa",
+      "+ 15720289647da59c19cc2c19c7f123ee84259a31",
+      "+ 2fd58de581a2184ff7b8815e6587a672165d6572",
+      "+ 633faa7f9517a6d6edc82158cd125b09a66f6312"
+    ],
+    "classification": "Dependiente de otra",
+    "decision_reason": "#213; diagnósticos del host, no ejecución recuperada comprobada.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 219,
+    "head_sha": "ca7f4237211ac6e001eaa81a5ee4239f709f8bab",
+    "base_ref": "main",
+    "merge_base": "1c44a6389a7bbd6ac9157ac087269e216e654373",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "docs/AUTOPILOT_STATE.md",
+      "docs/ORD204G_NATIVE_WINDOW_20261110.md",
+      "docs/ORD204G_NATIVE_WINDOW_RESULT_20261110.json",
+      "vercel.json"
+    ],
+    "code_paths": [
+      "vercel.json"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ ca7f4237211ac6e001eaa81a5ee4239f709f8bab"
+    ],
+    "classification": "En conflicto",
+    "decision_reason": "Evidencia ORD-204G y script con trabajo exclusivo. Conservar; no usar como arranque actual.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 213,
+    "head_sha": "15720289647da59c19cc2c19c7f123ee84259a31",
+    "base_ref": "main",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "docs/AUTOPILOT_STATE.md",
+      "docs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "scripts/autopilot-native-host.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tools/native-host/Demo-LabWindow.ps1",
+      "tools/native-host/Prepare-NativeDemo.ps1",
+      "tools/native-host/Read-TaskOrigin.ps1",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "tools/native-host/task.disabled.xml",
+      "vercel.json"
+    ],
+    "code_paths": [
+      "scripts/autopilot-native-host.ts",
+      "src/autopilot/localMissionStore.ts",
+      "src/autopilot/managedProcesses.ts",
+      "src/autopilot/nativeHost.test.ts",
+      "src/autopilot/nativeHost.ts",
+      "tests/mission-operator-postgres.test.ts",
+      "tools/native-host/execution-host.json",
+      "tools/native-host/mission-request.json",
+      "vercel.json"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 10a72568d1d36e617ea6ac5c5ba48dd66a44d6aa",
+      "+ 15720289647da59c19cc2c19c7f123ee84259a31"
+    ],
+    "classification": "En conflicto",
+    "decision_reason": "Base del host nativo ORD-204G. Resolver frente al runtime actual antes de #220/#222/#223.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 202,
+    "head_sha": "eb92a0cef9c5d50ea578f4a532e7b56cb600cdab",
+    "base_ref": "main",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "docs/AUTOPILOT_STATE.md",
+      "src/security/adminAuth.test.ts",
+      "src/security/adminAuth.ts"
+    ],
+    "code_paths": [
+      "src/security/adminAuth.test.ts",
+      "src/security/adminAuth.ts"
+    ],
+    "identical_code_paths_on_main": [
+      "src/security/adminAuth.test.ts",
+      "src/security/adminAuth.ts"
+    ],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 8b8929ab964b249d856d0a4e0e4cfa9f26da1c0a",
+      "+ eb92a0cef9c5d50ea578f4a532e7b56cb600cdab"
+    ],
+    "classification": "Ya incorporada funcionalmente",
+    "decision_reason": "#204 está en main; ambos archivos de código de la propuesta son idénticos al main observado.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 201,
+    "head_sha": "7da72d3634c378d4cd1f6b41aa99b30f0a6001ce",
+    "base_ref": "codex/shared-api-mount-20261108",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "depends_on_pr": [
+      200
+    ],
+    "changed_paths": [
+      ".dockerignore",
+      ".github/workflows/autopilot-core-v4.yml",
+      ".gitignore",
+      "Dockerfile",
+      "api-app.ts",
+      "docs/AUTOPILOT_STATE.md",
+      "package.json",
+      "scripts/check-built-api.mjs",
+      "server.ts",
+      "src/http/createApp.ts",
+      "src/storefront/vercelHealth.test.ts"
+    ],
+    "code_paths": [
+      ".github/workflows/autopilot-core-v4.yml",
+      "api-app.ts",
+      "package.json",
+      "scripts/check-built-api.mjs",
+      "server.ts",
+      "src/http/createApp.ts",
+      "src/storefront/vercelHealth.test.ts"
+    ],
+    "identical_code_paths_on_main": [
+      "api-app.ts",
+      "scripts/check-built-api.mjs",
+      "server.ts",
+      "src/http/createApp.ts",
+      "src/storefront/vercelHealth.test.ts"
+    ],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 039ecf3503cb74b8f7c32b1fd4e8d71b7fa2f72a",
+      "+ eb8a23b53947849c8c74b9fe27e9d933bda6c586",
+      "+ 7da72d3634c378d4cd1f6b41aa99b30f0a6001ce"
+    ],
+    "classification": "Ya incorporada funcionalmente",
+    "decision_reason": "#204 incorpora 404 y builds separados; 5/7 archivos de código idénticos, restantes evolucionaron. Base formal #200.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 200,
+    "head_sha": "039ecf3503cb74b8f7c32b1fd4e8d71b7fa2f72a",
+    "base_ref": "main",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "api-app.ts",
+      "docs/AUTOPILOT_STATE.md",
+      "server.ts",
+      "src/http/createApp.ts",
+      "src/storefront/vercelHealth.test.ts"
+    ],
+    "code_paths": [
+      "api-app.ts",
+      "server.ts",
+      "src/http/createApp.ts",
+      "src/storefront/vercelHealth.test.ts"
+    ],
+    "identical_code_paths_on_main": [
+      "src/storefront/vercelHealth.test.ts"
+    ],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 039ecf3503cb74b8f7c32b1fd4e8d71b7fa2f72a"
+    ],
+    "classification": "Ya incorporada funcionalmente",
+    "decision_reason": "#204 incorpora montaje común; src/http/createApp.ts y smoke actual acreditan el comportamiento. Diferencias posteriores no son razón para reintegrar.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 199,
+    "head_sha": "2607a427d77f3b523de120a2d41ae1f1898b146f",
+    "base_ref": "main",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "docs/AUTOPILOT_STATE.md",
+      "docs/consultation-agents/camelrun-agent-manifest.json",
+      "src/storefront/consultationAgentEval.test.ts",
+      "src/storefront/consultationAgentPrompts.ts"
+    ],
+    "code_paths": [
+      "src/storefront/consultationAgentEval.test.ts",
+      "src/storefront/consultationAgentPrompts.ts"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 2607a427d77f3b523de120a2d41ae1f1898b146f"
+    ],
+    "classification": "En conflicto",
+    "decision_reason": "Guardián F3; cambios exclusivos y base divergente. Revisión semántica focalizada pendiente, no reemplazar main con variante antigua.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 198,
+    "head_sha": "9d7edf1cfe90562cad29771738b038f06f7f3696",
+    "base_ref": "main",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "depends_on_pr": [],
+    "changed_paths": [
+      ".gitattributes",
+      "docs/AUTOPILOT_STATE.md",
+      "docs/F3_EVALUACION_AUTORIZADA_20261106.md",
+      "docs/consultation-agents/results/development-20261106-42326025668.json"
+    ],
+    "code_paths": [],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 9d7edf1cfe90562cad29771738b038f06f7f3696"
+    ],
+    "classification": "Requiere investigación",
+    "decision_reason": "Evidencia histórica F3; preservar documentos exclusivos. No prueba aprobación completa vigente de 40+6.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 169,
+    "head_sha": "f9924558237d033cfae7f530524fa72348ea4297",
+    "base_ref": "main",
+    "merge_base": "30e9f41c0713ee1692aeefe0a26e16931d0fe4b1",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "package-lock.json",
+      "package.json"
+    ],
+    "code_paths": [
+      "package-lock.json",
+      "package.json"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ f9924558237d033cfae7f530524fa72348ea4297"
+    ],
+    "classification": "En conflicto",
+    "decision_reason": "Git mergeable/behind pero validate FAILURE: migración Express 5 sin contrato verificado. Conflicto técnico, no textual.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 124,
+    "head_sha": "253309a253d7c467d1286710c391817a87339d9e",
+    "base_ref": "main",
+    "merge_base": "15b6f55768fd93604df116aefa638e1bdfc5bbd3",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "src/components/admin/ConsultationInbox.tsx",
+      "src/components/public/ConsultationForm.tsx",
+      "src/components/public/serviceDetails.ts",
+      "src/components/public/serviceDirectory.ts",
+      "src/components/public/servicesDirectory.test.ts",
+      "src/storefront/careDiscovery.test.ts",
+      "src/storefront/consultationAnswerOptions.test.ts",
+      "src/storefront/consultationAnswerOptions.ts",
+      "src/storefront/consultationFrontend.test.ts",
+      "src/storefront/consultationOperationsAgents.test.ts",
+      "src/storefront/consultationOperationsAgents.ts",
+      "src/storefront/consultationReplyDelivery.ts",
+      "src/storefront/consultationRouter.ts",
+      "src/storefront/serviceConsultation.test.ts"
+    ],
+    "code_paths": [
+      "src/components/admin/ConsultationInbox.tsx",
+      "src/components/public/ConsultationForm.tsx",
+      "src/components/public/serviceDetails.ts",
+      "src/components/public/serviceDirectory.ts",
+      "src/components/public/servicesDirectory.test.ts",
+      "src/storefront/careDiscovery.test.ts",
+      "src/storefront/consultationAnswerOptions.test.ts",
+      "src/storefront/consultationAnswerOptions.ts",
+      "src/storefront/consultationFrontend.test.ts",
+      "src/storefront/consultationOperationsAgents.test.ts",
+      "src/storefront/consultationOperationsAgents.ts",
+      "src/storefront/consultationReplyDelivery.ts",
+      "src/storefront/consultationRouter.ts",
+      "src/storefront/serviceConsultation.test.ts"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ caaf33dd17c7d1703af8050cdbda4c3d3964428d",
+      "+ 770c2aeb595328e20511d96d331cb63916817dab",
+      "+ 27a8023a5a57451c43441ed124da8d1d6f394f25",
+      "+ 66073db84db5e8183ee7a3e38e0e05dc97cbf6ab",
+      "+ 3bbc293fc1a1459e71c60809a4dfdae85896f147",
+      "+ be2c7396e4084915719f47d697d87166045b49ac",
+      "+ 928fea7392d2a7e9f68c8d8e6eafd91095f4d113",
+      "+ f429a56a0c63c7e0ceafbb581be7f8be715b8bcc",
+      "+ e57000cb2bae7282f177db0c5b9c8e5e1c8aee8d",
+      "+ 123e23da05888e474ed3022876d6b32e00440015",
+      "+ 26316aec3ed5ce2916e5372b55227994b40c91db",
+      "+ 7a5f04074f336d9877bde4ed0d35fd38723f6c03",
+      "+ 189b082ac91af0b01f6e527a933df9253bb63a27",
+      "+ bbd48100e43e29625c25dc8f7dfec9c117918ed2",
+      "+ 5779bf492de2e672cf0e005d023c16ea96e1286c",
+      "+ 8748f23538b1baf54f00c02aae6619e20fe10293",
+      "+ 9d8d267a88f37633b9a8cb714cfee0f62df51aa0",
+      "+ 198722c287b50bde3e76ee793db39819b130dc91",
+      "+ 253309a253d7c467d1286710c391817a87339d9e"
+    ],
+    "classification": "Obsoleta",
+    "decision_reason": "Alcance mixto catálogo/correos/agentes histórico, fuera de dirección actual. Tiene trabajo exclusivo; no cerrar ni borrar automáticamente.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 122,
+    "head_sha": "0623fbc41b1c0aba0a1c6131698acbdb106fd0e5",
+    "base_ref": "main",
+    "merge_base": "15b6f55768fd93604df116aefa638e1bdfc5bbd3",
+    "depends_on_pr": [],
+    "changed_paths": [
+      ".env.example",
+      "docs/AUTOPILOT_STATE.md",
+      "src/storefront/consultationAutoReply.test.ts",
+      "src/storefront/consultationAutoReply.ts",
+      "src/storefront/consultationPricePolicy.test.ts",
+      "src/storefront/consultationPricePolicy.ts",
+      "src/storefront/consultationResponseAgents.test.ts",
+      "src/storefront/consultationResponseAgents.ts",
+      "src/storefront/consultationSafety.ts"
+    ],
+    "code_paths": [
+      "src/storefront/consultationAutoReply.test.ts",
+      "src/storefront/consultationAutoReply.ts",
+      "src/storefront/consultationPricePolicy.test.ts",
+      "src/storefront/consultationPricePolicy.ts",
+      "src/storefront/consultationResponseAgents.test.ts",
+      "src/storefront/consultationResponseAgents.ts",
+      "src/storefront/consultationSafety.ts"
+    ],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ 6662695a832a9a9b21bc02d5fe7c41ff410b4d14",
+      "+ fcd1f127fa1a0afa3350521f4f645fb341cfa3c0",
+      "+ 0623fbc41b1c0aba0a1c6131698acbdb106fd0e5"
+    ],
+    "classification": "Requiere investigación",
+    "decision_reason": "Precios/Guardián fase2 históricos; hay trabajo exclusivo y conflicto. Tarifas actuales no aprobadas; mantener borrador.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  },
+  {
+    "number": 90,
+    "head_sha": "b12c7da28b7b862d656681465954e48dfa8932b1",
+    "base_ref": "main",
+    "merge_base": "97fc36e3b2fb3e3c86472aa6ac9279720e9bf5f7",
+    "depends_on_pr": [],
+    "changed_paths": [
+      "docs/AUTOPILOT_STATE.md",
+      "docs/SOCIAL_PROFILE_ALIGNMENT_20261019.md"
+    ],
+    "code_paths": [],
+    "identical_code_paths_on_main": [],
+    "head_is_ancestor_of_main": false,
+    "cherry": [
+      "+ c2a80b10b4694446ee4be9f7e630aeb165a92a61",
+      "+ baa906744a4fddc2fb483ba0938d1faee67edad7",
+      "+ b12c7da28b7b862d656681465954e48dfa8932b1"
+    ],
+    "classification": "Obsoleta",
+    "decision_reason": "Preparación social fuera de fase actual. Contenido exclusivo se conserva; no publicar perfiles ni cerrar por antigüedad.",
+    "state_at_p0_followup": "CLOSED",
+    "state_changed_externally": true,
+    "head_unchanged": true,
+    "current_evidence": "docs/audits/evidence-20261114/p0-pending-prs-baseline.json"
+  }
+]

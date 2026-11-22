@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "data": {
+    "conclusion": "success",
+    "created_at": "2026-11-15T00:17:27Z",
+    "event": "workflow_dispatch",
+    "head_sha": "0337d47c84239d05fc574967315700bf4de9d428",
+    "html_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657434746",
+    "id": 43657434746,
+    "name": "PLAN Cloud - auditoria segura",
+    "status": "completed"
+  }
+}

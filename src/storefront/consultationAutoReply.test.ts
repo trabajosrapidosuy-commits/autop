@@ -44,7 +44,7 @@ test('agent refuses clinical, urgent, underage, non-email and test inquiries', a
   for (const change of examples) {
     assert.equal(await maybeSendAutomaticConsultationReply({ ...example, ...change } as ConsultationInput, {
       env: enabled, fetch: async () => { throw Error('SHOULD_NOT_SEND'); },
-    }), 'ineligible');
+    }), 'disabled');
   }
 });
 

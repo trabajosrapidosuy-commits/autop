@@ -1,0 +1,269 @@
+name: PLAN Cloud - auditoria segura
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_run:
+    workflows: ['Autopilot Core v4']
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "inventario (sin IA) o codex (requiere secreto de API)"
+        type: choice
+        required: true
+        default: inventory
+        options: [inventory, codex, development, hosted-status, hosted-resume, hosted-handoff, ipv6-probe]
+      mission_id:
+        description: 'ID synthetic previamente admitida; solo modos hosted'
+        type: string
+        default: ''
+      source_run:
+        description: 'Run Autopilot Core main/completed/success del SHA revisado; solo hosted-handoff'
+        type: string
+        default: ''
+  pull_request:
+    paths:
+      - '.github/workflows/plan-cloud.yml'
+      - '.agents/skills/plan/**'
+      - 'scripts/plan_cloud_inventory.py'
+permissions:
+  contents: read
+  pull-requests: read
+concurrency:
+  group: plan-cloud-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  cloud-adapter-validation:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node --import tsx --test src/autopilot/cloudDevelopment.test.ts src/autopilot/cloudLedgerHandoff.test.ts scripts/cloud-development.test.mjs
+      - run: node --import tsx scripts/cloud-development.mjs sandbox-smoke
+  cloud-development:
+    # Opt-in, main only, one bounded proposal. Existing synthetic SQL grants stay closed.
+    if: ${{ github.ref == 'refs/heads/main' && vars.AUTOPILOT_CLOUD_SCHEDULE_ENABLED == 'true' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'development')) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    concurrency:
+      group: autopilot-plan-cloud-development
+      cancel-in-progress: false
+    env:
+      AUTOPILOT_CLOUD_SCHEDULE_ENABLED: ${{ vars.AUTOPILOT_CLOUD_SCHEDULE_ENABLED }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Reconcile canonical order and existing writers
+        id: prepare
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node --import tsx scripts/cloud-development.mjs prepare
+      - name: Generate bounded proposal (USD 0.04 reservation)
+        id: generate
+        if: steps.prepare.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node --import tsx scripts/cloud-development.mjs generate
+      - name: Verify candidate without network or credentials
+        if: steps.generate.outputs.change == 'true'
+        run: node --import tsx scripts/cloud-development.mjs verify
+      - name: Publish one draft PR after live reauthorization
+        if: steps.generate.outputs.change == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node --import tsx scripts/cloud-development.mjs publish
+      - name: Record bounded outcome
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ['RUNNER_TEMP']) / 'autopilot-cloud-output'
+          result = {}
+          for name in ['result.json', 'inference-reserved.json', 'publication.json']:
+              file = root / name
+              if file.is_file():
+                  result[name] = json.loads(file.read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+              out.write('Autopilot cloud: proposal lane only; no SQL mission, merge, deployment or sends.\n\n')
+              out.write('```json\n' + json.dumps(result, indent=2) + '\n```\n')
+          PY
+  ipv6-probe:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'ipv6-probe' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions: {}
+    steps:
+      - name: Diagnose IPv6 without credentials
+        shell: bash
+        run: |
+          set -eu
+          python3 - <<'PY'
+          import socket
+          host = 'db.juyowvmtluxfetgkckjd.supabase.co'
+          infos = socket.getaddrinfo(host, 5432, socket.AF_INET6, socket.SOCK_STREAM)
+          print('IPv6 DNS addresses:', len(infos))
+          for family, typ, proto, canon, sockaddr in infos:
+              try:
+                  with socket.socket(family, typ, proto) as s:
+                      s.settimeout(5)
+                      s.connect(sockaddr)
+                  print('IPv6 TCP 5432: CONNECTED')
+                  break
+              except OSError as exc:
+                  print('IPv6 TCP 5432:', type(exc).__name__, getattr(exc, 'errno', None))
+          else:
+              raise SystemExit('No direct IPv6 TCP route; no credentials were used')
+          PY
+  continuation:
+    if: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_repository.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      # No checkout or artifact download from the triggering branch: workflow_run is privileged.
+      - name: Record durable handoff and fail closed
+        env:
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+          SOURCE_RUN: ${{ github.event.workflow_run.id }}
+          SOURCE_RESULT: ${{ github.event.workflow_run.conclusion }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          successful = os.environ['SOURCE_RESULT'] == 'success'
+          evidence = {
+            'schema_version': 1,
+            'source_sha': os.environ['SOURCE_SHA'],
+            'source_run': os.environ['SOURCE_RUN'],
+            'state': 'blocked',
+            'reason': 'cloud_ledger_adapter_not_configured' if successful else 'source_ci_not_successful',
+            'executed': False,
+            'scheduler_created': False,
+          }
+          Path('continuation.json').write_text(json.dumps(evidence, indent=2))
+          print(evidence['reason'])
+          raise SystemExit(1)
+          PY
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: continuation-${{ github.event.workflow_run.id }}
+          path: continuation.json
+          retention-days: 14
+  inventory:
+    if: ${{ github.event_name != 'workflow_run' && github.event_name != 'schedule' && inputs.mode != 'development' && inputs.mode != 'hosted-status' && inputs.mode != 'hosted-resume' && inputs.mode != 'hosted-handoff' && inputs.mode != 'ipv6-probe' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Read-only P0 inventory
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/plan_cloud_inventory.py
+      - name: Publish evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: plan-cloud-inventory-${{ github.run_id }}
+          path: plan-cloud-output/
+          if-no-files-found: warn
+          retention-days: 14
+  codex:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'codex' }}
+    needs: inventory
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Check API configuration
+        env:
+          CODEX_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$CODEX_API_KEY" ]; then
+            echo "::error::Configure OPENAI_API_KEY in GitHub Actions secrets before running Codex."
+            exit 1
+          fi
+      - name: Execute plan in read-only sandbox
+        uses: openai/codex-action@v1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          safety-strategy: read-only
+          sandbox: read-only
+          output-file: plan-cloud-analysis.md
+          prompt: |
+            Use the local .agents/skills/plan/SKILL.md as your planning instructions.
+            Read AGENTS.md and relevant direction and checkpoint docs.
+            Inspect only the checked out repository and plan-cloud-output/inventory.json.
+            Create a concise factual P0 report in Spanish, using your final response.
+            State gaps explicitly: this runner cannot inspect remote Windows writers or live systems.
+            Do not change files, execute mutating commands, send messages, make deployments,
+            create PRs, or treat planning as authorization.
+      - name: Publish Codex report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: plan-cloud-codex-${{ github.run_id }}
+          path: plan-cloud-analysis.md
+          if-no-files-found: warn
+          retention-days: 14
+  hosted-ledger:
+    # No PR/workflow_run credentials. Exact reviewed commit AND protected environment required.
+    if: ${{ github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && (inputs.mode == 'hosted-status' || inputs.mode == 'hosted-resume' || inputs.mode == 'hosted-handoff') && vars.P0C_HOSTED_REVIEWED_SHA == github.sha }}
+    environment: p0c-hosted-ledger
+    permissions:
+      contents: read
+      actions: read
+    concurrency:
+      group: p0c-hosted-ledger
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - name: Run isolated synthetic ledger operation
+        env:
+          P0C_RUNNER_PASSWORD: ${{ secrets.P0C_LEDGER_RUNNER_PASSWORD }}
+          P0C_CA_CERT: ${{ secrets.P0C_LEDGER_CA_CERT }}
+          P0C_CONNECTION_MODE: ${{ vars.P0C_LEDGER_CONNECTION_MODE }}
+          P0C_REVIEWED_SHA: ${{ vars.P0C_HOSTED_REVIEWED_SHA }}
+          P0C_MISSION_ID: ${{ inputs.mission_id }}
+          P0C_ACTION: ${{ inputs.mode == 'hosted-status' && 'status' || inputs.mode == 'hosted-handoff' && 'handoff' || 'resume' }}
+          P0C_HANDOFF_SOURCE_RUN: ${{ inputs.source_run }}
+          GH_TOKEN: ${{ github.token }}
+        run: node --import tsx scripts/hosted-ledger-runner.mjs

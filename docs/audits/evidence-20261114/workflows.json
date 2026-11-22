@@ -1,0 +1,212 @@
+{
+  "exit_code": 0,
+  "data": {
+    "total_count": 17,
+    "workflows": [
+      {
+        "id": 356229396,
+        "node_id": "W_kwDOUV9AHM4VO6EU",
+        "name": "Autopilot Core v4",
+        "path": ".github/workflows/autopilot-core-v4.yml",
+        "state": "active",
+        "created_at": "2026-09-11T22:17:57.000-03:00",
+        "updated_at": "2026-09-11T22:21:54.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/356229396",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/autopilot-core-v4.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Autopilot%20Core%20v4/badge.svg"
+      },
+      {
+        "id": 387964439,
+        "node_id": "W_kwDOUV9AHM4XH94X",
+        "name": "Isolated Beauty Supabase",
+        "path": ".github/workflows/beauty-supabase.yml",
+        "state": "active",
+        "created_at": "2026-10-17T17:48:05.000-03:00",
+        "updated_at": "2026-10-17T19:13:06.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/387964439",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/beauty-supabase.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Isolated%20Beauty%20Supabase/badge.svg"
+      },
+      {
+        "id": 380909024,
+        "node_id": "W_kwDOUV9AHM4WtDXg",
+        "name": "Isolated Supabase commerce",
+        "path": ".github/workflows/commerce-supabase.yml",
+        "state": "active",
+        "created_at": "2026-10-10T21:16:11.000-03:00",
+        "updated_at": "2026-10-17T00:35:55.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/380909024",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/commerce-supabase.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Isolated%20Supabase%20commerce/badge.svg"
+      },
+      {
+        "id": 395579145,
+        "node_id": "W_kwDOUV9AHM4XlA8J",
+        "name": "Consultation agents evaluator (safe check)",
+        "path": ".github/workflows/consultation-agents-eval.yml",
+        "state": "active",
+        "created_at": "2026-10-24T23:08:41.000-03:00",
+        "updated_at": "2026-10-25T00:39:37.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/395579145",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/consultation-agents-eval.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Consultation%20agents%20evaluator%20(safe%20check)/badge.svg"
+      },
+      {
+        "id": 395618865,
+        "node_id": "W_kwDOUV9AHM4XlKox",
+        "name": "Consultation agents manual synthetic evaluation",
+        "path": ".github/workflows/consultation-agents-live-eval.yml",
+        "state": "active",
+        "created_at": "2026-10-25T00:39:37.000-03:00",
+        "updated_at": "2026-10-25T00:39:37.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/395618865",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/consultation-agents-live-eval.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Consultation%20agents%20manual%20synthetic%20evaluation/badge.svg"
+      },
+      {
+        "id": 395743989,
+        "node_id": "W_kwDOUV9AHM4XlpL1",
+        "name": "ECC Browser Smoke",
+        "path": ".github/workflows/ecc-browser-smoke.yml",
+        "state": "active",
+        "created_at": "2026-10-25T04:49:10.000-03:00",
+        "updated_at": "2026-10-25T04:56:37.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/395743989",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/ecc-browser-smoke.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/ECC%20Browser%20Smoke/badge.svg"
+      },
+      {
+        "id": 402781674,
+        "node_id": "W_kwDOUV9AHM4YAfXq",
+        "name": "OpenCode workstation",
+        "path": ".github/workflows/opencode-workstation.yml",
+        "state": "active",
+        "created_at": "2026-10-31T11:02:29.000-03:00",
+        "updated_at": "2026-10-31T12:49:22.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/402781674",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/opencode-workstation.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/OpenCode%20workstation/badge.svg"
+      },
+      {
+        "id": 414038356,
+        "node_id": "W_kwDOUV9AHM4YrblU",
+        "name": "ORD-204G - viki readonly evidence bridge",
+        "path": ".github/workflows/ord204g-viki-readonly.yml",
+        "state": "active",
+        "created_at": "2026-11-10T21:58:56.000-03:00",
+        "updated_at": "2026-11-10T21:58:56.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/414038356",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/ord204g-viki-readonly.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/ORD-204G%20-%20viki%20readonly%20evidence%20bridge/badge.svg"
+      },
+      {
+        "id": 414176739,
+        "node_id": "W_kwDOUV9AHM4Yr9Xj",
+        "name": "PLAN Cloud - auditoria segura",
+        "path": ".github/workflows/plan-cloud.yml",
+        "state": "active",
+        "created_at": "2026-11-11T01:22:19.000-03:00",
+        "updated_at": "2026-11-11T01:47:12.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/414176739",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/plan-cloud.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/PLAN%20Cloud%20-%20auditoria%20segura/badge.svg"
+      },
+      {
+        "id": 395685151,
+        "node_id": "W_kwDOUV9AHM4Xla0f",
+        "name": "Verify restricted infrastructure worker",
+        "path": ".github/workflows/six-agent-health-worker-check.yml",
+        "state": "active",
+        "created_at": "2026-10-25T03:02:52.000-03:00",
+        "updated_at": "2026-10-25T03:05:04.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/395685151",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/six-agent-health-worker-check.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Verify%20restricted%20infrastructure%20worker/badge.svg"
+      },
+      {
+        "id": 395662254,
+        "node_id": "W_kwDOUV9AHM4XlVOu",
+        "name": "Victoriosas six-agent observability",
+        "path": ".github/workflows/six-agent-observability.yml",
+        "state": "active",
+        "created_at": "2026-10-25T02:13:22.000-03:00",
+        "updated_at": "2026-10-25T02:13:22.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/395662254",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/six-agent-observability.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Victoriosas%20six-agent%20observability/badge.svg"
+      },
+      {
+        "id": 395676026,
+        "node_id": "W_kwDOUV9AHM4XlYl6",
+        "name": "Edge function static security invariants",
+        "path": ".github/workflows/six-agent-report-security.yml",
+        "state": "active",
+        "created_at": "2026-10-25T02:44:38.000-03:00",
+        "updated_at": "2026-10-25T02:47:22.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/395676026",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/six-agent-report-security.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Edge%20function%20static%20security%20invariants/badge.svg"
+      },
+      {
+        "id": 395682317,
+        "node_id": "W_kwDOUV9AHM4XlaIN",
+        "name": "Victoriosas infrastructure availability",
+        "path": ".github/workflows/victoriosas-infrastructure-availability.yml",
+        "state": "active",
+        "created_at": "2026-10-25T02:56:54.000-03:00",
+        "updated_at": "2026-10-25T02:56:54.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/395682317",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/victoriosas-infrastructure-availability.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Victoriosas%20infrastructure%20availability/badge.svg"
+      },
+      {
+        "id": 388068571,
+        "node_id": "W_kwDOUV9AHM4XIXTb",
+        "name": "Victoriosas Public Health",
+        "path": ".github/workflows/victoriosas-public-health.yml",
+        "state": "active",
+        "created_at": "2026-10-17T21:14:30.000-03:00",
+        "updated_at": "2026-10-17T21:14:30.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/388068571",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/victoriosas-public-health.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Victoriosas%20Public%20Health/badge.svg"
+      },
+      {
+        "id": 403345019,
+        "node_id": "W_kwDOUV9AHM4YCo57",
+        "name": "Victoriosas zero-cost operational audit",
+        "path": ".github/workflows/zero-cost-agent-audit.yml",
+        "state": "active",
+        "created_at": "2026-11-01T03:48:12.000-03:00",
+        "updated_at": "2026-11-01T03:48:12.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/403345019",
+        "html_url": "https://github.com/Victoriosas/autopilot/blob/main/.github/workflows/zero-cost-agent-audit.yml",
+        "badge_url": "https://github.com/Victoriosas/autopilot/workflows/Victoriosas%20zero-cost%20operational%20audit/badge.svg"
+      },
+      {
+        "id": 390048865,
+        "node_id": "W_kwDOUV9AHM4XP6xh",
+        "name": "Dependabot Updates",
+        "path": "dynamic/dependabot/dependabot-updates",
+        "state": "active",
+        "created_at": "2026-10-19T22:52:49.000-03:00",
+        "updated_at": "2026-10-19T22:52:49.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/390048865",
+        "html_url": "https://github.com/Victoriosas/autopilot/actions/workflows/dependabot/dependabot-updates",
+        "badge_url": "https://github.com/Victoriosas/autopilot/actions/workflows/dependabot/dependabot-updates/badge.svg"
+      },
+      {
+        "id": 390040411,
+        "node_id": "W_kwDOUV9AHM4XP4tb",
+        "name": "CodeQL",
+        "path": "dynamic/github-code-scanning/codeql",
+        "state": "active",
+        "created_at": "2026-10-19T22:38:14.000-03:00",
+        "updated_at": "2026-10-19T22:38:14.000-03:00",
+        "url": "https://api.github.com/repos/Victoriosas/autopilot/actions/workflows/390040411",
+        "html_url": "https://github.com/Victoriosas/autopilot/actions/workflows/github-code-scanning/codeql",
+        "badge_url": "https://github.com/Victoriosas/autopilot/actions/workflows/github-code-scanning/codeql/badge.svg"
+      }
+    ]
+  }
+}

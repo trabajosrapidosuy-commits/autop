@@ -1,0 +1,155 @@
+{
+  "exit_code": 0,
+  "data": {
+    "check_runs": [
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646097516",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "hosted-ledger",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646072020",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "inventory",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646071750",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "codex",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646071371",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "ipv6-probe",
+        "status": "completed"
+      },
+      {
+        "conclusion": "failure",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659704757/job/132646070577",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "continuation",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646041486",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "inventory",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646041457",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "codex",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646041438",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "hosted-ledger",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646040912",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "ipv6-probe",
+        "status": "completed"
+      },
+      {
+        "conclusion": "failure",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43659703171/job/132646040114",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "continuation",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641318512",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "inventory",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641296635",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "codex",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641296473",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "ipv6-probe",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641296339",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "hosted-ledger",
+        "status": "completed"
+      },
+      {
+        "conclusion": "failure",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43658168711/job/132641295232",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "continuation",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://supabase.com/dashboard/project/jfjzpwlrhzqbcrvqxhzf",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "Supabase Preview",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963677/job/132640659787",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "Analyze (python)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963677/job/132640659746",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "Analyze (javascript-typescript)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963677/job/132640659738",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "Analyze (actions)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963656/job/132640656335",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "postgres",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43657963656/job/132640656184",
+        "head_sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+        "name": "validate",
+        "status": "completed"
+      }
+    ],
+    "total_count": 21
+  }
+}

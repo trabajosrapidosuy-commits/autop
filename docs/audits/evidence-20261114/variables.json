@@ -1,0 +1,20 @@
+{
+  "exit_code": 0,
+  "data": {
+    "total_count": 2,
+    "variables": [
+      {
+        "created_at": "2026-11-15T00:14:37Z",
+        "name": "P0C_HOSTED_REVIEWED_SHA",
+        "updated_at": "2026-11-15T00:26:54Z",
+        "value": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c"
+      },
+      {
+        "created_at": "2026-11-15T00:14:37Z",
+        "name": "P0C_LEDGER_CONNECTION_MODE",
+        "updated_at": "2026-11-15T00:14:37Z",
+        "value": "supabase-session"
+      }
+    ]
+  }
+}

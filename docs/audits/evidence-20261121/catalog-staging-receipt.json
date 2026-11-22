@@ -1,0 +1,351 @@
+{
+  "label": "SIMULADO",
+  "environment": "disposable_loopback_postgresql",
+  "source": {
+    "branch": "codex/lane-c-catalog-20261121",
+    "sha": "0905a62022afcebb61c85e3c89d78744e73882c4"
+  },
+  "sourceClean": true,
+  "cases": [
+    {
+      "id": "synthetic-catalog-denied",
+      "outcome": "blocked",
+      "calls": 0
+    },
+    {
+      "id": "synthetic-catalog-authorized",
+      "outcome": "completed",
+      "calls": 1
+    },
+    {
+      "id": "synthetic-catalog-budget",
+      "outcome": "blocked",
+      "calls": 1
+    },
+    {
+      "id": "synthetic-catalog-unavailable",
+      "outcome": "blocked",
+      "calls": 1
+    },
+    {
+      "id": "synthetic-catalog-disabled",
+      "outcome": "blocked",
+      "calls": 1
+    }
+  ],
+  "externallySent": false,
+  "externalProviderCalls": 0,
+  "catalogCalls": 1,
+  "tasks": [
+    {
+      "id": "synthetic-catalog-authorized",
+      "status": "completed",
+      "attempts": 1,
+      "checkpoint_version": 2,
+      "checkpoint": {
+        "results": [
+          {
+            "status": "passed",
+            "step_id": "catalog-read",
+            "summary": "SIMULADO:catalog_read:2:c047582a6deac8252263b1ac03719653348b2d0a4fe26d20ffd944e44f3e59e5"
+          }
+        ],
+        "worktree": {
+          "sha": "0905a62022afcebb61c85e3c89d78744e73882c4",
+          "branch": "codex/lane-c-catalog-20261121"
+        },
+        "artifacts": [
+          "synthetic-catalog:sha256:c047582a6deac8252263b1ac03719653348b2d0a4fe26d20ffd944e44f3e59e5"
+        ],
+        "mission_state": "completed",
+        "pending_steps": [],
+        "test_evidence": [
+          "catalog-read:SIMULADO:catalog_read:2:c047582a6deac8252263b1ac03719653348b2d0a4fe26d20ffd944e44f3e59e5"
+        ],
+        "completed_steps": [
+          "catalog-read"
+        ],
+        "current_step_id": null
+      }
+    },
+    {
+      "id": "synthetic-catalog-budget",
+      "status": "blocked",
+      "attempts": 1,
+      "checkpoint_version": 1,
+      "checkpoint": {
+        "results": [],
+        "artifacts": [],
+        "last_error": "executor_failed",
+        "mission_state": "blocked",
+        "pending_steps": [],
+        "test_evidence": [],
+        "completed_steps": []
+      }
+    },
+    {
+      "id": "synthetic-catalog-denied",
+      "status": "blocked",
+      "attempts": 1,
+      "checkpoint_version": 1,
+      "checkpoint": {
+        "results": [],
+        "artifacts": [],
+        "last_error": "executor_failed",
+        "mission_state": "blocked",
+        "pending_steps": [],
+        "test_evidence": [],
+        "completed_steps": []
+      }
+    },
+    {
+      "id": "synthetic-catalog-disabled",
+      "status": "blocked",
+      "attempts": 1,
+      "checkpoint_version": 1,
+      "checkpoint": {
+        "results": [],
+        "artifacts": [],
+        "last_error": "executor_failed",
+        "mission_state": "blocked",
+        "pending_steps": [],
+        "test_evidence": [],
+        "completed_steps": []
+      }
+    },
+    {
+      "id": "synthetic-catalog-unavailable",
+      "status": "blocked",
+      "attempts": 1,
+      "checkpoint_version": 1,
+      "checkpoint": {
+        "results": [],
+        "artifacts": [],
+        "last_error": "executor_failed",
+        "mission_state": "blocked",
+        "pending_steps": [],
+        "test_evidence": [],
+        "completed_steps": []
+      }
+    }
+  ],
+  "audit": [
+    {
+      "task": "synthetic-catalog-denied",
+      "event": "six_agent_claim",
+      "details": {
+        "agent": "software",
+        "attempt": "claimed",
+        "mission": true
+      },
+      "at": "2026-11-21T04:18:05.310006+00:00"
+    },
+    {
+      "task": "synthetic-catalog-denied",
+      "event": "catalog_read_denied",
+      "details": {
+        "event": "catalog_read_denied",
+        "reason": "catalog_authorization_required",
+        "missionId": "synthetic-catalog-denied",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:05.462672+00:00"
+    },
+    {
+      "task": "synthetic-catalog-denied",
+      "event": "six_agent_failure",
+      "details": {
+        "mission_id": "synthetic-catalog-denied",
+        "reason_code": "executor_failed",
+        "checkpoint_version": 1
+      },
+      "at": "2026-11-21T04:18:05.69366+00:00"
+    },
+    {
+      "task": "synthetic-catalog-authorized",
+      "event": "six_agent_claim",
+      "details": {
+        "agent": "software",
+        "attempt": "claimed",
+        "mission": true
+      },
+      "at": "2026-11-21T04:18:06.196021+00:00"
+    },
+    {
+      "task": "synthetic-catalog-authorized",
+      "event": "catalog_read_requested",
+      "details": {
+        "event": "catalog_read_requested",
+        "missionId": "synthetic-catalog-authorized",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:06.326446+00:00"
+    },
+    {
+      "task": "synthetic-catalog-authorized",
+      "event": "catalog_read_completed",
+      "details": {
+        "count": 2,
+        "event": "catalog_read_completed",
+        "digest": "c047582a6deac8252263b1ac03719653348b2d0a4fe26d20ffd944e44f3e59e5",
+        "missionId": "synthetic-catalog-authorized",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:06.475699+00:00"
+    },
+    {
+      "task": "synthetic-catalog-authorized",
+      "event": "mission_checkpoint_saved",
+      "details": {
+        "mission_id": "synthetic-catalog-authorized",
+        "executor_id": "catalog-demo-executor",
+        "operation_id": "checkpoint:synthetic-catalog-authorized:1",
+        "checkpoint_hash": "188174d6022f4e437664ca3adb61d772",
+        "checkpoint_version": 1
+      },
+      "at": "2026-11-21T04:18:06.759553+00:00"
+    },
+    {
+      "task": "synthetic-catalog-authorized",
+      "event": "six_agent_complete",
+      "details": {
+        "evidence": "mission:synthetic-catalog-authorized:verified",
+        "mission_id": "synthetic-catalog-authorized",
+        "checkpoint_version": 2
+      },
+      "at": "2026-11-21T04:18:06.922629+00:00"
+    },
+    {
+      "task": "synthetic-catalog-budget",
+      "event": "six_agent_claim",
+      "details": {
+        "agent": "software",
+        "attempt": "claimed",
+        "mission": true
+      },
+      "at": "2026-11-21T04:18:07.857309+00:00"
+    },
+    {
+      "task": "synthetic-catalog-budget",
+      "event": "catalog_read_requested",
+      "details": {
+        "event": "catalog_read_requested",
+        "missionId": "synthetic-catalog-budget",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:08.010416+00:00"
+    },
+    {
+      "task": "synthetic-catalog-budget",
+      "event": "catalog_read_denied",
+      "details": {
+        "event": "catalog_read_denied",
+        "reason": "catalog_budget_exhausted",
+        "missionId": "synthetic-catalog-budget",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:08.179091+00:00"
+    },
+    {
+      "task": "synthetic-catalog-budget",
+      "event": "six_agent_failure",
+      "details": {
+        "mission_id": "synthetic-catalog-budget",
+        "reason_code": "executor_failed",
+        "checkpoint_version": 1
+      },
+      "at": "2026-11-21T04:18:08.41149+00:00"
+    },
+    {
+      "task": "synthetic-catalog-unavailable",
+      "event": "six_agent_claim",
+      "details": {
+        "agent": "software",
+        "attempt": "claimed",
+        "mission": true
+      },
+      "at": "2026-11-21T04:18:09.352829+00:00"
+    },
+    {
+      "task": "synthetic-catalog-unavailable",
+      "event": "catalog_read_requested",
+      "details": {
+        "event": "catalog_read_requested",
+        "missionId": "synthetic-catalog-unavailable",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:09.665111+00:00"
+    },
+    {
+      "task": "synthetic-catalog-unavailable",
+      "event": "catalog_read_denied",
+      "details": {
+        "event": "catalog_read_denied",
+        "reason": "catalog_unavailable",
+        "missionId": "synthetic-catalog-unavailable",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:09.888006+00:00"
+    },
+    {
+      "task": "synthetic-catalog-unavailable",
+      "event": "six_agent_failure",
+      "details": {
+        "mission_id": "synthetic-catalog-unavailable",
+        "reason_code": "executor_failed",
+        "checkpoint_version": 1
+      },
+      "at": "2026-11-21T04:18:10.049999+00:00"
+    },
+    {
+      "task": "synthetic-catalog-disabled",
+      "event": "six_agent_claim",
+      "details": {
+        "agent": "software",
+        "attempt": "claimed",
+        "mission": true
+      },
+      "at": "2026-11-21T04:18:10.638779+00:00"
+    },
+    {
+      "task": "synthetic-catalog-disabled",
+      "event": "catalog_read_requested",
+      "details": {
+        "event": "catalog_read_requested",
+        "missionId": "synthetic-catalog-disabled",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:10.823413+00:00"
+    },
+    {
+      "task": "synthetic-catalog-disabled",
+      "event": "catalog_read_denied",
+      "details": {
+        "event": "catalog_read_denied",
+        "reason": "catalog_disabled",
+        "missionId": "synthetic-catalog-disabled",
+        "simulation": true,
+        "checkpointVersion": 0
+      },
+      "at": "2026-11-21T04:18:11.018736+00:00"
+    },
+    {
+      "task": "synthetic-catalog-disabled",
+      "event": "six_agent_failure",
+      "details": {
+        "mission_id": "synthetic-catalog-disabled",
+        "reason_code": "executor_failed",
+        "checkpoint_version": 1
+      },
+      "at": "2026-11-21T04:18:11.152935+00:00"
+    }
+  ]
+}

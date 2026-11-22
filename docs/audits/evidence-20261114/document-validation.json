@@ -1,0 +1,8 @@
+{
+  "json_files_parsed": 40,
+  "local_markdown_links_checked": 31,
+  "checkpoint_refs_checked": 14,
+  "schema_contract": "P0 unique active;83 resources;49 remote branches;17 open PRs",
+  "credential_pattern_scan": "bounded pattern scan; not exhaustive guarantee",
+  "errors": []
+}

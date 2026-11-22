@@ -21,7 +21,7 @@ test('consultation actual disposable Auth PostgREST RPC and administrator RLS', 
   const actors: Record<string, { token: string; db: ReturnType<typeof client>; id: string }> = {};
   const app = express();
   let deliveries = 0;
-  app.use('/inquiries', createConsultationRouter({ enabled: () => true, origin: () => 'https://victoriosas.online', abuseKey: () => 'synthetic-only', delivery: { ready: () => true, send: async () => { deliveries++; return 'fixture-provider'; } } }));
+  app.use('/inquiries', createConsultationRouter({ intelligence:{enabled:()=>true},enabled: () => true, origin: () => 'https://victoriosas.online', abuseKey: () => 'synthetic-only', delivery: { ready: () => true, send: async () => { deliveries++; return 'fixture-provider'; } } }));
   const server = app.listen(0, '127.0.0.1'); await once(server, 'listening');
   const base = `http://127.0.0.1:${(server.address() as any).port}/inquiries`;
   const input = { id: randomUUID(), fullName: 'Consulta sintética', phone: '+598 099123456', email: '', age: null, service: 'orientacion', message: 'Información general.', responseChannel: 'whatsapp', consent: true, consentVersion: 'consultation-v1', website: '' };
@@ -50,12 +50,76 @@ test('consultation actual disposable Auth PostgREST RPC and administrator RLS', 
       const hidden = await actors.customer.db.from('consultation_requests').select('id,input').eq('id', input.id);
       assert.equal(hidden.error, null); assert.deepEqual(hidden.data, []);
     });
+    await t.test('private service knowledge uses real Auth, versions and approval independent of website publication', async () => {
+      const headers = { authorization:'Bearer '+actors.admin.token, origin:'https://victoriosas.online', 'content-type':'application/json', 'x-consultation-lab':'synthetic-v1' };
+      const endpoint = base + '/admin/lab/knowledge';
+      assert.equal((await fetch(endpoint)).status,401);
+      assert.equal((await fetch(endpoint,{headers:{authorization:'Bearer '+actors.customer.token}})).status,403);
+      assert.ok((await anon.rpc('consultation_knowledge_facts')).error);
+      assert.ok((await actors.customer.db.rpc('consultation_knowledge_list')).error);
+      const listed=await (await fetch(endpoint,{headers})).json();
+      assert.equal(listed.services.length,17);
+      const catalog=await actors.admin.db.from('beauty_services').select('id,publication_status').in('id',listed.services.map((s:any)=>s.slug));
+      assert.equal(catalog.error,null);assert.equal(catalog.data!.length,17);assert.ok(catalog.data!.every(s=>s.publication_status==='draft'));
+      const entry={slug:'limpieza-profunda',version:0,description:'Descripción sintética autorizada exclusivamente para esta prueba.',techniques:'',duration:'',conditions:'',faq:'',internalFee:'999 UYU (sintético)',approvedForAI:true,priceApproved:false,validUntil:null};
+      const save=(value:any)=>fetch(endpoint,{method:'POST',headers,body:JSON.stringify(value)});
+      assert.equal((await save(entry)).status,200);
+      assert.equal((await save(entry)).status,409,'stale revisions cannot overwrite an approval');
+      const facts=await service.rpc('consultation_knowledge_facts');assert.equal(facts.error,null);
+      assert.equal(facts.data.length,1);assert.equal(facts.data[0].version,'1');
+      const approvedFact = facts.data.find((fact: any) => fact.service === entry.slug);
+      assert.ok(approvedFact, 'approved service must appear in the AI projection');
+      assert.equal(Object.hasOwn(approvedFact, 'internalFee'), false, 'internal fee field must not reach the AI projection');
+      assert.equal(JSON.stringify(facts.data).includes(entry.internalFee), false, 'internal fee value must not reach any AI fact');
+      const result=await fetch(base+'/admin/lab',{method:'POST',headers,body:JSON.stringify({caseId:'general'})});
+      assert.equal(result.status,200);const lab=await result.json();assert.equal(lab.delivery,'NOT_SENT');assert.equal(lab.analysis.evidence[0].fragment,entry.description);
+      assert.equal((await save({...entry,version:1,description:'Nueva versión sin aprobación.',approvedForAI:false})).status,200);
+      assert.deepEqual((await service.rpc('consultation_knowledge_facts')).data,[],'never fall back to an older approved revision');
+      assert.equal((await save({...entry,version:2,description:'Garantizamos resultados por $999.',approvedForAI:true})).status,200);
+      assert.deepEqual((await service.rpc('consultation_knowledge_facts')).data,[],'deterministic gate overrides an unsafe approved description');
+      assert.equal(deliveries,1,'laboratory never notifies Resend');
+    });
     await t.test('HTTP inbox checks real Auth and profile role then applies caller RLS', async () => {
       assert.equal((await fetch(base + '/admin')).status, 401);
       assert.equal((await fetch(base + '/admin', { headers: { authorization: 'Bearer ' + actors.customer.token } })).status, 403);
       const response = await fetch(base + '/admin', { headers: { authorization: 'Bearer ' + actors.admin.token } });
       assert.equal(response.status, 200); const payload = await response.json();
       assert.equal(payload.requests.some((row: { id: string }) => row.id === input.id), true);
+    });
+    await t.test('real administrator read markers persist and count unread without creating replies', async () => {
+      const adminHeaders = { authorization: 'Bearer ' + actors.admin.token, origin: 'https://victoriosas.online', 'content-type': 'application/json', 'x-consultation-approval': input.id };
+      const mark = (read: boolean, headers = adminHeaders) => fetch(base + '/admin/' + input.id + '/read-state', { method: 'POST', headers, body: JSON.stringify({ read }) });
+      const metrics = async () => {
+        const response = await fetch(base + '/admin/metrics', { headers: adminHeaders });
+        assert.equal(response.status, 200); return response.json();
+      };
+      assert.ok((await anon.from('consultation_read_states').select('*')).error);
+      assert.ok((await actors.admin.db.from('consultation_read_states').select('*')).error, 'even admins use the authorized server route');
+      assert.ok((await actors.customer.db.from('consultation_read_metrics').select('*')).error);
+      assert.equal((await mark(true, { ...adminHeaders, authorization: 'Bearer ' + actors.customer.token })).status, 403);
+      assert.equal((await metrics()).unreadRequests, 1);
+      const response = await mark(true); assert.equal(response.status, 200);
+      assert.equal(typeof (await response.json()).readAt, 'string');
+      assert.equal((await metrics()).unreadRequests, 0);
+      const listed = await (await fetch(base + '/admin', { headers: adminHeaders })).json();
+      assert.equal(typeof listed.readStates[input.id], 'string');
+      assert.equal((await mark(true)).status, 200); assert.equal((await metrics()).unreadRequests, 0);
+      const audit = await service.from('consultation_read_states').select('read_by').eq('request_id', input.id).single();
+      assert.equal(audit.error, null); assert.equal(audit.data!.read_by, actors.admin.id);
+      assert.equal((await mark(false)).status, 200); assert.equal((await metrics()).unreadRequests, 1);
+      const counts = await metrics(); assert.equal(counts.activeRequests, 1); assert.equal(counts.sentLast30Days, 0);
+      assert.equal(deliveries, 1, 'reading must not send or resend the notification');
+    });
+    await t.test('shadow analysis uses real authenticated persistence without sending',async()=>{
+      const headers={authorization:'Bearer '+actors.admin.token,origin:'https://victoriosas.online','content-type':'application/json','x-consultation-approval':input.id};
+      const path=base+'/admin/'+input.id+'/intelligence';
+      assert.equal((await fetch(path,{method:'POST',headers:{...headers,authorization:'Bearer '+actors.customer.token},body:'{}'})).status,403);
+      const response=await fetch(path,{method:'POST',headers,body:'{}'});assert.equal(response.status,200);const result=await response.json();
+      assert.equal(result.analysis.mode,'shadow');assert.equal(result.analysis.decision.action,'no_send');
+      const stored=await service.from('consultation_intelligence_runs').select('analysis').eq('id',result.id).single();assert.equal(stored.error,null);assert.equal(stored.data!.analysis.fingerprint,result.analysis.fingerprint);
+      assert.ok((await actors.admin.db.from('consultation_intelligence_runs').select('*')).error);
+      const replay=await (await fetch(path,{method:'POST',headers,body:'{}'})).json();assert.equal(replay.id,result.id);
+      assert.equal(deliveries,1);assert.ok((await anon.rpc('consultation_ai_report')).error);
     });
   } finally {
     server.closeAllConnections(); await new Promise<void>(resolve => server.close(() => resolve()));

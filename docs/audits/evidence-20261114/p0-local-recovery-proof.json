@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "reference_date": "2026-11-14 America/Montevideo",
+  "observed_utc": "2026-11-15T01:46:16.718378+00:00",
+  "reference_pr": 235,
+  "reference_sha": "0f2482fab0f04b5fc58e2d7fc94c0e8d12923bda",
+  "archives": [
+    {
+      "alias": "alignment-audit",
+      "ciphertext_sha256": "eb19a990c0a5be565e6583ab716cda9724bd80b60793398ff17f9cd65b47c95d",
+      "plaintext_archive_sha256": "afb27a7b75d07938be0d214ff6d2f1351acc4806a900f495de74f9f003c28427",
+      "ciphertext_bytes": 24526806,
+      "roundtrip_verified": true,
+      "recovered_in_memory": true,
+      "protection": "Windows DPAPI CurrentUser; profile and machine recovery required; no portable/offsite recovery certified",
+      "head_sha": "48a6f2f3fde5ac48e7664f0b47143ac385dcae7d",
+      "branch": "codex/alignment-audit-20261105",
+      "merged_pr": 195,
+      "project_owner": "Victoriosas/autopilot; human authorship of uncommitted QA not inferred",
+      "purpose": "historical review and visual QA workspace",
+      "tracked_paths": 732,
+      "untracked_paths": 13,
+      "files_restored_and_hashed_in_memory": 745,
+      "base_archive_regular_files": 732,
+      "staged_changes_present": false,
+      "dirty_path_count": 13,
+      "dirty_categories": {
+        "qa_report_or_session": 13
+      },
+      "dirty_reachable_in_main_history": 0,
+      "dirty_not_found_in_main_history": 13,
+      "same_status_and_source_hashes_after_backup": true,
+      "skipped_path_count": 0,
+      "decision": "CONSERVAR; no deletion proposed",
+      "restoration_scope": "snapshot includes tracked/nonignored regular files, base tree and binary index/worktree patches; independent encrypted full-history pack proof is recorded below; ignored files retained in original worktree",
+      "consumer_assessment": "Git worktree on merged PR; local QA evidence, scripts and session files; runtime consumers checked separately"
+    },
+    {
+      "alias": "diseno",
+      "ciphertext_sha256": "3d6a3c0be7479faaa57caecce0883c971326aad88a6507b9163507fa12300cc3",
+      "plaintext_archive_sha256": "27c6ba90793c452cfc73be59a2bef5b72d38406aef2d895b06b259c6f7a8f318",
+      "ciphertext_bytes": 26808246,
+      "roundtrip_verified": true,
+      "recovered_in_memory": true,
+      "protection": "Windows DPAPI CurrentUser; profile and machine recovery required; no portable/offsite recovery certified",
+      "head_sha": "c132ed0efcad02593f9b348141d96c28b25c9af7",
+      "branch": "codex/victoriosas-functional-audit-20261017",
+      "merged_pr": 79,
+      "project_owner": "Victoriosas/autopilot; human authorship of uncommitted QA not inferred",
+      "purpose": "historical review and visual QA workspace",
+      "tracked_paths": 366,
+      "untracked_paths": 39,
+      "files_restored_and_hashed_in_memory": 405,
+      "base_archive_regular_files": 366,
+      "staged_changes_present": false,
+      "dirty_path_count": 48,
+      "dirty_categories": {
+        "capture": 23,
+        "qa_report_or_session": 22,
+        "qa_script": 3
+      },
+      "dirty_reachable_in_main_history": 1,
+      "dirty_not_found_in_main_history": 47,
+      "same_status_and_source_hashes_after_backup": true,
+      "skipped_path_count": 0,
+      "decision": "CONSERVAR; no deletion proposed",
+      "restoration_scope": "snapshot includes tracked/nonignored regular files, base tree and binary index/worktree patches; independent encrypted full-history pack proof is recorded below; ignored files retained in original worktree",
+      "consumer_assessment": "Git worktree on merged PR; local QA evidence, scripts and session files; runtime consumers checked separately"
+    },
+    {
+      "alias": "original-audit-inventories",
+      "ciphertext_sha256": "d144985759ba6bf46e51caea1ea8cbf8661b373026e6e8bb45b862721f9cda76",
+      "plaintext_archive_sha256": "5f443a2bd5a0f51147a308e33ad615df8010fe13cd7734ca2de9bd7214e2b398",
+      "ciphertext_bytes": 323142,
+      "roundtrip_verified": true,
+      "recovered_in_memory": true,
+      "protection": "Windows DPAPI CurrentUser; profile and machine recovery required; no portable/offsite recovery certified"
+    }
+  ],
+  "private_locator": "local only, not committed; operator can use encrypted private-map under dedicated backup directory",
+  "original_worktrees_mutated": false,
+  "extracted_files_or_scripts_executed": false,
+  "plaintext_backup_written": false,
+  "remaining_limits": [
+    "DPAPI recovery tied to this Windows identity/machine; no independent-host or disaster recovery certified",
+    "No stable snapshot can prove absence of every external writer; status and all captured hashes rechecked",
+    "Human authorship of uncommitted artifacts not established by ACL, branch or timestamps",
+    "Ignored files not backed up; full Git history is encrypted and dry-run validated, not written into a plaintext checkout."
+  ],
+  "independent_recovery_verification": {
+    "observed_utc": "2026-11-15T01:48:39.256035+00:00",
+    "fresh_process": true,
+    "resources": [
+      {
+        "alias": "alignment-audit",
+        "fresh_process_dpapi_unprotect": true,
+        "snapshot_file_hashes_recovered_and_compared": 745,
+        "binary_patches_and_base_archive_verified": true,
+        "history_pack_ciphertext_sha256": "c190a7f9c4e735eac90e5003bb010262f23507995864d7b8028ded0759c97639",
+        "history_pack_sha256": "4d952649b1495ed8a1e618a19858fe084c99792182131306281031bad620e485",
+        "history_pack_bytes": 13372023,
+        "history_root_sha": "48a6f2f3fde5ac48e7664f0b47143ac385dcae7d",
+        "pack_validation": "git unpack-objects -n -q --strict in fresh empty bare repository; exit0",
+        "plaintext_git_objects_written": 0,
+        "scripts_executed": 0
+      },
+      {
+        "alias": "diseno",
+        "fresh_process_dpapi_unprotect": true,
+        "snapshot_file_hashes_recovered_and_compared": 405,
+        "binary_patches_and_base_archive_verified": true,
+        "history_pack_ciphertext_sha256": "49b4b7f662141d15e96327b44209e000f6fe0e4c9ed43758a5aeff918bf13b38",
+        "history_pack_sha256": "6c94ee5a0302b1ec2601836e980ab5cadf252ac012eb940f46c816e82e5673c1",
+        "history_pack_bytes": 8797421,
+        "history_root_sha": "c132ed0efcad02593f9b348141d96c28b25c9af7",
+        "pack_validation": "git unpack-objects -n -q --strict in fresh empty bare repository; exit0",
+        "plaintext_git_objects_written": 0,
+        "scripts_executed": 0
+      }
+    ],
+    "limits": "Snapshot bytes actually decrypted/recovered in memory; Git history pack dry-run validated without writing sensitive objects. Full checkout/offsite/disaster recovery not claimed."
+  }
+}

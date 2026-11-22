@@ -4,11 +4,32 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "installCommand": "npm ci",
-  "crons": [{ "path": "/api/autopilot/v4/cron/sourcing", "schedule": "0 */6 * * *" }],
+  "crons": [
+    {
+      "path": "/api/autopilot/v4/cron/sourcing",
+      "schedule": "0 */6 * * *"
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/:path*",
       "destination": "/api/server?path=:path*"
+    },
+    {
+      "source": "/victoria",
+      "destination": "/seo/victoria.html"
+    },
+    {
+      "source": "/victoria/",
+      "destination": "/seo/victoria.html"
+    },
+    {
+      "source": "/contacto",
+      "destination": "/seo/starting.html"
+    },
+    {
+      "source": "/contacto/",
+      "destination": "/seo/starting.html"
     },
     {
       "source": "/de-mi-para-ti",
@@ -33,6 +54,14 @@
     {
       "source": "/nuestros-servicios/",
       "destination": "/seo/services.html"
+    },
+    {
+      "source": "/tecnologia",
+      "destination": "/seo/technology.html"
+    },
+    {
+      "source": "/tecnologia/",
+      "destination": "/seo/technology.html"
     },
     {
       "source": "/privacidad",
@@ -69,5 +98,23 @@
         }
       ]
     }
-  ]
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "codex/cloud-*": false,
+      "main": false,
+      "codex/hosted-ledger-20261112": false,
+      "codex/cloud-ledger-adapter-20261112": false,
+      "codex/autonomy-continuity-20261112": false,
+      "codex/self-development-f1-20261110": false,
+      "codex/self-development-20261110": false,
+      "codex/shared-context-20261110": false,
+      "codex/f1-readiness-20261110": false,
+      "codex/mission-operator-20261109": false,
+      "codex/mission-trigger-20261109": false,
+      "codex/consultation-knowledge-engine-v1": false,
+      "codex/consultation-grounded-response-v1": false,
+      "codex/consultation-material-persistence-v1": false
+    }
+  }
 }

@@ -1,0 +1,90 @@
+{
+  "roles": [
+    {
+      "failed": 0,
+      "queued": 0,
+      "blocked": 0,
+      "running": 0,
+      "agent_id": "consultations",
+      "received": 0,
+      "completed": 0,
+      "active_leases": 0,
+      "retried_tasks": 0,
+      "oldest_open_at": null,
+      "last_completed_at": null
+    },
+    {
+      "failed": 0,
+      "queued": 0,
+      "blocked": 0,
+      "running": 0,
+      "agent_id": "director",
+      "received": 0,
+      "completed": 0,
+      "active_leases": 0,
+      "retried_tasks": 0,
+      "oldest_open_at": null,
+      "last_completed_at": null
+    },
+    {
+      "failed": 0,
+      "queued": 0,
+      "blocked": 0,
+      "running": 0,
+      "agent_id": "followup",
+      "received": 0,
+      "completed": 0,
+      "active_leases": 0,
+      "retried_tasks": 0,
+      "oldest_open_at": null,
+      "last_completed_at": null
+    },
+    {
+      "failed": 0,
+      "queued": 13,
+      "blocked": 6,
+      "running": 0,
+      "agent_id": "infrastructure",
+      "received": 64,
+      "completed": 45,
+      "active_leases": 0,
+      "retried_tasks": 7,
+      "oldest_open_at": "2026-10-28T05:55:04.844507+00:00",
+      "last_completed_at": "2026-11-20T20:31:48.9449+00:00"
+    },
+    {
+      "failed": 0,
+      "queued": 0,
+      "blocked": 0,
+      "running": 0,
+      "agent_id": "reports",
+      "received": 0,
+      "completed": 0,
+      "active_leases": 0,
+      "retried_tasks": 0,
+      "oldest_open_at": null,
+      "last_completed_at": null
+    },
+    {
+      "failed": 0,
+      "queued": 0,
+      "blocked": 0,
+      "running": 0,
+      "agent_id": "software",
+      "received": 0,
+      "completed": 0,
+      "active_leases": 0,
+      "retried_tasks": 0,
+      "oldest_open_at": null,
+      "last_completed_at": null
+    }
+  ],
+  "observed_at": "2026-11-21T03:21:12.638283+00:00",
+  "audit_events": 130,
+  "last_event_at": "2026-11-20T20:31:48.9449+00:00",
+  "status_counts": {
+    "queued": 13,
+    "blocked": 6,
+    "completed": 45
+  }
+}

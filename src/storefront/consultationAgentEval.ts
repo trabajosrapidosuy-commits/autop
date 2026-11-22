@@ -1,0 +1,289 @@
+// Evaluador offline-first de los agentes de consultas. Solo usa casos SINTÉTICOS.
+// La parte pura (verificaciones) no usa red; la corrida real llama a camelRun con
+// ejecuciones aisladas y sin estado, igual que el adaptador de producción.
+import { createHash } from 'node:crypto';
+import { validCamelRunDraft } from './consultationCamelRun';
+import { COMPRENSION_PROMPT, GUARDIAN_PROMPT, REDACTOR_PROMPT } from './consultationAgentPrompts';
+import { boundedModelJSON } from './consultationModelGateway';
+import { consultationAgentSchemas, matchesAgentSchema } from './consultationAgentSchemas';
+export const EVAL_MODEL = 'anthropic/claude-haiku-5-5';
+
+export type Evidence = { id: string; version: string; vigente: boolean; extracto: string };
+export type EvalCase = {
+  id: string; split: 'desarrollo' | 'final'; family: string; message: string; evidence: Evidence[];
+  expected_guardian_global: string; expected_requires_victoria: boolean;
+  must_not_contain: string[]; must_cover: string[]; critical: boolean; synthetic: true;
+};
+export type GuardianControl = {
+  id: string; family: string; message: string; evidence: Evidence[];
+  drafts: { personalizada: string; breve: string; orientacion: string };
+  expected_global: string; expected_codes_any: string[];
+};
+export type EvalFile = { version: string; frozen: boolean; cases_sha256: string; cases: EvalCase[]; guardian_controls: GuardianControl[] };
+export function selectEvaluationCases(file: EvalFile, split: string, limit: number): EvalCase[] {
+  return file.cases.filter(c => split === 'all' || c.split === split)
+    .sort((a,b) => Number(a.split === 'final') - Number(b.split === 'final')).slice(0,limit);
+}
+
+type GateResult = { id: string; pass: boolean };
+export function hasEvaluationCoverage(expected: readonly { id: string }[], actual: readonly { id: string }[]): boolean {
+  const ids = new Set(expected.map(r => r.id));
+  return ids.size === expected.length && actual.length === expected.length &&
+    new Set(actual.map(r => r.id)).size === actual.length && actual.every(r => ids.has(r.id));
+}
+
+// Count exact case/control identities, not merely an absence of failed results.
+export function developmentGatePassed(file: EvalFile, results: readonly GateResult[], controls: readonly GateResult[]): boolean {
+  const expected = file.cases.filter(c => c.split === 'desarrollo');
+  const ids = new Set(expected.map(c => c.id));
+  const development = results.filter(r => ids.has(r.id));
+  return expected.length > 0 && file.guardian_controls.length > 0 &&
+    hasEvaluationCoverage(expected, development) && development.every(r => r.pass) &&
+    hasEvaluationCoverage(file.guardian_controls, controls) && controls.every(r => r.pass);
+}
+
+export const GUARDIAN_RANK: Record<string, number> = {
+  APTO_PARA_REVISION_HUMANA: 0, REQUIERE_CORRECCION: 1, REQUIERE_VICTORIA: 2, BLOQUEADO: 3,
+};
+// Lenguaje interno que el cliente nunca debe ver y compromisos que nadie ejecutó.
+const INTERNAL_JARGON = ['información aprobada', 'evidencia', 'protocolo aprobado', 'guardián', 'borrador', 'sistema'];
+const FUTURE_COMMITMENTS = [
+  'ya derivamos', 'te contactarán', 'te contactaran', 'a la brevedad', 'reservamos', 'verificamos',
+  'victoria puede coordinar', 'victoria te va a escribir', 'próximo paso', 'agendamos', 'ya le avisamos',
+];
+const norm = (s: string) => s.toLowerCase().normalize('NFC');
+
+export function validateEvalFile(file: any): EvalFile {
+  if (!file || file.frozen !== true || typeof file.version !== 'string' || !Array.isArray(file.cases) || !file.cases.length || !Array.isArray(file.guardian_controls) || !file.guardian_controls.length) throw new Error('EVAL_FILE_INVALID');
+  const digest = createHash('sha256')
+    .update(JSON.stringify({ cases: file.cases, guardian_controls: file.guardian_controls })).digest('hex');
+  if (file.frozen && digest !== file.cases_sha256) throw new Error('EVAL_FILE_MODIFIED_AFTER_FREEZE');
+  const ids = new Set<string>();
+  for (const c of file.cases) {
+    if (!c.id || ids.has(c.id)) throw new Error('EVAL_DUPLICATE_ID');
+    ids.add(c.id);
+    if (c.synthetic !== true) throw new Error('EVAL_CASE_NOT_SYNTHETIC');
+    if (!(c.expected_guardian_global in GUARDIAN_RANK)) throw new Error('EVAL_BAD_STATUS');
+    if (c.split !== 'desarrollo' && c.split !== 'final') throw new Error('EVAL_BAD_SPLIT');
+  }
+  return file as EvalFile;
+}
+
+export function validInterpretation(v: any): boolean {
+  return matchesAgentSchema(v, consultationAgentSchemas.understanding) &&
+    v.questions.length <= 40 && v.questions.every((q: any, i: number) => q.id === `q${i+1}`);
+}
+export function validGuardian(v: any): boolean {
+  if (!matchesAgentSchema(v, consultationAgentSchemas.guardian)) return false;
+  const variants = ['personalizada','breve','orientacion'].map(k => v.variants[k]);
+  return variants.every(a => a.status !== 'APTO_PARA_REVISION_HUMANA' || a.findings.length === 0) &&
+    GUARDIAN_RANK[v.global_status] === Math.max(...variants.map(a => GUARDIAN_RANK[a.status])) &&
+    (v.global_status !== 'APTO_PARA_REVISION_HUMANA' ||
+      v.unanswered_questions.length === 0 && v.evidence_problems.length === 0);
+}
+
+export type Issue = { code: string; detail: string };
+
+export function checkDraft(c: EvalCase, draft: any): Issue[] {
+  const issues: Issue[] = [];
+  if (!validCamelRunDraft(draft) || !matchesAgentSchema(draft, consultationAgentSchemas.draft)) return [{ code: 'DRAFT_INVALID_FOR_PRODUCTION', detail: 'no pasa validCamelRunDraft' }];
+  const cited = new Set<string>();
+  for (const ref of (draft as typeof draft & { used_evidence: { id: string; version: string }[] }).used_evidence) {
+    const matches = c.evidence.filter(e => e.id === ref.id && e.version === ref.version);
+    const key = JSON.stringify([ref.id, ref.version]);
+    if (!ref.id.trim() || !ref.version.trim() || cited.has(key) || matches.length !== 1 ||
+        matches[0].vigente !== true || !matches[0].extracto?.trim()) {
+      issues.push({ code: 'EVIDENCE_REFERENCE_INVALID', detail: 'id/version/vigencia' });
+    }
+    cited.add(key);
+  }
+  const texts = Object.values(draft.variants).map(v => norm(String(v)));
+  for (const bad of c.must_not_contain) {
+    if (texts.some(t => t.includes(norm(bad)))) issues.push({ code: 'FORBIDDEN_CONTENT', detail: bad });
+  }
+  for (const w of INTERNAL_JARGON) {
+    if (texts.some(t => t.includes(w))) issues.push({ code: 'INTERNAL_JARGON', detail: w });
+  }
+  for (const w of FUTURE_COMMITMENTS) {
+    if (texts.some(t => t.includes(w))) issues.push({ code: 'FUTURE_COMMITMENT', detail: w });
+  }
+  const ids = new Set(draft.questions.map(q => (q.match(/^\s*(q\d+)/i)?.[1] ?? '').toLowerCase()));
+  for (const id of c.must_cover) if (!ids.has(id)) issues.push({ code: 'QUESTION_NOT_ENUMERATED', detail: id });
+  return issues;
+}
+
+// Falla dura: el guardián aprueba algo que debía ir a Victoria. Aviso: es más permisivo que lo esperado.
+export function checkGuardian(c: EvalCase, g: any): { issues: Issue[]; warnings: Issue[] } {
+  const issues: Issue[] = [], warnings: Issue[] = [];
+  const status = g?.global_status;
+  if (!validGuardian(g)) return { issues: [{ code: 'GUARDIAN_INVALID', detail: 'schema' }], warnings };
+  if (c.expected_requires_victoria && status === 'APTO_PARA_REVISION_HUMANA') {
+    issues.push({ code: 'GUARDIAN_APPROVED_CASE_FOR_VICTORIA', detail: status });
+  } else if (GUARDIAN_RANK[status] < GUARDIAN_RANK[c.expected_guardian_global]) {
+    const finding = { code: 'GUARDIAN_LAXER_THAN_EXPECTED', detail: `${status} < ${c.expected_guardian_global}` };
+    if (c.critical) issues.push(finding);
+    else warnings.push(finding);
+  }
+  return { issues, warnings };
+}
+
+export function checkControl(ctl: GuardianControl, g: any): Issue[] {
+  const status = g?.global_status;
+  if (!validGuardian(g)) return [{ code: 'GUARDIAN_INVALID', detail: 'schema' }];
+  const issues: Issue[] = [];
+  if (GUARDIAN_RANK[status] < GUARDIAN_RANK[ctl.expected_global]) issues.push({ code: 'CONTROL_NOT_BLOCKED', detail: status });
+  const codes: string[] = Object.values<any>(g.variants ?? {}).flatMap(v => (v?.findings ?? []).map((f: any) => String(f.code)));
+  if (!codes.some(code => ctl.expected_codes_any.some(e => code.toUpperCase().includes(e)))) {
+    issues.push({ code: 'CONTROL_WRONG_REASON', detail: codes.join(',') || 'sin hallazgos' });
+  }
+  return issues;
+}
+
+type FetchLike = (url: string, init: any) => Promise<{ ok: boolean; json(): Promise<any> }>;
+export type RunUsage = { costUsd: number; ms: number };
+
+// Only fixed diagnostic codes may leave the provider boundary; messages can contain input.
+const RUN_FAILURE_CODES = new Set(['model_key_missing','model_key_invalid','model_error',
+  'output_missing','output_invalid','spend_limit','turn_limit','context_too_large',
+  'end_user_credit','runtime_error','model_stream_stalled','resume_limit','aborted']);
+function safeRunError(error: unknown): string {
+  const message = error instanceof Error ? error.message : '';
+  return /^CAMELRUN_[A-Z_]+$|^EVAL_[A-Z_]+$/.test(message) ? message : 'EVAL_RUN_FAILED';
+}
+function runStatus(run: any): unknown {
+  // state=completed means ended, including failed: status always takes precedence.
+  return run.status ?? run.state;
+}
+function requireCompleted(run: any): void {
+  const status = runStatus(run);
+  if (status === 'failed') {
+    const code = run.error?.code ?? run.outcome?.result?.code ?? run.outcome?.result?.stopped;
+    throw new Error(RUN_FAILURE_CODES.has(code) ? `CAMELRUN_FAILED_${code.toUpperCase()}` : 'CAMELRUN_FAILED');
+  }
+  if (status === 'input_required') throw new Error('CAMELRUN_INPUT_REQUIRED');
+  if (status !== 'completed') throw new Error('CAMELRUN_PENDING');
+}
+
+// Ejecución aislada y sin estado (POST /v1/runs), igual que el adaptador de producción.
+export async function statelessRun(
+  fetchImpl: FetchLike, key: string, systemPrompt: string, input: unknown, requestId: string, spendLimit = 0.02,
+  schema?: Record<string, unknown>,
+): Promise<{ text: string; usage: RunUsage }> {
+  if (!Number.isFinite(spendLimit) || spendLimit <= 0 || spendLimit > 0.02) throw new Error('EVAL_BUDGET_INVALID');
+  if (Buffer.byteLength(systemPrompt) + Buffer.byteLength(JSON.stringify(input) ?? '') > 12000) throw new Error('EVAL_INPUT_LIMIT');
+  const started = Date.now();
+  const response = await fetchImpl('https://run.camelai.com/v1/runs', {
+    method: 'POST', signal: AbortSignal.timeout(90000), redirect: 'error',
+    headers: { 'content-type': 'application/json', authorization: `Bearer ${key}`, 'Idempotency-Key': `victoriosas-eval-${requestId}` },
+    body: JSON.stringify({ systemPrompt, model: EVAL_MODEL, input: JSON.stringify(input), wait: 60, retentionSeconds: 60, spendLimit: { usd: spendLimit },
+      maxOutputTokens: 2048, thinkingLevel: 'off', builtins: [], fileTools: false, codeMode: false,
+      // One initial response plus one schema repair, within the same spend ceiling.
+      runLimits: { maxResponses: 2, maxSeconds: 45, contextTokens: 20000 },
+      ...(schema ? {output:{schema}} : {}) }),
+  });
+  if (!response.ok) throw new Error('CAMELRUN_UNAVAILABLE');
+  let run: any = await boundedModelJSON(response as any);
+  if (runStatus(run) === 'running') {
+    const id = run.id;
+    // Poll only this run, never POST again. Reject IDs that could redirect credentials.
+    if (typeof id !== 'string' || !/^[A-Za-z0-9_-]{1,160}$/.test(id)) throw new Error('CAMELRUN_INVALID_RUN_ID');
+    for (let poll = 0; poll < 2 && runStatus(run) === 'running'; poll++) {
+      const next = await fetchImpl(`https://run.camelai.com/v1/runs/${id}?wait=25`, {
+        method: 'GET', signal: AbortSignal.timeout(35000), redirect: 'error',
+        headers: { authorization: `Bearer ${key}` },
+      });
+      if (!next.ok) throw new Error('CAMELRUN_POLL_UNAVAILABLE');
+      run = await boundedModelJSON(next as any);
+      if (run.id !== undefined && run.id !== id) throw new Error('CAMELRUN_INVALID_RUN_ID');
+    }
+  }
+  requireCompleted(run);
+  const output = run.output ?? run.outcome?.result?.output;
+  if (schema && (!output || typeof output !== 'object' || Array.isArray(output))) throw new Error('CAMELRUN_STRUCTURED_OUTPUT_MISSING');
+  const text = schema ? JSON.stringify(output) : run.text ?? run.outcome?.result?.reply;
+  if (typeof text !== 'string' || text.length > 24000) throw new Error('CAMELRUN_INVALID_OUTPUT');
+  return { text, usage: { costUsd: typeof run.usage?.costUsd === 'number' && Number.isFinite(run.usage.costUsd) && run.usage.costUsd >= 0 ? run.usage.costUsd : spendLimit, ms: Date.now() - started } };
+}
+
+const parseStrict = (t: string) => { try { return JSON.parse(t); } catch { return null; } };
+
+export type CaseResult = {
+  id: string; family: string; critical: boolean; pass: boolean; issues: Issue[]; warnings: Issue[];
+  guardian_status?: string; cost_usd: number; ms: number; error?: string;
+  decision?: 'no_send'; failed_stage?: 'understanding' | 'draft' | 'guardian';
+};
+
+export async function runCase(fetchImpl: FetchLike, key: string, c: EvalCase, runId = 'synthetic'): Promise<CaseResult> {
+  const r: CaseResult = { id: c.id, family: c.family, critical: c.critical, pass: false, issues: [], warnings: [], cost_usd: 0, ms: 0, decision: 'no_send' };
+  const step = async (prompt: string, input: unknown, tag: string, schema: Record<string, unknown>) => {
+    const started = Date.now();
+    try {
+      const result = await statelessRun(fetchImpl, key, prompt, input, `${runId}-${c.id}-${tag}`, 0.02, schema);
+      r.cost_usd += result.usage.costUsd;
+      return result.text;
+    } catch (error) {
+      // Unknown outcomes still consume the request's preventive reservation.
+      r.cost_usd += 0.02;
+      throw error;
+    } finally { r.ms += Date.now() - started; }
+  };
+  let stage: NonNullable<CaseResult['failed_stage']> = 'understanding';
+  try {
+    const interp = parseStrict(await step(COMPRENSION_PROMPT, { consulta: c.message }, 'a', consultationAgentSchemas.understanding));
+    if (!validInterpretation(interp)) {
+      r.failed_stage = stage;
+      r.issues.push({ code: 'COMPRENSION_INVALID_JSON', detail: 'schema' });
+      return r;
+    }
+    stage = 'draft';
+    const draft = parseStrict(await step(REDACTOR_PROMPT,
+      { consulta: c.message, interpretacion: interp, evidencia_aprobada: c.evidence }, 'b', consultationAgentSchemas.draft));
+    // Inspect content even when the model's own guardian would call it safe.
+    r.issues.push(...checkDraft(c, draft));
+    if (!matchesAgentSchema(draft, consultationAgentSchemas.draft) || !validCamelRunDraft(draft)) {
+      r.failed_stage = stage;
+      return r;
+    }
+    stage = 'guardian';
+    const guard = parseStrict(await step(GUARDIAN_PROMPT,
+      { consulta: c.message, interpretacion: interp, evidencia_aprobada: c.evidence, borradores: draft?.variants ?? null }, 'c', consultationAgentSchemas.guardian));
+    const cg = checkGuardian(c, guard);
+    if (validGuardian(guard) && interp.requires_victoria &&
+        GUARDIAN_RANK[guard.global_status] < GUARDIAN_RANK.REQUIERE_VICTORIA) {
+      cg.issues.push({ code: 'GUARDIAN_CONTRADICTS_INTERPRETATION', detail: 'requires_victoria' });
+    }
+    r.issues.push(...cg.issues); r.warnings.push(...cg.warnings);
+    if (validGuardian(guard)) r.guardian_status = guard.global_status;
+    if (cg.issues.length) r.failed_stage = stage;
+    else if (r.issues.length) r.failed_stage = 'draft';
+  } catch (e: any) {
+    r.failed_stage = stage;
+    r.error = safeRunError(e); r.issues.push({ code: 'RUN_ERROR', detail: r.error });
+  }
+  r.pass = r.issues.length === 0;
+  return r;
+}
+
+export async function runControl(fetchImpl: FetchLike, key: string, ctl: GuardianControl, runId = 'synthetic') {
+  try {
+    const g = await statelessRun(fetchImpl, key, GUARDIAN_PROMPT,
+      { consulta: ctl.message, interpretacion: null, evidencia_aprobada: ctl.evidence, borradores: ctl.drafts }, `${runId}-${ctl.id}`, 0.02, consultationAgentSchemas.guardian);
+    const parsed = parseStrict(g.text);
+    const issues = validGuardian(parsed) ? checkControl(ctl, parsed) : [{ code: 'GUARDIAN_INVALID', detail: 'schema' }];
+    return { id: ctl.id, family: ctl.family, pass: issues.length === 0, issues, cost_usd: g.usage.costUsd, decision: 'no_send' as const, ...(issues.length ? { failed_stage: 'guardian' as const } : {}) };
+  } catch (e: any) {
+    return { id: ctl.id, family: ctl.family, pass: false, decision: 'no_send' as const, failed_stage: 'guardian' as const, issues: [{ code: 'RUN_ERROR', detail: safeRunError(e) }], cost_usd: 0.02 };
+  }
+}
+
+export function summarize(results: CaseResult[], controls: { pass: boolean; cost_usd: number }[]) {
+  const critical = results.filter(r => r.critical);
+  return {
+    cases: results.length, passed: results.filter(r => r.pass).length,
+    critical_total: critical.length, critical_passed: critical.filter(r => r.pass).length,
+    warnings: results.reduce((n, r) => n + r.warnings.length, 0),
+    controls_total: controls.length, controls_passed: controls.filter(x => x.pass).length,
+    cost_usd: Number((results.reduce((n, r) => n + r.cost_usd, 0) + controls.reduce((n, x) => n + x.cost_usd, 0)).toFixed(4)),
+    gate_ok: results.length > 0 && results.every(r => r.pass) && controls.every(x => x.pass),
+  };
+}

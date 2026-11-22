@@ -1,0 +1,42 @@
+{
+  "publication_schema": "minimized-v1",
+  "snapshot": "historical initial audit; not current global configuration",
+  "repository_skills": [
+    "ahorro-continuidad-autopilot",
+    "autopilot-core",
+    "autopilot-roles",
+    "autopilot-safety",
+    "plan",
+    "victoriosas-autopilot-operational-audit",
+    "victoriosas-camelrun-laboratorio",
+    "victoriosas-codex-ahorro-tokens",
+    "victoriosas-conocimiento-tratamientos",
+    "victoriosas-consultas-e2e",
+    "victoriosas-control-de-fases",
+    "victoriosas-desarrollo-autonomo",
+    "victoriosas-privacidad-seguridad",
+    "victoriosas-publicacion-verificada"
+  ],
+  "automation": {
+    "id": "victoriosa-autopilot-6h",
+    "name": "Victoriosa Autopilot 6h",
+    "status_at_snapshot": "ACTIVE",
+    "cadence": "six hours; preserved",
+    "kind": "heartbeat",
+    "target_thread_id_published": false,
+    "prompt_sha256_at_snapshot": "b125e7118f957e9e3530aaee205764f997544dc3e8f36e82f9fb7e5ab522ecda",
+    "prompt_review": {
+      "historical_priorities": [
+        84,
+        81
+      ],
+      "issues_observed_open": true,
+      "historical_form_closed_instruction": true,
+      "public_form_currently_enabled": true,
+      "canonical_linear_prompt_referenced": false,
+      "mutation_performed": false
+    }
+  },
+  "omitted": "global approval/sandbox/model settings, home paths, installed shared plugins, MCP server/env names, lock details and personal automation destination",
+  "evidence": "raw prior snapshot encrypted locally; not a credential backup"
+}

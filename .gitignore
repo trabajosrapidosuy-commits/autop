@@ -1,9 +1,15 @@
 node_modules/
 build/
 dist/
+dist-node/
 coverage/
 .DS_Store
 *.log
 .env*
 !.env.example
 supabase/.temp/
+
+output/consultation-agents-eval/
+
+# Reproducible temporary Supabase API bundle
+/output/supabase-api/

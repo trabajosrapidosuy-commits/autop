@@ -1,0 +1,209 @@
+{
+  "observed_utc": "2026-11-15T01:57:29.426099+00:00",
+  "pr235": {
+    "baseRefOid": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+    "headRefOid": "0f2482fab0f04b5fc58e2d7fc94c0e8d12923bda",
+    "mergeCommit": {
+      "oid": "f2129e9dadf73978b91974d26b39fe0bd297dcb7"
+    },
+    "mergedAt": "2026-11-15T01:49:18Z",
+    "state": "MERGED",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:28:39Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43663191087/job/132656797997",
+        "name": "validate",
+        "startedAt": "2026-11-15T01:27:44Z",
+        "status": "COMPLETED",
+        "workflowName": "Autopilot Core v4"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:28:37Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43663187680/job/132656787234",
+        "name": "validate",
+        "startedAt": "2026-11-15T01:27:41Z",
+        "status": "COMPLETED",
+        "workflowName": "Autopilot Core v4"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:28:14Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43663188172/job/132656791726",
+        "name": "Analyze (actions)",
+        "startedAt": "2026-11-15T01:27:42Z",
+        "status": "COMPLETED",
+        "workflowName": "CodeQL"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:28:40Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43663188172/job/132656791699",
+        "name": "Analyze (javascript-typescript)",
+        "startedAt": "2026-11-15T01:27:42Z",
+        "status": "COMPLETED",
+        "workflowName": "CodeQL"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:28:34Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43663188172/job/132656791469",
+        "name": "Analyze (python)",
+        "startedAt": "2026-11-15T01:27:42Z",
+        "status": "COMPLETED",
+        "workflowName": "CodeQL"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:29:32Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43663191087/job/132656798282",
+        "name": "postgres",
+        "startedAt": "2026-11-15T01:27:43Z",
+        "status": "COMPLETED",
+        "workflowName": "Autopilot Core v4"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:29:53Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/actions/runs/43663187680/job/132656787474",
+        "name": "postgres",
+        "startedAt": "2026-11-15T01:27:41Z",
+        "status": "COMPLETED",
+        "workflowName": "Autopilot Core v4"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:27:38Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://supabase.com/dashboard/project/jfjzpwlrhzqbcrvqxhzf/branches",
+        "name": "Supabase Preview",
+        "startedAt": "2026-11-15T01:27:38Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:28:07Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/Victoriosas/autopilot/runs/132656886662",
+        "name": "CodeQL",
+        "startedAt": "2026-11-15T01:28:05Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      },
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-11-15T01:27:56Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/autopilot12/autopilot/5bMVtL2bh61HPGFCHSFLwSDqEsdN"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-11-15T01:27:57Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-11-15T01:27:57Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "url": "https://github.com/Victoriosas/autopilot/pull/235"
+  },
+  "main_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+  "main_checks": {
+    "check_runs": [
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43665025177/job/132662374618",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "ipv6-probe",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43665025177/job/132662374550",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "hosted-ledger",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43665025177/job/132662374503",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "inventory",
+        "status": "completed"
+      },
+      {
+        "conclusion": "skipped",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43665025177/job/132662374395",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "codex",
+        "status": "completed"
+      },
+      {
+        "conclusion": "failure",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43665025177/job/132662373431",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "continuation",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://supabase.com/dashboard/project/jfjzpwlrhzqbcrvqxhzf",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "Supabase Preview",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43664869751/job/132661905383",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "Analyze (actions)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43664869751/job/132661905380",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "Analyze (javascript-typescript)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43664869751/job/132661905117",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "Analyze (python)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43664869832/job/132661902298",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "postgres",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "details_url": "https://github.com/Victoriosas/autopilot/actions/runs/43664869832/job/132661901917",
+        "head_sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+        "name": "validate",
+        "status": "completed"
+      }
+    ],
+    "total_count": 11
+  },
+  "merge_performed_by_this_order": false,
+  "pr235_head_ci_at_start": "validate twice, postgres twice and CodeQL SUCCESS; Supabase Preview SKIPPED",
+  "new_branch_reason": "PR235 merged externally during read-only review; unique P0 privacy/recovery follow-up on verified main, not duplicate audit or P1",
+  "other_documentary_ref_observed": "points to old a4ca9dd base; no exclusive work or equivalent open PR observed; left unchanged"
+}

@@ -1,0 +1,879 @@
+[
+  {
+    "name": "chatgpt/provider-agnostic-consultations-20261024",
+    "sha": "9c5dd3b871891a87eb6581caa1397ee320652b94",
+    "protected": false,
+    "main_left_branch_right": "156\t2",
+    "merge_base": "a8daca97ebef2cd5663e33ee87dda3693a7094ad",
+    "changed_paths": [
+      "A\tsrc/storefront/consultationModelGateway.test.ts",
+      "A\tsrc/storefront/consultationModelGateway.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/admin-auth-upstream-status-20261108",
+    "sha": "eb92a0cef9c5d50ea578f4a532e7b56cb600cdab",
+    "protected": false,
+    "main_left_branch_right": "80\t2",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "M\tsrc/security/adminAuth.test.ts",
+      "M\tsrc/security/adminAuth.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/admin-lockdown",
+    "sha": "d2e0425d85df15c4d98ec8b20944dcb744016585",
+    "protected": false,
+    "main_left_branch_right": "737\t3",
+    "merge_base": "402c05de3eea85a6812bf04068c8e11609c848d5",
+    "changed_paths": [
+      "M\tsrc/autopilot/mount.ts",
+      "M\tsrc/lib/api.ts",
+      "A\tsrc/security/adminAuth.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/align-cj-mcp-tools",
+    "sha": "b301db010b1b6912b4af5a27ee4261c0a5d55f8f",
+    "protected": false,
+    "main_left_branch_right": "532\t1",
+    "merge_base": "8baff982b8d952a1f28763f6aeeccac34bfc07fd",
+    "changed_paths": [
+      "A\tdocs/mcp-sourcing-note.tmp"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/api-404-build-isolation-20261108",
+    "sha": "7da72d3634c378d4cd1f6b41aa99b30f0a6001ce",
+    "protected": false,
+    "main_left_branch_right": "80\t3",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "changed_paths": [
+      "A\t.dockerignore",
+      "M\t.github/workflows/autopilot-core-v4.yml",
+      "M\t.gitignore",
+      "M\tDockerfile",
+      "M\tapi-app.ts",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "M\tpackage.json",
+      "A\tscripts/check-built-api.mjs",
+      "M\tserver.ts",
+      "A\tsrc/http/createApp.ts",
+      "M\tsrc/storefront/vercelHealth.test.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/autopilot-core-v4-phase3b",
+    "sha": "f5364ea50197e209110d8ab1a5ab69569ab57333",
+    "protected": false,
+    "main_left_branch_right": "741\t2",
+    "merge_base": "0b1388d8388a36eaac77debd70c4bec62be1924d",
+    "changed_paths": [
+      "A\tdocs/AUTOPILOT_V4_ACTIVATION.md",
+      "A\tsrc/autopilot/mount.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/autopilot-core-v4",
+    "sha": "835f4aeadece30f66736600c39ecfd4db4cec561",
+    "protected": false,
+    "main_left_branch_right": "760\t10",
+    "merge_base": "473c624f4a77defbd2466e61e5a18c7c8ee4fac0",
+    "changed_paths": [
+      "M\t.env.example",
+      "A\t.github/workflows/autopilot-core-v4.yml",
+      "A\tdocs/OPENCODE_CODEX_PROTOCOL.md",
+      "A\tdocs/PHASE2_NOTE.md",
+      "A\tdocs/PHASE2_NOTE_2.md",
+      "A\tdocs/PHASE2_NOTE_3.md",
+      "A\tsrc/autopilot/api.ts",
+      "A\tsrc/autopilot/reranker.ts",
+      "A\tsrc/autopilot/taskStore.ts",
+      "A\tsupabase/migrations/20260912011500_autopilot_core_v4.sql"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/cj-mcp-direct-token-validation",
+    "sha": "448ce1718669b8c445a620629d45b70736ba6d8f",
+    "protected": false,
+    "main_left_branch_right": "518\t4",
+    "merge_base": "3433be46b850ae569b5e29c81d4e9c328dc40559",
+    "changed_paths": [
+      "M\tsrc/autopilot/cjMcpClient.test.ts",
+      "M\tsrc/autopilot/cjMcpSourcingProvider.test.ts",
+      "M\tsrc/services/cjMcp.ts",
+      "M\tsrc/services/cjSourcingProvider.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/consultation-admin-integration-v1",
+    "sha": "d666cccfc49f6fea183b1cb5f8e028f839628881",
+    "protected": false,
+    "main_left_branch_right": "22\t4",
+    "merge_base": "30e9f41c0713ee1692aeefe0a26e16931d0fe4b1",
+    "changed_paths": [
+      "M\t.github/workflows/beauty-supabase.yml",
+      "M\t.gitignore",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/CONSULTATION_ADMIN_D_CHECKPOINT.md",
+      "A\tscripts/test-consultation-material-browser.ts",
+      "M\tsrc/components/admin/ConsultationInbox.tsx",
+      "A\tsrc/components/admin/ConsultationMaterialPanel.tsx",
+      "A\tsrc/storefront/consultationMaterialAdmin.test.ts",
+      "A\tsrc/storefront/consultationMaterialAdmin.ts",
+      "A\tsrc/storefront/consultationMaterialAdminRouter.ts",
+      "M\tsrc/storefront/consultationRouter.ts",
+      "A\tsupabase/staged/consultation_material_admin_v1.sql",
+      "A\tsupabase/staged/rollback/consultation_material_admin_v1.sql",
+      "M\ttests/consultation-material-postgres.test.ts",
+      "M\ttests/consultation-material-supabase.test.ts",
+      "M\tvercel.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/consultation-eval-20261024",
+    "sha": "45e22a94cb95c01586efe7d6964914700881d9d7",
+    "protected": false,
+    "main_left_branch_right": "156\t2",
+    "merge_base": "a8daca97ebef2cd5663e33ee87dda3693a7094ad",
+    "changed_paths": [
+      "A\t.github/workflows/consultation-agents-eval.yml",
+      "M\t.gitignore",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/CONSULTATION_AGENTS_EVAL_20261024.md",
+      "A\tdocs/consultation-agents/eval-cases-v1.json",
+      "M\tpackage.json",
+      "A\tscripts/eval-consultation-agents.ts",
+      "A\tsrc/storefront/consultationAgentEval.test.ts",
+      "A\tsrc/storefront/consultationAgentEval.ts",
+      "A\tsrc/storefront/consultationAgentPrompts.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/consultation-price-phase2-20261024",
+    "sha": "0623fbc41b1c0aba0a1c6131698acbdb106fd0e5",
+    "protected": false,
+    "main_left_branch_right": "159\t3",
+    "merge_base": "15b6f55768fd93604df116aefa638e1bdfc5bbd3",
+    "changed_paths": [
+      "M\t.env.example",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "M\tsrc/storefront/consultationAutoReply.test.ts",
+      "M\tsrc/storefront/consultationAutoReply.ts",
+      "A\tsrc/storefront/consultationPricePolicy.test.ts",
+      "A\tsrc/storefront/consultationPricePolicy.ts",
+      "M\tsrc/storefront/consultationResponseAgents.test.ts",
+      "M\tsrc/storefront/consultationResponseAgents.ts",
+      "A\tsrc/storefront/consultationSafety.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/consultation-reading-release-20261024",
+    "sha": "42da44279426d39a6f3d4054f6f67ceaf698ca69",
+    "protected": false,
+    "main_left_branch_right": "158\t1",
+    "merge_base": "27558f3e6161c12c2df0ba23112262e56787f8c0",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/data-truth-revenue-score",
+    "sha": "42e312d31bab424425e60f14e02b66be6c6ba2b8",
+    "protected": false,
+    "main_left_branch_right": "735\t11",
+    "merge_base": "d30bc44da65e14e792e0cebca7c213be2d32d7c3",
+    "changed_paths": [
+      "M\tsrc/components/store/ProductDetailModal.tsx",
+      "M\tsrc/components/store/StoreHeader.tsx",
+      "M\tsrc/services/autoPublisher.ts",
+      "M\tsrc/services/connectors/AliExpressConnector.ts",
+      "M\tsrc/services/connectors/AlibabaConnector.ts",
+      "M\tsrc/services/connectors/AmazonConnector.ts",
+      "M\tsrc/services/productAnalyzer.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/f3-authorized-evaluation-20261106",
+    "sha": "9d7edf1cfe90562cad29771738b038f06f7f3696",
+    "protected": false,
+    "main_left_branch_right": "80\t1",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "changed_paths": [
+      "A\t.gitattributes",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/F3_EVALUACION_AUTORIZADA_20261106.md",
+      "A\tdocs/consultation-agents/results/development-20261106-42326025668.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/f3-guardian-injection-20261108",
+    "sha": "2607a427d77f3b523de120a2d41ae1f1898b146f",
+    "protected": false,
+    "main_left_branch_right": "80\t1",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "M\tdocs/consultation-agents/camelrun-agent-manifest.json",
+      "M\tsrc/storefront/consultationAgentEval.test.ts",
+      "M\tsrc/storefront/consultationAgentPrompts.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/harden-v4-task-policy",
+    "sha": "369dc77fbbcb06eead5e870b000307a7d37952df",
+    "protected": false,
+    "main_left_branch_right": "739\t3",
+    "merge_base": "275d93be30874355b65ba6d1a2d7105e8a7db5ef",
+    "changed_paths": [
+      "M\tsrc/autopilot/api.ts",
+      "M\tsrc/autopilot/orchestrator.ts",
+      "M\tsrc/autopilot/policyEngine.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/mission-checkpoint-recovery-20261109",
+    "sha": "1b588f71f3194845f7f5a5e9287d436140a88464",
+    "protected": false,
+    "main_left_branch_right": "74\t0",
+    "merge_base": "1b588f71f3194845f7f5a5e9287d436140a88464",
+    "changed_paths": [],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/mission-native-activation-20261109",
+    "sha": "cc7f753605f3e718e727d7c151f5e1af321b79ad",
+    "protected": false,
+    "main_left_branch_right": "70\t4",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "A\tscripts/autopilot-native-host.ts",
+      "M\tsrc/autopilot/localMissionStore.ts",
+      "M\tsrc/autopilot/managedProcesses.ts",
+      "A\tsrc/autopilot/nativeHost.test.ts",
+      "A\tsrc/autopilot/nativeHost.ts",
+      "M\ttests/mission-operator-postgres.test.ts",
+      "A\ttools/native-host/Demo-LabWindow.ps1",
+      "A\ttools/native-host/Prepare-NativeDemo.ps1",
+      "A\ttools/native-host/Read-TaskOrigin.ps1",
+      "A\ttools/native-host/execution-host.json",
+      "A\ttools/native-host/mission-request.json",
+      "A\ttools/native-host/task.disabled.xml",
+      "M\tvercel.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/mission-native-host-20261109",
+    "sha": "15720289647da59c19cc2c19c7f123ee84259a31",
+    "protected": false,
+    "main_left_branch_right": "70\t2",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "A\tscripts/autopilot-native-host.ts",
+      "M\tsrc/autopilot/localMissionStore.ts",
+      "M\tsrc/autopilot/managedProcesses.ts",
+      "A\tsrc/autopilot/nativeHost.test.ts",
+      "A\tsrc/autopilot/nativeHost.ts",
+      "M\ttests/mission-operator-postgres.test.ts",
+      "A\ttools/native-host/Demo-LabWindow.ps1",
+      "A\ttools/native-host/Prepare-NativeDemo.ps1",
+      "A\ttools/native-host/Read-TaskOrigin.ps1",
+      "A\ttools/native-host/execution-host.json",
+      "A\ttools/native-host/mission-request.json",
+      "A\ttools/native-host/task.disabled.xml",
+      "M\tvercel.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/native-window-evidence-20261110",
+    "sha": "ca7f4237211ac6e001eaa81a5ee4239f709f8bab",
+    "protected": false,
+    "main_left_branch_right": "48\t1",
+    "merge_base": "1c44a6389a7bbd6ac9157ac087269e216e654373",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/ORD204G_NATIVE_WINDOW_20261110.md",
+      "A\tdocs/ORD204G_NATIVE_WINDOW_RESULT_20261110.json",
+      "M\tvercel.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/ord204g-early-diagnostics-20261110",
+    "sha": "633faa7f9517a6d6edc82158cd125b09a66f6312",
+    "protected": false,
+    "main_left_branch_right": "70\t4",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "A\tdocs/ORD204G_RECOVERY_DIAGNOSTICS_20261110.md",
+      "A\tscripts/autopilot-native-host.ts",
+      "M\tsrc/autopilot/localMissionStore.ts",
+      "M\tsrc/autopilot/managedProcesses.ts",
+      "A\tsrc/autopilot/nativeHost.test.ts",
+      "A\tsrc/autopilot/nativeHost.ts",
+      "M\ttests/mission-operator-postgres.test.ts",
+      "A\ttools/native-host/Demo-LabWindow.ps1",
+      "A\ttools/native-host/Prepare-NativeDemo.ps1",
+      "A\ttools/native-host/Read-TaskOrigin.ps1",
+      "A\ttools/native-host/execution-host.json",
+      "A\ttools/native-host/mission-request.json",
+      "A\ttools/native-host/task.disabled.xml",
+      "M\tvercel.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/ord204g-preflight-handoff-20261110",
+    "sha": "9042122323887939b95ab7c9dc653742e0073517",
+    "protected": false,
+    "main_left_branch_right": "48\t1",
+    "merge_base": "1c44a6389a7bbd6ac9157ac087269e216e654373",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/ord204g-viki-bridge-20261110",
+    "sha": "e034db1dd1e28f71febd895c19d62d20ff5616bd",
+    "protected": false,
+    "main_left_branch_right": "70\t6",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "changed_paths": [
+      "A\t.github/workflows/ord204g-viki-readonly.yml",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "A\tdocs/ORD204G_RECOVERY_DIAGNOSTICS_20261110.md",
+      "A\tscripts/autopilot-native-host.ts",
+      "M\tsrc/autopilot/localMissionStore.ts",
+      "M\tsrc/autopilot/managedProcesses.ts",
+      "A\tsrc/autopilot/nativeHost.test.ts",
+      "A\tsrc/autopilot/nativeHost.ts",
+      "M\ttests/mission-operator-postgres.test.ts",
+      "A\ttools/camelrun-bridge/README.md",
+      "A\ttools/camelrun-bridge/bridge.mjs",
+      "A\ttools/camelrun-bridge/bridge.test.mjs",
+      "A\ttools/native-host/Demo-LabWindow.ps1",
+      "A\ttools/native-host/Prepare-NativeDemo.ps1",
+      "A\ttools/native-host/Read-TaskOrigin.ps1",
+      "A\ttools/native-host/execution-host.json",
+      "A\ttools/native-host/mission-request.json",
+      "A\ttools/native-host/task.disabled.xml",
+      "M\tvercel.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/ord204g-window-manager-20261110",
+    "sha": "e2f68d2c9be7423755c2b88d4ab5ee579f1bc65c",
+    "protected": false,
+    "main_left_branch_right": "70\t8",
+    "merge_base": "0359fff114bff73e923678f10e2de16cda743e48",
+    "changed_paths": [
+      "M\t.github/workflows/autopilot-core-v4.yml",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/MISSION_NATIVE_HOST_ORD204G_20261109.md",
+      "A\tdocs/ORD204G_RECOVERY_DIAGNOSTICS_20261110.md",
+      "A\tdocs/ORD204G_TEST_WINDOW_MANAGER.md",
+      "A\tscripts/autopilot-native-host.ts",
+      "A\tscripts/observe-ord204g-native-window.ts",
+      "A\tscripts/ord204g-test-window-manager.ts",
+      "M\tsrc/autopilot/localMissionStore.ts",
+      "M\tsrc/autopilot/managedProcesses.ts",
+      "A\tsrc/autopilot/nativeHost.test.ts",
+      "A\tsrc/autopilot/nativeHost.ts",
+      "A\tsrc/autopilot/ord204gObserverHook.ts",
+      "A\tsrc/autopilot/ord204gWindowManager.test.ts",
+      "A\tsrc/autopilot/ord204gWindowManager.ts",
+      "M\ttests/mission-operator-postgres.test.ts",
+      "A\ttests/ord204g-window-observer-postgres.test.ts",
+      "A\ttools/native-host/Demo-LabWindow.ps1",
+      "A\ttools/native-host/Prepare-NativeDemo.ps1",
+      "A\ttools/native-host/Read-TaskOrigin.ps1",
+      "A\ttools/native-host/execution-host.json",
+      "A\ttools/native-host/mission-request.json",
+      "A\ttools/native-host/task.disabled.xml",
+      "M\tvercel.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/payment-hardening",
+    "sha": "57c8706fe7cf96a2fd7f14d8ae297cdd5df877e7",
+    "protected": false,
+    "main_left_branch_right": "736\t1",
+    "merge_base": "929f7d699e278d43c39fc078c861e18ccc056035",
+    "changed_paths": [
+      "M\t.env.example",
+      "M\tsrc/autopilot/mount.ts",
+      "M\tsrc/components/store/CheckoutModal.tsx",
+      "A\tsrc/payments/paypalV2.ts",
+      "M\tsrc/services/revenue.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/permanent-supervisor-p0d-20261114",
+    "sha": "3ce7fdf6f3e7ea955a705f20f771a91ec8cb1f14",
+    "protected": false,
+    "main_left_branch_right": "0\t1",
+    "merge_base": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+    "changed_paths": [
+      "A\tdocs/PERMANENT_SUPERVISOR_P0D_20261114.md",
+      "A\tsrc/autopilot/permanentSupervisor.test.ts",
+      "A\tsrc/autopilot/permanentSupervisor.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/pricing-engine-v2",
+    "sha": "a9255b9569336a0a46dd0067380dd3cdb1335bd1",
+    "protected": false,
+    "main_left_branch_right": "657\t1",
+    "merge_base": "255cb6fc6f5266caa106243a9a2cc85416ed9e69",
+    "changed_paths": [],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/queue-fencing-20261109",
+    "sha": "ccde407db280e11f85ab93e81690ae867b33a002",
+    "protected": false,
+    "main_left_branch_right": "78\t2",
+    "merge_base": "a6cff5aba04e752cb010926b88c24fd4abfe84b6",
+    "changed_paths": [
+      "M\t.github/workflows/autopilot-core-v4.yml",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/MISSION_RECOVERY_20261109.md",
+      "M\tsupabase/staged/six_agent_queue_20261025.sql",
+      "A\ttests/six-agent-recovery.test.mjs"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/revenue-sprint-1",
+    "sha": "455a11112efb0ae494c27b9b23832ffc3cdf6374",
+    "protected": false,
+    "main_left_branch_right": "738\t2",
+    "merge_base": "ed92d01007d67b0a17ec5170e3dc96dc66fb440d",
+    "changed_paths": [
+      "M\t.env.example",
+      "A\tdocs/REVENUE_SPRINT_1.md",
+      "M\tsrc/components/store/CheckoutModal.tsx",
+      "A\tsrc/services/revenue.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/service-discovery-20261031",
+    "sha": "ad30a5758c4bbc6e3cda8c3c6ffa1d2885e87d7e",
+    "protected": false,
+    "main_left_branch_right": "119\t1",
+    "merge_base": "c9c350dd8bf83c4c177608d30dcdbb77d9afcef6",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/COMPETITIVE_DISCOVERY_20261031.md",
+      "A\tdocs/evidence/02-portada-tratamientos.jpg",
+      "A\tdocs/evidence/03-filtro-directorio.jpg",
+      "A\tdocs/evidence/04-ancla-tratamiento.jpg",
+      "M\tsrc/components/public/ProfessionalSite.tsx",
+      "A\tsrc/components/public/ServiceShortcuts.tsx",
+      "M\tsrc/components/public/ServicesDirectory.tsx",
+      "M\tsrc/components/public/noir.css",
+      "A\tsrc/components/public/serviceSearch.ts",
+      "M\tsrc/storefront/serviceConsultation.test.ts",
+      "A\tsrc/storefront/serviceSearch.test.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/shared-api-mount-20261108",
+    "sha": "039ecf3503cb74b8f7c32b1fd4e8d71b7fa2f72a",
+    "protected": false,
+    "main_left_branch_right": "80\t1",
+    "merge_base": "7458d4bc8c43dde16e8eb3a3c7670a5e712ed0ef",
+    "changed_paths": [
+      "M\tapi-app.ts",
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "M\tserver.ts",
+      "A\tsrc/http/createApp.ts",
+      "M\tsrc/storefront/vercelHealth.test.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/social-profile-alignment-20261019",
+    "sha": "b12c7da28b7b862d656681465954e48dfa8932b1",
+    "protected": false,
+    "main_left_branch_right": "202\t4",
+    "merge_base": "97fc36e3b2fb3e3c86472aa6ac9279720e9bf5f7",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/SOCIAL_PROFILE_ALIGNMENT_20261019.md"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/vercel-boot-fix",
+    "sha": "4e60923616e0bfe8fdbd49a487c89a84d846e955",
+    "protected": false,
+    "main_left_branch_right": "725\t1",
+    "merge_base": "191477ceba2c1c7f34bd2942aae08db2de28bde9",
+    "changed_paths": [
+      "M\tsrc/lib/supabase.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/victoriosas-copy-remoto-20261018",
+    "sha": "965f1c8a43c2568db458401c56547fe885bcb638",
+    "protected": false,
+    "main_left_branch_right": "262\t8",
+    "merge_base": "1d647a2ad3cac9b091b4aa3a6decca49313d1a2e",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/DE_MI_PARA_TI_EDITORIAL.md",
+      "A\tdocs/VICTORIOSAS_FUNCTIONAL_AUDIT.md",
+      "A\tdocs/VICTORIOSAS_VISUAL_EDITORIAL_REVIEW.md",
+      "M\tindex.html",
+      "A\toutput/playwright/before-production-desktop.png",
+      "A\toutput/playwright/editorial-article.png",
+      "A\toutput/playwright/verified-1440.png",
+      "A\toutput/playwright/verified-320.png",
+      "A\toutput/playwright/verified-390.png",
+      "A\toutput/playwright/verified-768.png",
+      "A\toutput/playwright/visual-editorial-1440.png",
+      "A\toutput/playwright/visual-editorial-320.png",
+      "A\toutput/playwright/visual-editorial-390.png",
+      "A\toutput/playwright/visual-editorial-768.png",
+      "M\tpackage-lock.json",
+      "M\tpublic/beauty-services.js",
+      "A\tpublic/brand/editorial-pausa.svg",
+      "A\tpublic/favicon.svg",
+      "M\tpublic/robots.txt",
+      "M\tpublic/servicios-sofia.html",
+      "A\tscripts/verify-editorial-production.cjs",
+      "A\tscripts/verify-victoriosas-public.cjs",
+      "M\tsrc/App.tsx",
+      "A\tsrc/InternalEntry.tsx",
+      "A\tsrc/components/public/ContactLink.tsx",
+      "A\tsrc/components/public/EditorialPage.tsx",
+      "A\tsrc/components/public/ProfessionalSite.tsx",
+      "A\tsrc/components/public/professional.css",
+      "M\tsrc/context/AppContext.tsx",
+      "M\tsrc/main.tsx",
+      "M\tsrc/storefront/beautyCatalogFrontend.test.ts",
+      "M\tsrc/storefront/beautyFrontend.test.ts",
+      "A\tsrc/storefront/editorial.test.ts",
+      "A\tsrc/storefront/editorial.ts",
+      "M\tsrc/storefront/storefrontSeo.test.ts",
+      "M\tsrc/storefront/waitlistRouter.test.ts",
+      "M\tsrc/storefront/waitlistRouter.ts",
+      "M\tsrc/vite-env.d.ts",
+      "M\tvite.config.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "codex/victoriosas-functional-audit-20261017",
+    "sha": "c132ed0efcad02593f9b348141d96c28b25c9af7",
+    "protected": false,
+    "main_left_branch_right": "262\t9",
+    "merge_base": "1d647a2ad3cac9b091b4aa3a6decca49313d1a2e",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md",
+      "A\tdocs/DE_MI_PARA_TI_EDITORIAL.md",
+      "A\tdocs/EDITORIAL_LAUNCH_READINESS.md",
+      "A\tdocs/VICTORIOSAS_FUNCTIONAL_AUDIT.md",
+      "A\tdocs/VICTORIOSAS_PR79_FINAL_VALIDATION.md",
+      "A\tdocs/VICTORIOSAS_VISUAL_EDITORIAL_REVIEW.md",
+      "M\tindex.html",
+      "A\toutput/playwright/approved-copy-1440.png",
+      "A\toutput/playwright/approved-copy-320.png",
+      "A\toutput/playwright/approved-copy-390.png",
+      "A\toutput/playwright/approved-copy-768.png",
+      "A\toutput/playwright/approved-copy-article.png",
+      "A\toutput/playwright/approved-copy-proof.json",
+      "A\toutput/playwright/approved-production-guard.json",
+      "A\toutput/playwright/approved-release-browser.json",
+      "A\toutput/playwright/approved-release-cold-performance.json",
+      "A\toutput/playwright/approved-release-quality.json",
+      "A\toutput/playwright/before-production-desktop.png",
+      "A\toutput/playwright/editorial-article.png",
+      "A\toutput/playwright/verified-1440.png",
+      "A\toutput/playwright/verified-320.png",
+      "A\toutput/playwright/verified-390.png",
+      "A\toutput/playwright/verified-768.png",
+      "A\toutput/playwright/visual-editorial-1440.png",
+      "A\toutput/playwright/visual-editorial-320.png",
+      "A\toutput/playwright/visual-editorial-390.png",
+      "A\toutput/playwright/visual-editorial-768.png",
+      "M\tpackage-lock.json",
+      "M\tpublic/beauty-services.js",
+      "A\tpublic/brand/editorial-pausa.svg",
+      "A\tpublic/favicon.svg",
+      "M\tpublic/robots.txt",
+      "M\tpublic/servicios-sofia.html",
+      "A\tscripts/verify-approved-copy.cjs",
+      "A\tscripts/verify-editorial-production.cjs",
+      "A\tscripts/verify-victoriosas-public.cjs",
+      "M\tsrc/App.tsx",
+      "A\tsrc/InternalEntry.tsx",
+      "A\tsrc/components/public/ContactLink.tsx",
+      "A\tsrc/components/public/EditorialPage.tsx",
+      "A\tsrc/components/public/ProfessionalSite.tsx",
+      "A\tsrc/components/public/professional.css",
+      "M\tsrc/context/AppContext.tsx",
+      "M\tsrc/main.tsx",
+      "A\tsrc/storefront/approvedCopy.test.ts",
+      "M\tsrc/storefront/beautyCatalogFrontend.test.ts",
+      "M\tsrc/storefront/beautyFrontend.test.ts",
+      "A\tsrc/storefront/editorial.test.ts",
+      "A\tsrc/storefront/editorial.ts",
+      "M\tsrc/storefront/storefrontSeo.test.ts",
+      "M\tsrc/storefront/waitlistRouter.test.ts",
+      "M\tsrc/storefront/waitlistRouter.ts",
+      "M\tsrc/vite-env.d.ts",
+      "A\ttests/approved-copy-pr80.json",
+      "M\tvite.config.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "dependabot/npm_and_yarn/multi-766765435e",
+    "sha": "f9924558237d033cfae7f530524fa72348ea4297",
+    "protected": false,
+    "main_left_branch_right": "22\t1",
+    "merge_base": "30e9f41c0713ee1692aeefe0a26e16931d0fe4b1",
+    "changed_paths": [
+      "M\tpackage-lock.json",
+      "M\tpackage.json"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "docs/consultation-activation-20261023",
+    "sha": "6f8c8cfaafce9a511e81d3dd31541c9b7d07ed1c",
+    "protected": false,
+    "main_left_branch_right": "168\t1",
+    "merge_base": "0f5bbc66faeac1a03b3d0f9425a92bbf85e7bb6e",
+    "changed_paths": [
+      "M\tdocs/AUTOPILOT_STATE.md"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "feat/editorial-hero-reference",
+    "sha": "914f63f4325cdf696e38f5476f39369fdecbd2b1",
+    "protected": false,
+    "main_left_branch_right": "639\t1",
+    "merge_base": "aca92db7048ed3f7a996ccde2a33e2bb20a17f6a",
+    "changed_paths": [
+      "M\tindex.html",
+      "A\tpublic/brand/sofia-victoria-hero-mobile.jpg",
+      "A\tpublic/brand/sofia-victoria-hero.jpg",
+      "A\tpublic/brand/victoriosa-hero-editorial.png",
+      "M\tsrc/components/store/HeroBanner.tsx",
+      "M\tsrc/components/store/StoreHeader.tsx"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "feature/consultas-menu-web-whatsapp-20261023",
+    "sha": "b0aee74087e56be181a78a9c94c989006ecdad21",
+    "protected": false,
+    "main_left_branch_right": "163\t5",
+    "merge_base": "ce5c732a9f6fa0916776e5163ef0b89d649dc27e",
+    "changed_paths": [
+      "M\tsrc/App.tsx",
+      "M\tsrc/components/admin/ConsultationInbox.tsx"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "feature/victoriosas-agents-catalog-email-20261024",
+    "sha": "253309a253d7c467d1286710c391817a87339d9e",
+    "protected": false,
+    "main_left_branch_right": "159\t19",
+    "merge_base": "15b6f55768fd93604df116aefa638e1bdfc5bbd3",
+    "changed_paths": [
+      "M\tsrc/components/admin/ConsultationInbox.tsx",
+      "M\tsrc/components/public/ConsultationForm.tsx",
+      "M\tsrc/components/public/serviceDetails.ts",
+      "M\tsrc/components/public/serviceDirectory.ts",
+      "M\tsrc/components/public/servicesDirectory.test.ts",
+      "M\tsrc/storefront/careDiscovery.test.ts",
+      "A\tsrc/storefront/consultationAnswerOptions.test.ts",
+      "A\tsrc/storefront/consultationAnswerOptions.ts",
+      "M\tsrc/storefront/consultationFrontend.test.ts",
+      "A\tsrc/storefront/consultationOperationsAgents.test.ts",
+      "A\tsrc/storefront/consultationOperationsAgents.ts",
+      "M\tsrc/storefront/consultationReplyDelivery.ts",
+      "M\tsrc/storefront/consultationRouter.ts",
+      "M\tsrc/storefront/serviceConsultation.test.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "fix/approved-evidence-disclaimers-20261105",
+    "sha": "8f1afe45035358b2accbee735c11061fef45652f",
+    "protected": false,
+    "main_left_branch_right": "93\t0",
+    "merge_base": "8f1afe45035358b2accbee735c11061fef45652f",
+    "changed_paths": [],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "fix/seo-retired-routes-82",
+    "sha": "66251e3cf08bf9eb4e6fd881ce2a36d96b811929",
+    "protected": false,
+    "main_left_branch_right": "261\t1",
+    "merge_base": "7d8519844a6691ee2c39adbf28f65662e8854d87",
+    "changed_paths": [
+      "A\tdocs/SEO_RETIRED_ROUTES_82.md"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "main",
+    "sha": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+    "protected": true,
+    "main_left_branch_right": "0\t0",
+    "merge_base": "a4ca9dd31afa6f576d0bd5e52bc83ffb72e9272c",
+    "changed_paths": [],
+    "classification": "CONSERVAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "owner/authorized-keyword-shadow",
+    "sha": "3e8dcdf0215e22568b4891f50f3f8567e397e44c",
+    "protected": false,
+    "main_left_branch_right": "452\t1",
+    "merge_base": "ac0d70ed6bf3157aa32ed6fb41db42d55d08a7a9",
+    "changed_paths": [
+      "M\tsrc/autopilot/shadowRunAuthorization.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "owner/market-memory-bilingual",
+    "sha": "ac0d70ed6bf3157aa32ed6fb41db42d55d08a7a9",
+    "protected": false,
+    "main_left_branch_right": "452\t0",
+    "merge_base": "ac0d70ed6bf3157aa32ed6fb41db42d55d08a7a9",
+    "changed_paths": [],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "owner/one-shot-keyword-campaign",
+    "sha": "99fcfa31da9e2341c4ca6adc52b257562a5f6059",
+    "protected": false,
+    "main_left_branch_right": "456\t0",
+    "merge_base": "99fcfa31da9e2341c4ca6adc52b257562a5f6059",
+    "changed_paths": [],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "owner/production-promotion-manual-release",
+    "sha": "48b45641f6fd9a6dfce208e44e0502a41d335202",
+    "protected": false,
+    "main_left_branch_right": "471\t0",
+    "merge_base": "48b45641f6fd9a6dfce208e44e0502a41d335202",
+    "changed_paths": [],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "owner/shadow-campaign-authorizations",
+    "sha": "99fcfa31da9e2341c4ca6adc52b257562a5f6059",
+    "protected": false,
+    "main_left_branch_right": "456\t0",
+    "merge_base": "99fcfa31da9e2341c4ca6adc52b257562a5f6059",
+    "changed_paths": [],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  },
+  {
+    "name": "v0/fix-supabase-env",
+    "sha": "5b8f6dd80388a0a8a81932cf7e003bd3869c7f5e",
+    "protected": false,
+    "main_left_branch_right": "774\t2",
+    "merge_base": "162ceab12ac585113317da87220cb8728cf1ff34",
+    "changed_paths": [
+      "M\tsrc/lib/supabase.ts",
+      "M\tvite.config.ts"
+    ],
+    "classification": "CONSOLIDAR",
+    "reason": "conservar ref hasta reconciliar commits, patches y consumidores; no autorización de borrado"
+  }
+]

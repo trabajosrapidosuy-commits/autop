@@ -1,0 +1,2055 @@
+{
+  "exit_code": 0,
+  "data": [
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-15T00:23:51Z",
+      "headRefName": "codex/hosted-ledger-20261112",
+      "headRefOid": "b21cee1a9e9e1160eba690ba88841e86f5063f14",
+      "mergedAt": "2026-11-15T00:23:51Z",
+      "number": 233,
+      "title": "docs: registrar cierre verificado de P0C cloud",
+      "url": "https://github.com/Victoriosas/autopilot/pull/233"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-15T00:14:18Z",
+      "headRefName": "codex/hosted-ledger-20261112",
+      "headRefOid": "733727a4b7918aa2121dbbf4391c3a108c617b4a",
+      "mergedAt": "2026-11-15T00:14:18Z",
+      "number": 232,
+      "title": "P0C: resolver TLS del pooler y verificar ledger alojado",
+      "url": "https://github.com/Victoriosas/autopilot/pull/232"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-12T23:55:32Z",
+      "headRefName": "codex/cloud-ledger-adapter-20261112",
+      "headRefOid": "225cee414934499de90c8136188ace55ab072980",
+      "mergedAt": "2026-11-12T23:55:32Z",
+      "number": 231,
+      "title": "P0B: ledger cloud durable y recuperación sintética entre dos runners",
+      "url": "https://github.com/Victoriosas/autopilot/pull/231"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-12T23:32:51Z",
+      "headRefName": "codex/autonomy-continuity-20261112",
+      "headRefOid": "25b12155c1cf5e5ededd45135409f5867b7beba7",
+      "mergedAt": "2026-11-12T23:32:51Z",
+      "number": 230,
+      "title": "P0: preparar continuidad durable y traspaso de CI con cierre seguro",
+      "url": "https://github.com/Victoriosas/autopilot/pull/230"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T04:47:10Z",
+      "headRefName": "codex/plan-cloud-audit-20261111",
+      "headRefOid": "5f9f47ab6d61c84ababb8440ccea68c2ee68a4cd",
+      "mergedAt": "2026-11-11T04:47:10Z",
+      "number": 228,
+      "title": "ci(plan): preparar habilidad plan en GitHub Actions",
+      "url": "https://github.com/Victoriosas/autopilot/pull/228"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T05:07:21Z",
+      "headRefName": "codex/consultation-material-persistence-v1",
+      "headRefOid": "bee2df1ff6128fb0a8a147690e4cde390b4b2ebd",
+      "mergedAt": "2026-11-11T05:07:20Z",
+      "number": 227,
+      "title": "feat(consultas): persistencia supervisada de material con RLS y replay seguro",
+      "url": "https://github.com/Victoriosas/autopilot/pull/227"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T05:04:42Z",
+      "headRefName": "codex/consultation-grounded-response-v1",
+      "headRefOid": "d9f55dc2905b021297aeea837d7bf1d6a1e0d067",
+      "mergedAt": "2026-11-11T05:04:42Z",
+      "number": 226,
+      "title": "feat(consultas): compositor fundamentado y Guardián para revisión humana",
+      "url": "https://github.com/Victoriosas/autopilot/pull/226"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T05:02:04Z",
+      "headRefName": "codex/consultation-knowledge-engine-v1",
+      "headRefOid": "cfc6c3dfcfad86340cb04a132a5331c5cbfeeaaf",
+      "mergedAt": "2026-11-11T05:02:03Z",
+      "number": 225,
+      "title": "feat(consultas): biblioteca de 20 intenciones y conocimiento aprobado",
+      "url": "https://github.com/Victoriosas/autopilot/pull/225"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T04:59:22Z",
+      "headRefName": "codex/f1-public-health-redaction-20261110",
+      "headRefOid": "d63ed6c9bd927e2ce885a5c2f3eff04caaf4ebf1",
+      "mergedAt": "2026-11-11T04:59:22Z",
+      "number": 221,
+      "title": "F1: sanear errores de contenido del monitor público",
+      "url": "https://github.com/Victoriosas/autopilot/pull/221"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T06:05:52Z",
+      "headRefName": "codex/self-development-f1-20261110",
+      "headRefOid": "c2d516e45dc370a323504db9eeab7c7dafeacffa",
+      "mergedAt": "2026-11-11T06:05:52Z",
+      "number": 218,
+      "title": "F1: Autopilot deriva y verifica una corrección real de disponibilidad",
+      "url": "https://github.com/Victoriosas/autopilot/pull/218"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T05:57:07Z",
+      "headRefName": "codex/self-development-20261110",
+      "headRefOid": "8843e0935c239bab88c5b41c3970a117e2da9ec7",
+      "mergedAt": "2026-11-11T05:57:07Z",
+      "number": 217,
+      "title": "Autopilot: ciclo local de autodesarrollo con supervisor externo y recuperación",
+      "url": "https://github.com/Victoriosas/autopilot/pull/217"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T03:57:54Z",
+      "headRefName": "codex/autopilot-next-safe-20261110",
+      "headRefOid": "e8c0496710b2de5ff05264737dc73524b55307f5",
+      "mergedAt": "2026-11-10T03:57:54Z",
+      "number": 216,
+      "title": "fix(autopilot): aislar claims de misiones y tareas legacy",
+      "url": "https://github.com/Victoriosas/autopilot/pull/216"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T02:44:35Z",
+      "headRefName": "codex/f1-readiness-20261110",
+      "headRefOid": "c52d3a70e98de9b53f19b404579e22bcc285c7bb",
+      "mergedAt": "2026-11-10T02:44:35Z",
+      "number": 215,
+      "title": "F1: acotar disponibilidad de consultas y clasificar fallos sin exponer detalles",
+      "url": "https://github.com/Victoriosas/autopilot/pull/215"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T02:29:15Z",
+      "headRefName": "codex/shared-context-20261110",
+      "headRefOid": "564ca2a9142e86e69e0e7a0a00fca1243d83d11c",
+      "mergedAt": "2026-11-10T02:29:15Z",
+      "number": 214,
+      "title": "docs: inventario del host y contexto compartido Work/Codex",
+      "url": "https://github.com/Victoriosas/autopilot/pull/214"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T03:11:38Z",
+      "headRefName": "codex/mission-trigger-20261109",
+      "headRefOid": "f0b0a0639a49fa91bf51c880772bdab632c6d5b0",
+      "mergedAt": "2026-11-10T03:11:38Z",
+      "number": 212,
+      "title": "ORD-204F: auditar disparadores y preparar integración sin activarla",
+      "url": "https://github.com/Victoriosas/autopilot/pull/212"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T03:05:59Z",
+      "headRefName": "codex/mission-operator-20261109",
+      "headRefOid": "d704d54de5624bc5aeb8931f7a72b2aabe17c1d1",
+      "mergedAt": "2026-11-10T03:05:59Z",
+      "number": 211,
+      "title": "ORD-204E: operar y supervisar misiones sintéticas desde CLI local",
+      "url": "https://github.com/Victoriosas/autopilot/pull/211"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T02:57:01Z",
+      "headRefName": "codex/mission-planner-20261109",
+      "headRefOid": "6a7fe56942fde15890bbf175ea8a117603259e35",
+      "mergedAt": "2026-11-10T02:57:01Z",
+      "number": 210,
+      "title": "ORD-204D: derivar y adaptar planes sintéticos desde objetivos autorizados",
+      "url": "https://github.com/Victoriosas/autopilot/pull/210"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T02:50:26Z",
+      "headRefName": "codex/mission-runner-20261109",
+      "headRefOid": "31c158d3ebdd5337d0891eda196444676ef868a4",
+      "mergedAt": "2026-11-10T02:50:26Z",
+      "number": 209,
+      "title": "ORD-204C: ejecutar y recuperar una misión sintética desde checkpoints",
+      "url": "https://github.com/Victoriosas/autopilot/pull/209"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-09T22:22:41Z",
+      "headRefName": "codex/queue-fencing-20261109",
+      "headRefOid": "ccde407db280e11f85ab93e81690ae867b33a002",
+      "mergedAt": null,
+      "number": 208,
+      "title": "Rechazar escrituras de ejecutores vencidos y probar recuperación de cola",
+      "url": "https://github.com/Victoriosas/autopilot/pull/208"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T04:30:52Z",
+      "headRefName": "dependabot/github_actions/actions-674967a53d",
+      "headRefOid": "0f6e6b197222c619ad4a99679f6d1828a805679b",
+      "mergedAt": "2026-11-10T04:30:52Z",
+      "number": 207,
+      "title": "ci(deps): bump actions/upload-artifact from 4 to 7 in the actions group across 1 directory",
+      "url": "https://github.com/Victoriosas/autopilot/pull/207"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-11T05:11:20Z",
+      "headRefName": "dependabot/npm_and_yarn/npm-minor-patch-83ad8026f6",
+      "headRefOid": "fc4c2571d65ec4db326f61e53862653ceefca1fe",
+      "mergedAt": "2026-11-11T05:11:20Z",
+      "number": 206,
+      "title": "chore(deps): bump the npm-minor-patch group across 1 directory with 4 updates",
+      "url": "https://github.com/Victoriosas/autopilot/pull/206"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T02:23:59Z",
+      "headRefName": "codex/continuation-v5-20261109",
+      "headRefOid": "2a34b77f94d09cdacf4e88b141e912a898d99eef",
+      "mergedAt": "2026-11-10T02:23:59Z",
+      "number": 205,
+      "title": "docs: continuidad recuperable de Codex V5",
+      "url": "https://github.com/Victoriosas/autopilot/pull/205"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-10T02:37:45Z",
+      "headRefName": "codex/f1-api-auth-review-20261109",
+      "headRefOid": "d4bc0bbbc96736538830ed057125d056d87bf6a6",
+      "mergedAt": "2026-11-10T02:37:45Z",
+      "number": 204,
+      "title": "F1: integrar montaje de API, builds y autenticación revisados",
+      "url": "https://github.com/Victoriosas/autopilot/pull/204"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-09T01:11:49Z",
+      "headRefName": "codex/victoriosas-skills-v2",
+      "headRefOid": "5b9ceac1f56812a722754fbce873551e9bb9633f",
+      "mergedAt": "2026-11-09T01:11:49Z",
+      "number": 203,
+      "title": "Instala las cinco habilidades de Codex v2",
+      "url": "https://github.com/Victoriosas/autopilot/pull/203"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-07T01:41:09Z",
+      "headRefName": "codex/public-health-diagnostics-20261106",
+      "headRefOid": "50fcea83a6f84acc36cae1da2516690618c91f94",
+      "mergedAt": "2026-11-07T01:41:09Z",
+      "number": 197,
+      "title": "F1: diagnosticar 403 del monitor público sin reducir seguridad",
+      "url": "https://github.com/Victoriosas/autopilot/pull/197"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-07T01:45:22Z",
+      "headRefName": "codex/f3-quality-recovery-20261106",
+      "headRefOid": "266bc53091895056ba2460b94e83f13e4034f066",
+      "mergedAt": "2026-11-07T01:45:22Z",
+      "number": 196,
+      "title": "F3: cerrar contratos inválidos y conservar diagnóstico sin envíos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/196"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:06:11Z",
+      "headRefName": "codex/alignment-audit-20261105",
+      "headRefOid": "48a6f2f3fde5ac48e7664f0b47143ac385dcae7d",
+      "mergedAt": "2026-11-06T03:06:11Z",
+      "number": 195,
+      "title": "test(F1/F2): recuperar recorrido aislado de fichas y auditar alineación",
+      "url": "https://github.com/Victoriosas/autopilot/pull/195"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:10:11Z",
+      "headRefName": "docs/camelrun-smoke-result-20261106",
+      "headRefOid": "719d0063237b34ad0b14557d98afc7f0d5dbdb4f",
+      "mergedAt": "2026-11-06T03:10:11Z",
+      "number": 194,
+      "title": "docs: registrar smoke real 3/3 casos y 6/6 controles",
+      "url": "https://github.com/Victoriosas/autopilot/pull/194"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T01:58:31Z",
+      "headRefName": "fix/camelrun-schema-repair",
+      "headRefOid": "94134ad7d92cfc0ae4e0d4be5599426c6bb5803a",
+      "mergedAt": "2026-11-06T01:58:31Z",
+      "number": 193,
+      "title": "fix: permitir una reparación de esquema dentro del presupuesto",
+      "url": "https://github.com/Victoriosas/autopilot/pull/193"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T01:44:10Z",
+      "headRefName": "fix/camelrun-run-completion",
+      "headRefOid": "59bec1c440b6d526d3d818e38e592689d4d6fc9a",
+      "mergedAt": "2026-11-06T01:44:10Z",
+      "number": 192,
+      "title": "fix: distinguir fallos y seguir la misma ejecución camelRun",
+      "url": "https://github.com/Victoriosas/autopilot/pull/192"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T01:34:26Z",
+      "headRefName": "fix/structured-camelrun-evaluation",
+      "headRefOid": "606c9c5082edb31b6c6f9869b563cde37f59ed64",
+      "mergedAt": "2026-11-06T01:34:26Z",
+      "number": 191,
+      "title": "fix: contratos estructurados y escalamiento de evaluación camelRun",
+      "url": "https://github.com/Victoriosas/autopilot/pull/191"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-05T23:29:53Z",
+      "headRefName": "fix/evidence-disclaimers-20261105",
+      "headRefOid": "bcbe069cd87b920da99bc5ddb29bfc47288bf1f5",
+      "mergedAt": "2026-11-05T23:29:53Z",
+      "number": 190,
+      "title": "fix: evitar falsos positivos en fichas aprobadas para IA",
+      "url": "https://github.com/Victoriosas/autopilot/pull/190"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:12:18Z",
+      "headRefName": "docs/f2-provisional-drafts-20261105",
+      "headRefOid": "cb6ec9b4ac7357b3c0f7267062b05245ee5ee515",
+      "mergedAt": "2026-11-06T03:12:18Z",
+      "number": 189,
+      "title": "docs(f2): registrar carga provisional de 17 fichas y sus límites",
+      "url": "https://github.com/Victoriosas/autopilot/pull/189"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:20:45Z",
+      "headRefName": "fix/f2-browser-portable-20261105",
+      "headRefOid": "01953cd7e542624496b35c3fdaf5a0d6c50f2e93",
+      "mergedAt": "2026-11-06T03:20:45Z",
+      "number": 188,
+      "title": "test(f2): prueba de fichas portátil para Codex y CI",
+      "url": "https://github.com/Victoriosas/autopilot/pull/188"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:25:43Z",
+      "headRefName": "docs/pr-legacy-triage-20261105",
+      "headRefOid": "1e22348cb9e1fd703829f23f9c5d229fb07a5480",
+      "mergedAt": "2026-11-06T03:25:43Z",
+      "number": 187,
+      "title": "docs: cerrar depuración de PR con evidencia preservada",
+      "url": "https://github.com/Victoriosas/autopilot/pull/187"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:18:01Z",
+      "headRefName": "docs/codex-primary-20261105",
+      "headRefOid": "64f59f017884cb37ed6d1541bdd02afdcee093f7",
+      "mergedAt": "2026-11-06T03:18:01Z",
+      "number": 186,
+      "title": "docs: Codex principal y OpenCode auxiliar sin interferencias",
+      "url": "https://github.com/Victoriosas/autopilot/pull/186"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T21:45:09Z",
+      "headRefName": "codex/f2-review-progress-20261104",
+      "headRefOid": "9842dc84e87a07d2d0a3ca93b5d5ad2630054fa4",
+      "mergedAt": "2026-11-04T21:45:09Z",
+      "number": 185,
+      "title": "feat(f2): pestaña Fichas, avance de 17 tratamientos y guardas de borradores",
+      "url": "https://github.com/Victoriosas/autopilot/pull/185"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T21:17:08Z",
+      "headRefName": "codex/f1-e2e-closure-20261104",
+      "headRefOid": "15cf2dd315bd721daa9c816a0f3a0769e57cf71b",
+      "mergedAt": "2026-11-04T21:17:08Z",
+      "number": 184,
+      "title": "docs(f1): cierre E2E de consultas con aprobación humana y entrega Gmail",
+      "url": "https://github.com/Victoriosas/autopilot/pull/184"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T21:01:46Z",
+      "headRefName": "codex/f1-e2e-f2-review-20261104",
+      "headRefOid": "a3b15d117e58f6f2857e02eaa2bde462266404e7",
+      "mergedAt": "2026-11-04T21:01:46Z",
+      "number": 183,
+      "title": "docs(f1/f2): validar recepción productiva y preparar revisión de 17 tratamientos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/183"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T18:50:43Z",
+      "headRefName": "codex/consultation-f1-availability-20261104",
+      "headRefOid": "68adeae806d0db4c0fdea2cc303d9282fc536573",
+      "mergedAt": "2026-11-04T18:50:43Z",
+      "number": 182,
+      "title": "docs(f1): registrar recuperación pública de /consultanos y controles pendientes",
+      "url": "https://github.com/Victoriosas/autopilot/pull/182"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T18:16:58Z",
+      "headRefName": "codex/direccion-autopilot-20261104",
+      "headRefOid": "1ab29f2d744e3e742a4ce4dde37219a9a6e4f7de",
+      "mergedAt": "2026-11-04T18:16:58Z",
+      "number": 181,
+      "title": "docs(gobierno): dirección única, auditoría y control de fases Victoriosas/Autopilot",
+      "url": "https://github.com/Victoriosas/autopilot/pull/181"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T05:49:49Z",
+      "headRefName": "codex/preview-history-audit-20261104",
+      "headRefOid": "099bc890c2e40f01eca0a80bf3f0e9dbc8b1b4c1",
+      "mergedAt": "2026-11-04T05:49:49Z",
+      "number": 179,
+      "title": "Reconciliar Supabase Preview con las 41 migraciones realmente ejecutadas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/179"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T05:46:44Z",
+      "headRefName": "codex/consultation-dark-menu-email-choice-20261104",
+      "headRefOid": "b79a86d9314d292675cde572c2f3a1187ee2e0ee",
+      "mergedAt": "2026-11-04T05:46:44Z",
+      "number": 178,
+      "title": "fix(consultas): menú oscuro legible y respuesta por email con aprobación para cualquier preferencia",
+      "url": "https://github.com/Victoriosas/autopilot/pull/178"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T04:46:15Z",
+      "headRefName": "codex/consultation-knowledge-security-20261104",
+      "headRefOid": "bde52f4c40c75c5714806d4bd178012270a4b5b0",
+      "mergedAt": "2026-11-04T04:46:15Z",
+      "number": 177,
+      "title": "Aislar la limpieza privilegiada y verificar las fichas privadas de consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/177"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T04:41:56Z",
+      "headRefName": "codex/consultation-stabilization-20261104",
+      "headRefOid": "791ccc45760143289e92a4104e05d47a7129c76c",
+      "mergedAt": "2026-11-04T04:41:56Z",
+      "number": 176,
+      "title": "Conservar la verificación del sitio al consultar y enviar el formulario",
+      "url": "https://github.com/Victoriosas/autopilot/pull/176"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T04:08:42Z",
+      "headRefName": "codex/consultation-lab-failclosed-fallback-20261104",
+      "headRefOid": "60f7193afb2d267af46439cf99fdb46d450f67c4",
+      "mergedAt": "2026-11-04T04:08:41Z",
+      "number": 174,
+      "title": "fix(consultas): mantener el laboratorio sintético seguro si faltan fichas privadas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/174"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T03:39:46Z",
+      "headRefName": "codex/consultation-synthetic-ai-lab",
+      "headRefOid": "61867d2e48709f3fadba3156bed3581ad9ade821",
+      "mergedAt": "2026-11-04T03:39:46Z",
+      "number": 173,
+      "title": "feat(consultas): laboratorio IA sintético y fichas privadas versionadas (sin envío)",
+      "url": "https://github.com/Victoriosas/autopilot/pull/173"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T03:31:49Z",
+      "headRefName": "codex/skills-victoriosas-20261104",
+      "headRefOid": "d25596c2c370d13adcbc276673da38c884f09c97",
+      "mergedAt": "2026-11-04T03:31:49Z",
+      "number": 172,
+      "title": "docs(codex): seis habilidades enfocadas para consultas, IA, seguridad y ahorro de tokens",
+      "url": "https://github.com/Victoriosas/autopilot/pull/172"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T02:08:39Z",
+      "headRefName": "chatgpt/consultation-admin-focus-20261103",
+      "headRefOid": "a5c47b45628f0e75f0118dbb29220ce7f08d6af6",
+      "mergedAt": "2026-11-04T02:08:39Z",
+      "number": 171,
+      "title": "Simplificar Autopilot a atención profesional y reparar acceso al formulario propio",
+      "url": "https://github.com/Victoriosas/autopilot/pull/171"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-04T03:44:22Z",
+      "headRefName": "dependabot/github_actions/actions-6212fb2f78",
+      "headRefOid": "432f5f8acadf48b1cd40440c3456076f462f68de",
+      "mergedAt": "2026-11-04T03:44:22Z",
+      "number": 170,
+      "title": "ci(deps): bump the actions group across 1 directory with 2 updates",
+      "url": "https://github.com/Victoriosas/autopilot/pull/170"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:22:37Z",
+      "headRefName": "dependabot/npm_and_yarn/npm-minor-patch-1a651b1bbe",
+      "headRefOid": "e3dfe9a185c041e0ab090308945fbf186d87a55c",
+      "mergedAt": "2026-11-06T03:22:37Z",
+      "number": 168,
+      "title": "chore(deps): bump the npm-minor-patch group across 1 directory with 2 updates",
+      "url": "https://github.com/Victoriosas/autopilot/pull/168"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-01T05:52:52Z",
+      "headRefName": "fix/consultation-email-vault-agents",
+      "headRefOid": "016a2e108a6f07daca0d0f0d92b225a4b8db38df",
+      "mergedAt": "2026-11-01T05:52:52Z",
+      "number": 167,
+      "title": "Reparar consultas por correo y activar análisis supervisado en Cloudflare/Supabase",
+      "url": "https://github.com/Victoriosas/autopilot/pull/167"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-01T05:14:22Z",
+      "headRefName": "fix/supabase-edge-consultation-buffer",
+      "headRefOid": "5730ab7c93868a2201506efc0a110fd6afa29dbc",
+      "mergedAt": "2026-11-01T05:14:22Z",
+      "number": 165,
+      "title": "fix: evitar fallo Buffer en consultas de Supabase Edge",
+      "url": "https://github.com/Victoriosas/autopilot/pull/165"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-01T02:04:51Z",
+      "headRefName": "feat/cloudflare-supabase-api",
+      "headRefOid": "a1b5ec996fd33afeb18b6dd6b1b118a3a1d23958",
+      "mergedAt": "2026-11-01T02:04:50Z",
+      "number": 164,
+      "title": "Conectar API temporal de Cloudflare a Supabase sin perder Vercel",
+      "url": "https://github.com/Victoriosas/autopilot/pull/164"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-01T06:46:06Z",
+      "headRefName": "fix/cloudflare-temporary-headers",
+      "headRefOid": "3d0e1a4388a2e45006ab258fcecd8c8bb0fb2256",
+      "mergedAt": "2026-11-01T06:46:06Z",
+      "number": 163,
+      "title": "Cloudflare temporal: cabeceras, caché y retorno a Vercel",
+      "url": "https://github.com/Victoriosas/autopilot/pull/163"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T17:49:20Z",
+      "headRefName": "codex/technology-direct-route-20261031",
+      "headRefOid": "6207916e23ed7bf8ca655c7c96488f741da2daef",
+      "mergedAt": "2026-10-31T17:49:20Z",
+      "number": 162,
+      "title": "fix(web): ruta directa y metadatos SEO de Tecnología",
+      "url": "https://github.com/Victoriosas/autopilot/pull/162"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T17:38:56Z",
+      "headRefName": "codex/victoriosas-clinical-experience-20261031",
+      "headRefOid": "de77be8e520233c138db29caa86901a5fefc9a29",
+      "mergedAt": "2026-10-31T17:38:56Z",
+      "number": 161,
+      "title": "feat(web): catálogo visual, página Tecnología y orientador guiado",
+      "url": "https://github.com/Victoriosas/autopilot/pull/161"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T17:21:05Z",
+      "headRefName": "codex/victoriosas-visual-depth-20261031",
+      "headRefOid": "a5961d148ffce7b688e5df862f40d707c2c363f9",
+      "mergedAt": "2026-10-31T17:21:05Z",
+      "number": 160,
+      "title": "feat(web): diseño clínico premium con profundidad y botones 3D",
+      "url": "https://github.com/Victoriosas/autopilot/pull/160"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T16:48:09Z",
+      "headRefName": "codex/opencode-glm53-20261031",
+      "headRefOid": "677ac2c26e9178981d96a522a9af999d48416fec",
+      "mergedAt": "2026-10-31T16:48:09Z",
+      "number": 159,
+      "title": "feat(opencode): habilitar GLM-5.3 y Flash con credenciales existentes",
+      "url": "https://github.com/Victoriosas/autopilot/pull/159"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T16:12:28Z",
+      "headRefName": "codex/github-maintenance-20261031",
+      "headRefOid": "9deefb61ad1083e1eb6cd713390e7ac2f2a1d5bc",
+      "mergedAt": "2026-10-31T16:12:28Z",
+      "number": 158,
+      "title": "chore(deps): consolidar actualizaciones de autoprefixer y lucide-react",
+      "url": "https://github.com/Victoriosas/autopilot/pull/158"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T16:20:31Z",
+      "headRefName": "codex/clinical-navigation-20261031",
+      "headRefOid": "c6ee2f41f33ecdd40872987224f72db93504b824",
+      "mergedAt": "2026-10-31T16:20:31Z",
+      "number": 157,
+      "title": "feat(web): navegación clínica multipágina para Victoriosas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/157"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T16:20:43Z",
+      "headRefName": "codex/service-discovery-20261031",
+      "headRefOid": "ad30a5758c4bbc6e3cda8c3c6ffa1d2885e87d7e",
+      "mergedAt": null,
+      "number": 156,
+      "title": "Mejora el acceso a tratamientos y el filtro de servicios",
+      "url": "https://github.com/Victoriosas/autopilot/pull/156"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T15:49:20Z",
+      "headRefName": "codex/opencode-workstation-20261031",
+      "headRefOid": "4ed02806bae9c27bcdc7f3bcda8d9a22f53d51ae",
+      "mergedAt": "2026-10-31T15:49:20Z",
+      "number": 155,
+      "title": "Motor local OpenCode de Victoriosas con economía de tokens",
+      "url": "https://github.com/Victoriosas/autopilot/pull/155"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T16:12:58Z",
+      "headRefName": "dependabot/npm_and_yarn/lucide-react-1.61.0",
+      "headRefOid": "a1ce05d6c34aff8e7a5999af8db536223f02dce9",
+      "mergedAt": null,
+      "number": 154,
+      "title": "chore(deps): bump lucide-react from 0.546.0 to 1.61.0",
+      "url": "https://github.com/Victoriosas/autopilot/pull/154"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-31T16:12:53Z",
+      "headRefName": "dependabot/npm_and_yarn/npm-minor-patch-ecffce9733",
+      "headRefOid": "19eab1f338c7d83ed95d2df58272279f96906ec6",
+      "mergedAt": null,
+      "number": 153,
+      "title": "chore(deps): bump autoprefixer from 10.6.1 to 10.6.2 in the npm-minor-patch group",
+      "url": "https://github.com/Victoriosas/autopilot/pull/153"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:22Z",
+      "headRefName": "codex/integration-local-20261029",
+      "headRefOid": "31be4330db5240547e33ecaaf5ec2930654071d1",
+      "mergedAt": "2026-10-30T00:20:22Z",
+      "number": 152,
+      "title": "Integrar cambios técnicos y contenidos para prueba local en la PC",
+      "url": "https://github.com/Victoriosas/autopilot/pull/152"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:25Z",
+      "headRefName": "codex/technical-close-20261029",
+      "headRefOid": "74518ed5d8e38fc4c3883581899b4836c0769a0b",
+      "mergedAt": "2026-10-30T00:20:25Z",
+      "number": 151,
+      "title": "Corregir aprobación supervisada y estados de correo de consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/151"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "codex/client-content-20261029",
+      "headRefOid": "0e2b1cbecfc68aaadfa672203bcb5cb67e1c893e",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 150,
+      "title": "Preparar 12 lecturas y preguntas para orientar a las clientas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/150"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "codex/validated-integration-20261026",
+      "headRefOid": "71ebf8d842248b6df2bf7d9aa5c54b7f1c0aa4ef",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 148,
+      "title": "Integrar Node 24, monitor de consultas y evaluación protegida",
+      "url": "https://github.com/Victoriosas/autopilot/pull/148"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "codex/evaluation-final-gates-20261026",
+      "headRefOid": "7ab05cac41ec3c4da0f7d8c5c5dc8ce13025b1c1",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 147,
+      "title": "Exigir desarrollo y controles completos antes de evaluar casos finales",
+      "url": "https://github.com/Victoriosas/autopilot/pull/147"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "codex/local-model-preflight-20261026",
+      "headRefOid": "00f0f6c56e831625aed62df1f13160de8bcd6b5f",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 145,
+      "title": "Comprobar modelo local y registrar el bloqueo semántico sin habilitar consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/145"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "codex/consultation-health-20261026",
+      "headRefOid": "7770296a484f7b724366b3950d2b86c2386c083f",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 144,
+      "title": "Detectar caídas del formulario de consultas en el monitor público",
+      "url": "https://github.com/Victoriosas/autopilot/pull/144"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "dependabot/github_actions/actions-14c15c98eb",
+      "headRefOid": "adaf8c364dd650b6aea9ddc2609e4046ef7457dc",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 143,
+      "title": "ci(deps): bump the actions group with 3 updates",
+      "url": "https://github.com/Victoriosas/autopilot/pull/143"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "dependabot/npm_and_yarn/types/node-26.6.5",
+      "headRefOid": "77ffba63dc0b11618c084b5428a95f17b0084aef",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 142,
+      "title": "Alinear tipos y prueba de navegador con Node 24",
+      "url": "https://github.com/Victoriosas/autopilot/pull/142"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-30T00:20:24Z",
+      "headRefName": "dependabot/npm_and_yarn/npm-minor-patch-8ac81e884a",
+      "headRefOid": "9cdce2e3f47ba194dca637d004e170a1f4a8619d",
+      "mergedAt": "2026-10-30T00:20:24Z",
+      "number": 141,
+      "title": "chore(deps): bump the npm-minor-patch group with 2 updates",
+      "url": "https://github.com/Victoriosas/autopilot/pull/141"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T07:56:36Z",
+      "headRefName": "agent/ecc-selective-quality-20261025",
+      "headRefOid": "263269413264d6e8f5413f1c49c86f4d890b23a0",
+      "mergedAt": "2026-10-25T07:56:36Z",
+      "number": 140,
+      "title": "Integrar cinco perfiles ECC de revisión segura en OpenCode",
+      "url": "https://github.com/Victoriosas/autopilot/pull/140"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T06:05:02Z",
+      "headRefName": "agent/persisted-infrastructure-worker-20261025",
+      "headRefOid": "471cab4f738966d1be0e28f92a78274fe1ff63eb",
+      "mergedAt": "2026-10-25T06:05:02Z",
+      "number": 139,
+      "title": "feat: auditor de infraestructura con cola persistente y ejecución remota",
+      "url": "https://github.com/Victoriosas/autopilot/pull/139"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T05:56:53Z",
+      "headRefName": "agent/public-health-monitor-20261025",
+      "headRefOid": "82d23cb6f7b08e8ea62f6a423d5884104bece552",
+      "mergedAt": "2026-10-25T05:56:53Z",
+      "number": 138,
+      "title": "feat: verificación remota del sitio cuatro veces al día",
+      "url": "https://github.com/Victoriosas/autopilot/pull/138"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T05:47:21Z",
+      "headRefName": "agent/secure-reports-20261025",
+      "headRefOid": "0f6bca2394b2fa15bf800a25eec0ae91661a0ba4",
+      "mergedAt": "2026-10-25T05:47:21Z",
+      "number": 137,
+      "title": "feat: informe real de seis agentes mediante GitHub OIDC sin secretos compartidos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/137"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T05:52:20Z",
+      "headRefName": "agent/autopilot-operational-audit-skill-20261025",
+      "headRefOid": "4f5822f50f377bc0c85e1452573388b4fb55be34",
+      "mergedAt": "2026-10-25T05:52:20Z",
+      "number": 136,
+      "title": "docs: skill de auditoría operativa verificable de Autopilot",
+      "url": "https://github.com/Victoriosas/autopilot/pull/136"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T05:13:21Z",
+      "headRefName": "agent/observability-daily-20261025",
+      "headRefOid": "9811bfef068841a72be0fc86a4ab08f98d600d5a",
+      "mergedAt": "2026-10-25T05:13:21Z",
+      "number": 135,
+      "title": "feat: informe diario sin coste de los seis agentes (19:00 UY)",
+      "url": "https://github.com/Victoriosas/autopilot/pull/135"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T04:58:25Z",
+      "headRefName": "agent/six-agent-control-plane-20261025",
+      "headRefOid": "aadbf2c33f95333de9751878df2e87a9688f9c2c",
+      "mergedAt": "2026-10-25T04:58:25Z",
+      "number": 134,
+      "title": "feat: control de seis agentes con seguridad y pruebas deterministas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/134"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-01T06:48:11Z",
+      "headRefName": "feat/zero-cost-agent-observability-20261025",
+      "headRefOid": "f30944b52e6b7dbbaf09f0b534f5c25c2e9c2fcd",
+      "mergedAt": "2026-11-01T06:48:11Z",
+      "number": 133,
+      "title": "feat(agents): auditoría programada sin IA ni costes adicionales",
+      "url": "https://github.com/Victoriosas/autopilot/pull/133"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-25T03:39:36Z",
+      "headRefName": "codex/consultation-integration-20261024",
+      "headRefOid": "aca6e7aa832f5a850b4840d8755a21eb40ddd99e",
+      "mergedAt": "2026-10-25T03:39:36Z",
+      "number": 132,
+      "title": "Integrar consultas supervisadas, evidencia privada y proveedores intercambiables",
+      "url": "https://github.com/Victoriosas/autopilot/pull/132"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:23:08Z",
+      "headRefName": "chatgpt/provider-agnostic-consultations-20261024",
+      "headRefOid": "9c5dd3b871891a87eb6581caa1397ee320652b94",
+      "mergedAt": null,
+      "number": 131,
+      "title": "feat(ai): motor de modelos intercambiable, deshabilitado por defecto",
+      "url": "https://github.com/Victoriosas/autopilot/pull/131"
+    },
+    {
+      "baseRefName": "codex/consultation-eval-20261024",
+      "closedAt": "2026-10-31T16:16:29Z",
+      "headRefName": "chatgpt/pr129-actions-eval-20261024",
+      "headRefOid": "0b87edd2bda26494cb95b117c3b33337879de0f0",
+      "mergedAt": "2026-10-31T16:16:29Z",
+      "number": 130,
+      "title": "CI: validación segura del evaluador de agentes (#129)",
+      "url": "https://github.com/Victoriosas/autopilot/pull/130"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:23:06Z",
+      "headRefName": "codex/consultation-eval-20261024",
+      "headRefOid": "45e22a94cb95c01586efe7d6964914700881d9d7",
+      "mergedAt": null,
+      "number": 129,
+      "title": "feat: stateless evaluation harness for consultation agents",
+      "url": "https://github.com/Victoriosas/autopilot/pull/129"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T06:56:52Z",
+      "headRefName": "fix/camelrun-privacy-consent-20261024",
+      "headRefOid": "65c9cd68b1ed9f5ef8c832ffaac84f307b3d69e8",
+      "mergedAt": "2026-10-24T06:56:52Z",
+      "number": 128,
+      "title": "Privacidad y consentimiento explícito para borradores camelRun",
+      "url": "https://github.com/Victoriosas/autopilot/pull/128"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T06:34:20Z",
+      "headRefName": "feat/camelrun-supervised-drafts-20261024",
+      "headRefOid": "40a49114731605f014f4b1f318e39aa7100d9528",
+      "mergedAt": "2026-10-24T06:34:20Z",
+      "number": 127,
+      "title": "Integración supervisada de camelRun para borradores de consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/127"
+    },
+    {
+      "baseRefName": "feature/victoriosas-agents-catalog-email-20261024",
+      "closedAt": "2026-10-31T16:08:45Z",
+      "headRefName": "codex/consultation-catalog-repair-20261024",
+      "headRefOid": "20f86e29a57c0e2a0d089b58dce32874e5b63ddb",
+      "mergedAt": "2026-10-31T16:08:45Z",
+      "number": 126,
+      "title": "fix: corregir selección de servicios y controles de PR124",
+      "url": "https://github.com/Victoriosas/autopilot/pull/126"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:23:04Z",
+      "headRefName": "codex/consultation-reading-release-20261024",
+      "headRefOid": "42da44279426d39a6f3d4054f6f67ceaf698ca69",
+      "mergedAt": null,
+      "number": 125,
+      "title": "docs: registrar publicación y verificación de PR123",
+      "url": "https://github.com/Victoriosas/autopilot/pull/125"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T04:38:31Z",
+      "headRefName": "codex/consultation-unread-20261024",
+      "headRefOid": "ba053f266e0863821229ab0d47ed5bd89195610c",
+      "mergedAt": "2026-10-24T04:38:30Z",
+      "number": 123,
+      "title": "Registrar consultas leídas y corregir el contador de la campana",
+      "url": "https://github.com/Victoriosas/autopilot/pull/123"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T01:07:40Z",
+      "headRefName": "feature/consultation-safe-auto-replies-20261023",
+      "headRefOid": "1ecd7c1326b78b995347ecceb0804b4641ed1c76",
+      "mergedAt": "2026-10-24T01:07:40Z",
+      "number": 121,
+      "title": "Respuestas automáticas acotadas para consultas generales",
+      "url": "https://github.com/Victoriosas/autopilot/pull/121"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T00:55:29Z",
+      "headRefName": "fix/orientacion-email-form-20261023",
+      "headRefOid": "11a9169d4a011a437f141507e393ea4442ab6200",
+      "mergedAt": "2026-10-24T00:55:29Z",
+      "number": 120,
+      "title": "Arreglar Orientación por email sin depender de mailto",
+      "url": "https://github.com/Victoriosas/autopilot/pull/120"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T00:48:28Z",
+      "headRefName": "feature/consultas-menu-current-main-20261023",
+      "headRefOid": "88c66f90f74547bd57e7ec75424d9c9654809b8e",
+      "mergedAt": "2026-10-24T00:48:28Z",
+      "number": 119,
+      "title": "Consultas con campanita y bandejas Web / WhatsApp (base actualizada)",
+      "url": "https://github.com/Victoriosas/autopilot/pull/119"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T00:48:37Z",
+      "headRefName": "feature/consultas-menu-web-whatsapp-20261023",
+      "headRefOid": "b0aee74087e56be181a78a9c94c989006ecdad21",
+      "mergedAt": null,
+      "number": 118,
+      "title": "Panel Consultas con campana, Web y WhatsApp",
+      "url": "https://github.com/Victoriosas/autopilot/pull/118"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T00:46:31Z",
+      "headRefName": "fix/contacto-email-consultanos-20261023",
+      "headRefOid": "16362c89292ec5e07ce7a1c15708eea2130130b7",
+      "mergedAt": "2026-10-24T00:46:31Z",
+      "number": 117,
+      "title": "Corregir botones de contacto y correo profesional",
+      "url": "https://github.com/Victoriosas/autopilot/pull/117"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-24T00:18:28Z",
+      "headRefName": "feature/consultas-panel-20261023",
+      "headRefOid": "11031af7e32e3a4cf02be4abc82960459e4621e8",
+      "mergedAt": "2026-10-24T00:18:28Z",
+      "number": 116,
+      "title": "Mejorar panel privado de consultas de Victoria",
+      "url": "https://github.com/Victoriosas/autopilot/pull/116"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T23:29:54Z",
+      "headRefName": "feat/consultation-knowledge-analytics-20261023",
+      "headRefOid": "f5c492fc0e0adbafc887c7d701fcdc963af4d1f5",
+      "mergedAt": "2026-10-23T23:29:54Z",
+      "number": 115,
+      "title": "feat: base de conocimiento aprobada y métricas privadas de consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/115"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T23:26:56Z",
+      "headRefName": "feat/consultation-operations-v2-20261023",
+      "headRefOid": "0318b6df7b6cfa46536f27959e25592234a940b4",
+      "mergedAt": "2026-10-23T23:26:56Z",
+      "number": 114,
+      "title": "feat: flujo privado de consultas, estados y trazabilidad de respuestas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/114"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T23:15:06Z",
+      "headRefName": "feat/peach-whatsapp-drafts-20261023",
+      "headRefOid": "1c54bce2a7822c0fb93783f99d1ffce419376893",
+      "mergedAt": "2026-10-23T23:15:06Z",
+      "number": 113,
+      "title": "feat: borradores de WhatsApp sin complementos externos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/113"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T22:52:50Z",
+      "headRefName": "feat/consultation-response-agents-20261023",
+      "headRefOid": "2de5d19a13a51c399caae43d1c8a15d4842bc3ac",
+      "mergedAt": "2026-10-23T22:52:50Z",
+      "number": 112,
+      "title": "feat: agentes de consultas, revisión administrativa y envío Resend",
+      "url": "https://github.com/Victoriosas/autopilot/pull/112"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-11-06T03:23:01Z",
+      "headRefName": "docs/consultation-activation-20261023",
+      "headRefOid": "6f8c8cfaafce9a511e81d3dd31541c9b7d07ed1c",
+      "mergedAt": null,
+      "number": 111,
+      "title": "docs: registrar activación verificada del formulario de consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/111"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T21:58:03Z",
+      "headRefName": "codex/ai-studio-release-qa-20261023",
+      "headRefOid": "901b9cef9fcf08fc18b979c8e6e8638f5040238c",
+      "mergedAt": "2026-10-23T21:58:02Z",
+      "number": 110,
+      "title": "Cerrar publicación de AI Studio: contraste y parches de dependencias",
+      "url": "https://github.com/Victoriosas/autopilot/pull/110"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T21:58:04Z",
+      "headRefName": "dependabot/npm_and_yarn/vite-6.4.5",
+      "headRefOid": "018177d73a1deac741f23a64fb4f1cef0b5612e1",
+      "mergedAt": "2026-10-23T21:58:04Z",
+      "number": 109,
+      "title": "chore(deps): bump vite from 6.4.3 to 6.4.5",
+      "url": "https://github.com/Victoriosas/autopilot/pull/109"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T21:58:04Z",
+      "headRefName": "dependabot/npm_and_yarn/body-parser-1.20.9",
+      "headRefOid": "d57a10ef9ab8072783e20a828ba720292c750f2c",
+      "mergedAt": "2026-10-23T21:58:04Z",
+      "number": 108,
+      "title": "chore(deps): bump body-parser from 1.20.8 to 1.20.9",
+      "url": "https://github.com/Victoriosas/autopilot/pull/108"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T21:47:30Z",
+      "headRefName": "codex/ai-studio-integration-20261023",
+      "headRefOid": "de760c49197690faad29222b66270657693425ef",
+      "mergedAt": "2026-10-23T21:47:30Z",
+      "number": 107,
+      "title": "Adaptar Victoriosas al diseño y recorridos de Google AI Studio",
+      "url": "https://github.com/Victoriosas/autopilot/pull/107"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T21:47:32Z",
+      "headRefName": "codex/discovery-plan-20261023",
+      "headRefOid": "344b4f0b6996383437bb187584fba22717663f15",
+      "mergedAt": "2026-10-23T21:47:32Z",
+      "number": 106,
+      "title": "Mejorar descubrimiento de cuidados y preparación de consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/106"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T21:47:32Z",
+      "headRefName": "chatgpt/beauty-contact-form-20261023",
+      "headRefOid": "666f4618b834d21b8043ba13ff244a656b4c4fcd",
+      "mergedAt": "2026-10-23T21:47:32Z",
+      "number": 105,
+      "title": "Consultas web: disponibilidad, reintentos seguros y bandeja privada",
+      "url": "https://github.com/Victoriosas/autopilot/pull/105"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-23T03:43:13Z",
+      "headRefName": "codex/launch-readiness-20261023",
+      "headRefOid": "6c2192b6f8f4adc06c5c4c9c9f3abb5a6350ce1b",
+      "mergedAt": "2026-10-23T03:43:13Z",
+      "number": 103,
+      "title": "Conservar el tratamiento al consultar y corregir SEO de servicios",
+      "url": "https://github.com/Victoriosas/autopilot/pull/103"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T02:13:20Z",
+      "headRefName": "codex/beauty-fk-indexes-20261020",
+      "headRefOid": "b88aa31820a59eab3960471aef4c80120309f260",
+      "mergedAt": "2026-10-20T02:13:20Z",
+      "number": 102,
+      "title": "Supabase: índices de claves foráneas Beauty y prueba de preservación",
+      "url": "https://github.com/Victoriosas/autopilot/pull/102"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T02:05:03Z",
+      "headRefName": "dependabot/npm_and_yarn/dotenv-18.0.8",
+      "headRefOid": "75f9c30a09103f3ef087433f162b747505da63a0",
+      "mergedAt": "2026-10-20T02:05:03Z",
+      "number": 101,
+      "title": "chore(deps): bump dotenv from 17.4.2 to 18.0.8",
+      "url": "https://github.com/Victoriosas/autopilot/pull/101"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T02:15:23Z",
+      "headRefName": "dependabot/npm_and_yarn/npm-minor-patch-373efb7926",
+      "headRefOid": "8486c581b65f8b5b0db9e0fc903f0e1ad4132ecc",
+      "mergedAt": "2026-10-20T02:15:23Z",
+      "number": 100,
+      "title": "chore(deps): bump the npm-minor-patch group across 1 directory with 7 updates",
+      "url": "https://github.com/Victoriosas/autopilot/pull/100"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T02:17:34Z",
+      "headRefName": "dependabot/github_actions/actions-9b61906d8b",
+      "headRefOid": "70724aba7538e866756a36c588d25cf59e188608",
+      "mergedAt": "2026-10-20T02:17:34Z",
+      "number": 99,
+      "title": "ci(deps): bump the actions group with 2 updates",
+      "url": "https://github.com/Victoriosas/autopilot/pull/99"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T01:52:43Z",
+      "headRefName": "codex/github-maintenance-20261020",
+      "headRefOid": "7bf39a7c9e0e5a9f01c43ca6bd975dd1e994be6a",
+      "mergedAt": "2026-10-20T01:52:43Z",
+      "number": 98,
+      "title": "GitHub: mantenimiento semanal, formularios e instrucciones actuales para agentes",
+      "url": "https://github.com/Victoriosas/autopilot/pull/98"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T01:12:01Z",
+      "headRefName": "codex/github-governance-agents-20261019",
+      "headRefOid": "bf5b5442f645647b8312a2a4fed739ad91ddcdfe",
+      "mergedAt": "2026-10-20T01:12:01Z",
+      "number": 97,
+      "title": "GitHub: instrucciones para agentes, plantilla de PR y política de seguridad",
+      "url": "https://github.com/Victoriosas/autopilot/pull/97"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T01:01:22Z",
+      "headRefName": "codex/beauty-service-descriptions-20261019",
+      "headRefOid": "b0ab6f23e2c20fb6d11db6db7e821d7f34bab80b",
+      "mergedAt": "2026-10-20T01:01:22Z",
+      "number": 96,
+      "title": "Beauty: fichas completas de los 17 tratamientos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/96"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T00:25:48Z",
+      "headRefName": "codex/beauty-services-menu-20261019",
+      "headRefOid": "3e9eb8462335b6c51ae27ee853d334e8ce9ff77b",
+      "mergedAt": "2026-10-20T00:25:48Z",
+      "number": 95,
+      "title": "Beauty: menú Nuestros servicios con faciales y corporales",
+      "url": "https://github.com/Victoriosas/autopilot/pull/95"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-20T00:00:15Z",
+      "headRefName": "codex/service-exploration-20261019",
+      "headRefOid": "02032340a4cbe500292726ce02b6fbea2840c465",
+      "mergedAt": "2026-10-20T00:00:15Z",
+      "number": 94,
+      "title": "Beauty: catálogo de servicios y mejoras de consultas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/94"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T23:55:20Z",
+      "headRefName": "codex/beauty-figma-content-preservation-20261019",
+      "headRefOid": "6ae4cd32c8c1a8482049c9ba86ffde50f988be31",
+      "mergedAt": null,
+      "number": 93,
+      "title": "Beauty: contrato de implementación desde Figma sin modificar textos existentes",
+      "url": "https://github.com/Victoriosas/autopilot/pull/93"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T22:21:16Z",
+      "headRefName": "codex/official-gmail-20261019",
+      "headRefOid": "1fa3209fbe40ed241d0c22fbcd1251973db7e900",
+      "mergedAt": "2026-10-19T22:21:15Z",
+      "number": 92,
+      "title": "fix: Gmail oficial para consultas de Victoriosas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/92"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T22:01:21Z",
+      "headRefName": "codex/free-email-contact-20261019",
+      "headRefOid": "640fd2e699b0614c74debcd31ff112e76634515d",
+      "mergedAt": "2026-10-19T22:01:21Z",
+      "number": 91,
+      "title": "feat: consultas gratuitas por email y WhatsApp",
+      "url": "https://github.com/Victoriosas/autopilot/pull/91"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T19:03:13Z",
+      "headRefName": "codex/consultation-start-20261019",
+      "headRefOid": "42562eceb3ae4c2131602f2ca08ccb9f6c874c34",
+      "mergedAt": "2026-10-19T19:03:13Z",
+      "number": 89,
+      "title": "feat: encontrar un punto de partida para consultar por WhatsApp",
+      "url": "https://github.com/Victoriosas/autopilot/pull/89"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T17:39:16Z",
+      "headRefName": "codex/scheduled-health-20261019",
+      "headRefOid": "ccb4091fccbd679055b0ea955961819a1892806a",
+      "mergedAt": "2026-10-19T17:39:16Z",
+      "number": 88,
+      "title": "feat: vigilar web y protecciones comerciales cada seis horas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/88"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T17:25:37Z",
+      "headRefName": "codex/production-release-record-20261019",
+      "headRefOid": "f7c8caeefb0bd7ca0422d0b922790720fb42b2e9",
+      "mergedAt": "2026-10-19T17:25:37Z",
+      "number": 87,
+      "title": "docs: registrar publicación y verificación de Victoriosas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/87"
+    },
+    {
+      "baseRefName": "codex/seo-route-metadata-oct19",
+      "closedAt": "2026-10-19T17:17:02Z",
+      "headRefName": "codex/figma-gold-home-20261019",
+      "headRefOid": "cb6912bdd3061c15f1f843c76b5fc2dc7439ee5e",
+      "mergedAt": "2026-10-19T17:17:02Z",
+      "number": 86,
+      "title": "feat(web): completar Victoriosas en dorado, contacto, SEO y rutas HTTP",
+      "url": "https://github.com/Victoriosas/autopilot/pull/86"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T17:19:02Z",
+      "headRefName": "codex/seo-route-metadata-oct19",
+      "headRefOid": "bc16a1c4ff24c855889f52b51cc172a424fbe037",
+      "mergedAt": "2026-10-19T17:19:02Z",
+      "number": 85,
+      "title": "feat(web): publicar Victoriosas dorada con SEO, contacto y rutas seguras",
+      "url": "https://github.com/Victoriosas/autopilot/pull/85"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-19T17:21:12Z",
+      "headRefName": "fix/seo-retired-routes-82",
+      "headRefOid": "66251e3cf08bf9eb4e6fd881ce2a36d96b811929",
+      "mergedAt": null,
+      "number": 83,
+      "title": "docs: plan de corrección SEO para rutas retiradas (#82)",
+      "url": "https://github.com/Victoriosas/autopilot/pull/83"
+    },
+    {
+      "baseRefName": "codex/victoriosas-functional-audit-20261017",
+      "closedAt": "2026-10-18T03:45:03Z",
+      "headRefName": "codex/victoriosas-copy-remoto-20261018",
+      "headRefOid": "965f1c8a43c2568db458401c56547fe885bcb638",
+      "mergedAt": "2026-10-18T03:45:03Z",
+      "number": 80,
+      "title": "copy: adaptar textos públicos aprobados para evaluación remota",
+      "url": "https://github.com/Victoriosas/autopilot/pull/80"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-18T04:35:50Z",
+      "headRefName": "codex/victoriosas-functional-audit-20261017",
+      "headRefOid": "c132ed0efcad02593f9b348141d96c28b25c9af7",
+      "mergedAt": "2026-10-18T04:35:50Z",
+      "number": 79,
+      "title": "Victoriosas: validación final de textos aprobados, portada y editorial",
+      "url": "https://github.com/Victoriosas/autopilot/pull/79"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-18T00:14:29Z",
+      "headRefName": "ops/quality-marketing-20261017",
+      "headRefOid": "253e9fbb355058a3f5cbb8d419bb8d3fd7f5b6e6",
+      "mergedAt": "2026-10-18T00:14:29Z",
+      "number": 78,
+      "title": "ci(ops): vigilancia pública y plan de marketing seguro",
+      "url": "https://github.com/Victoriosas/autopilot/pull/78"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-18T00:09:41Z",
+      "headRefName": "codex/catalog-channels-20261017",
+      "headRefOid": "97d9c2f78819470b45340445c33966ae861b5c54",
+      "mergedAt": "2026-10-18T00:09:41Z",
+      "number": 77,
+      "title": "Merge pull request #71 from Victoriosas/codex/firecrawl-affiliates-20…",
+      "url": "https://github.com/Victoriosas/autopilot/pull/77"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T23:32:27Z",
+      "headRefName": "worktree/diseno",
+      "headRefOid": "2080e130c4079df17a83af98307306c5517f3817",
+      "mergedAt": "2026-10-17T23:32:27Z",
+      "number": 76,
+      "title": "feat(design): destacar servicios de Sofía en portada",
+      "url": "https://github.com/Victoriosas/autopilot/pull/76"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T22:55:01Z",
+      "headRefName": "codex/editorial-navigation-20261017",
+      "headRefOid": "b7ca2a2c2f94a0a410f01489deae63814da17363",
+      "mergedAt": "2026-10-17T22:55:01Z",
+      "number": 75,
+      "title": "feat(ui): navegación editorial unificada para tienda y Beauty",
+      "url": "https://github.com/Victoriosas/autopilot/pull/75"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T22:40:05Z",
+      "headRefName": "codex/unify-beauty-navigation-20261017",
+      "headRefOid": "603908de4e023d4234e25eb29a14bf7de988245b",
+      "mergedAt": "2026-10-17T22:40:05Z",
+      "number": 74,
+      "title": "fix(beauty): enlazar servicios y unificar identidad con la tienda",
+      "url": "https://github.com/Victoriosas/autopilot/pull/74"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T22:13:05Z",
+      "headRefName": "codex/beauty-requests-20261017",
+      "headRefOid": "0c18cee96e8889bb6f45ad72795037c1a64fd392",
+      "mergedAt": "2026-10-17T22:13:05Z",
+      "number": 73,
+      "title": "feat(beauty): consultas, catálogo y evaluación profesional privada",
+      "url": "https://github.com/Victoriosas/autopilot/pull/73"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T22:12:47Z",
+      "headRefName": "codex/post-merge-review-20261010",
+      "headRefOid": "a38ff0150ebe768a1abd48159f8f6925fe3c4351",
+      "mergedAt": "2026-10-17T22:12:47Z",
+      "number": 72,
+      "title": "Consolidar Autopilot para victoriosas.online con checkout verificado",
+      "url": "https://github.com/Victoriosas/autopilot/pull/72"
+    },
+    {
+      "baseRefName": "codex/catalog-channels-20261017",
+      "closedAt": "2026-10-17T23:36:23Z",
+      "headRefName": "codex/firecrawl-affiliates-20261017",
+      "headRefOid": "cde839f8a0f55005b3e54272d3fda388a94d81e3",
+      "mergedAt": "2026-10-17T23:36:23Z",
+      "number": 71,
+      "title": "Integrar investigacion Firecrawl y estado de afiliacion",
+      "url": "https://github.com/Victoriosas/autopilot/pull/71"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T22:12:50Z",
+      "headRefName": "codex/catalog-channels-20261017",
+      "headRefOid": "b40690ed56f8a2f1fdfe773c6ade562c92815e94",
+      "mergedAt": "2026-10-17T22:12:49Z",
+      "number": 70,
+      "title": "feat: catálogo por consulta y afiliación sin integración con proveedores",
+      "url": "https://github.com/Victoriosas/autopilot/pull/70"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T22:12:49Z",
+      "headRefName": "codex/cj-connection-validation-20261017",
+      "headRefOid": "92b132f1ab99296edb8b0ae58ef8d7da92c4ee9d",
+      "mergedAt": "2026-10-17T22:12:49Z",
+      "number": 69,
+      "title": "fix(cj): diagnosticar conexión y credenciales rechazadas",
+      "url": "https://github.com/Victoriosas/autopilot/pull/69"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T22:12:49Z",
+      "headRefName": "codex/catalog-launch-review-20261017",
+      "headRefOid": "656c08a2bf5ab046e651ef18448d7eb7abe9d6e7",
+      "mergedAt": "2026-10-17T22:12:49Z",
+      "number": 68,
+      "title": "Preparar cinco candidatos de catálogo con evidencia y bloqueos explícitos",
+      "url": "https://github.com/Victoriosas/autopilot/pull/68"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T04:19:14Z",
+      "headRefName": "codex/payment-handoff-validation-20261017",
+      "headRefOid": "51bca8c1cf840314fc4b3974e4fb405098575d0d",
+      "mergedAt": "2026-10-17T04:19:14Z",
+      "number": 67,
+      "title": "Validar destino y datos del checkout de Mercado Pago",
+      "url": "https://github.com/Victoriosas/autopilot/pull/67"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-17T03:35:54Z",
+      "headRefName": "codex/post-merge-review-20261010",
+      "headRefOid": "a2ea94ff37c40a15cd1529c00e76745efbb56b03",
+      "mergedAt": "2026-10-17T03:35:53Z",
+      "number": 66,
+      "title": "Harden commerce recovery and add autonomous beauty catalog discovery",
+      "url": "https://github.com/Victoriosas/autopilot/pull/66"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-10-10T22:48:28Z",
+      "headRefName": "codex/autopilot-v4-durable-orchestrator",
+      "headRefOid": "1cca9c4cfe59ac08c7eaed056917575062a52c66",
+      "mergedAt": "2026-10-10T22:48:28Z",
+      "number": 65,
+      "title": "feat: atomic checkout, verified payment availability and recoverable fulfillment",
+      "url": "https://github.com/Victoriosas/autopilot/pull/65"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T21:24:46Z",
+      "headRefName": "owner/storefront-waitlist",
+      "headRefOid": "552ca1a732e7b0fd747a0c722cc1c692072b1d9b",
+      "mergedAt": "2026-09-15T21:24:46Z",
+      "number": 64,
+      "title": "Owner pass: turn storefront expectation into measurable demand",
+      "url": "https://github.com/Victoriosas/autopilot/pull/64"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T21:16:24Z",
+      "headRefName": "owner/market-memory",
+      "headRefOid": "7cf2c5af38e24c09b803bbeb3810796a6db44f90",
+      "mergedAt": "2026-09-15T21:16:24Z",
+      "number": 63,
+      "title": "Owner pass: build durable Uruguay market memory",
+      "url": "https://github.com/Victoriosas/autopilot/pull/63"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T20:54:21Z",
+      "headRefName": "owner/admin-release-lane-ui",
+      "headRefOid": "6e0bd804ec2790807e70772e93b0bd215b3893d5",
+      "mergedAt": "2026-09-15T20:54:21Z",
+      "number": 62,
+      "title": "Owner pass: operate production release lane from Admin",
+      "url": "https://github.com/Victoriosas/autopilot/pull/62"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T07:37:30Z",
+      "headRefName": "owner/release-candidate-lane",
+      "headRefOid": "30fd065062f6c32ef47faa210fb2589d1363e37b",
+      "mergedAt": "2026-09-15T07:37:30Z",
+      "number": 61,
+      "title": "Owner pass: production release-candidate lane with manual publication",
+      "url": "https://github.com/Victoriosas/autopilot/pull/61"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T06:49:11Z",
+      "headRefName": "owner/release-gate-legacy-lockdown",
+      "headRefOid": "96cb9015708d3d6a96ae9a96bcd258ae1ce21bd1",
+      "mergedAt": "2026-09-15T06:49:11Z",
+      "number": 60,
+      "title": "Owner pass: release readiness gate and legacy lockdown",
+      "url": "https://github.com/Victoriosas/autopilot/pull/60"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T06:12:45Z",
+      "headRefName": "owner/production-truth-cleanup",
+      "headRefOid": "552d626a236f73d50681c4ce614af102ba271b22",
+      "mergedAt": "2026-09-15T06:12:45Z",
+      "number": 59,
+      "title": "Owner pass: production truth, safe defaults and legacy cleanup",
+      "url": "https://github.com/Victoriosas/autopilot/pull/59"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T06:00:06Z",
+      "headRefName": "owner/market-provider-chain",
+      "headRefOid": "2156104d8e7aabf3663ba6221bdbb42f426bdb3d",
+      "mergedAt": "2026-09-15T06:00:06Z",
+      "number": 58,
+      "title": "Owner pass: resilient multi-provider Market Evidence",
+      "url": "https://github.com/Victoriosas/autopilot/pull/58"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T05:44:11Z",
+      "headRefName": "codex/market-annotation-fallback",
+      "headRefOid": "dfbb5834ce84e2fdc534eaecb5f95956dbb59412",
+      "mergedAt": "2026-09-15T05:44:11Z",
+      "number": 57,
+      "title": "Add deterministic grounded-price fallback for Market Evidence",
+      "url": "https://github.com/Victoriosas/autopilot/pull/57"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T05:35:39Z",
+      "headRefName": "codex/shadow-campaign-ui",
+      "headRefOid": "965f8859e5b5285e3dd2cce87f5b996a05c7c1a9",
+      "mergedAt": "2026-09-15T05:35:39Z",
+      "number": 56,
+      "title": "Add resumable 10–15 product Shadow curation campaign",
+      "url": "https://github.com/Victoriosas/autopilot/pull/56"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T05:36:14Z",
+      "headRefName": "codex/market-evidence-healing",
+      "headRefOid": "dc2456ae3101dc44045ffbd0dcdeb76212334a8e",
+      "mergedAt": "2026-09-15T05:36:14Z",
+      "number": 55,
+      "title": "Heal and robustly parse structured Market Evidence",
+      "url": "https://github.com/Victoriosas/autopilot/pull/55"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T05:16:11Z",
+      "headRefName": "codex/market-evidence-structured-output",
+      "headRefOid": "b6fe14807890cdaa4891bbe7a514a7cc7d0b7fee",
+      "mergedAt": "2026-09-15T05:16:11Z",
+      "number": 54,
+      "title": "Make grounded Market Evidence structured and parseable",
+      "url": "https://github.com/Victoriosas/autopilot/pull/54"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T05:11:49Z",
+      "headRefName": "codex/shadow-commercial-evidence-gate",
+      "headRefOid": "f144ff1caeebfe0f5a1cd3bd7defc109ff64794f",
+      "mergedAt": "2026-09-15T05:11:49Z",
+      "number": 53,
+      "title": "Fix Shadow commercial evidence gate ordering",
+      "url": "https://github.com/Victoriosas/autopilot/pull/53"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T05:06:47Z",
+      "headRefName": "codex/shadow-curation-campaign",
+      "headRefOid": "788a5f28bcd13b4d89e06f9bfd64ffaa79845589",
+      "mergedAt": "2026-09-15T05:06:47Z",
+      "number": 52,
+      "title": "Fix CJ public MCP enrichment for V4 shadow sourcing",
+      "url": "https://github.com/Victoriosas/autopilot/pull/52"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T04:51:47Z",
+      "headRefName": "codex/cj-mcp-primary-v4",
+      "headRefOid": "c14b88e669154add8ba32887941ea787ce93f9a4",
+      "mergedAt": "2026-09-15T04:51:46Z",
+      "number": 51,
+      "title": "Use CJ MCP documented tools as primary V4 sourcing reads",
+      "url": "https://github.com/Victoriosas/autopilot/pull/51"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T06:44:36Z",
+      "headRefName": "codex/cj-mcp-direct-token-validation",
+      "headRefOid": "448ce1718669b8c445a620629d45b70736ba6d8f",
+      "mergedAt": null,
+      "number": 50,
+      "title": "Codex/cj mcp direct token validation",
+      "url": "https://github.com/Victoriosas/autopilot/pull/50"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T04:20:32Z",
+      "headRefName": "codex/cj-provider-observability",
+      "headRefOid": "c6620d5f2071f446949175e98fef1769f50c933b",
+      "mergedAt": "2026-09-15T04:20:32Z",
+      "number": 49,
+      "title": "Make CJ MCP/REST auth failures observable without leaking secrets",
+      "url": "https://github.com/Victoriosas/autopilot/pull/49"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T04:12:07Z",
+      "headRefName": "codex/cj-mcp-v4-hybrid",
+      "headRefOid": "a615da7afccdde291919de60909b82fe4b80f841",
+      "mergedAt": "2026-09-15T04:12:07Z",
+      "number": 48,
+      "title": "Autopilot V4: use CJ MCP first with REST fallback",
+      "url": "https://github.com/Victoriosas/autopilot/pull/48"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T03:48:09Z",
+      "headRefName": "codex/align-cj-mcp-tools",
+      "headRefOid": "8baff982b8d952a1f28763f6aeeccac34bfc07fd",
+      "mergedAt": "2026-09-15T03:48:09Z",
+      "number": 47,
+      "title": "Align CJ MCP read-only tools with current official documentation",
+      "url": "https://github.com/Victoriosas/autopilot/pull/47"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T03:45:39Z",
+      "headRefName": "codex/v4-discovery-ui",
+      "headRefOid": "3f19b0bfecd7eac1176743e4913f91545a195f30",
+      "mergedAt": "2026-09-15T03:45:39Z",
+      "number": 46,
+      "title": "Route all admin discovery actions to Autopilot V4",
+      "url": "https://github.com/Victoriosas/autopilot/pull/46"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T03:39:38Z",
+      "headRefName": "codex/storefront-experience-v2",
+      "headRefOid": "08e145df5c6f08b3200fd62b66b85ac5fc1bb1fe",
+      "mergedAt": "2026-09-15T03:39:38Z",
+      "number": 45,
+      "title": "Rebuild public storefront into a complete launch experience",
+      "url": "https://github.com/Victoriosas/autopilot/pull/45"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T03:06:54Z",
+      "headRefName": "codex/fix-cj-mcp-token-url",
+      "headRefOid": "fe27dfe2a69d15bf8a8f6d44d7c50178e01e5160",
+      "mergedAt": "2026-09-15T03:06:53Z",
+      "number": 44,
+      "title": "Fix CJ MCP direct-token URL encoding",
+      "url": "https://github.com/Victoriosas/autopilot/pull/44"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T02:54:45Z",
+      "headRefName": "codex/fix-cj-mcp-admin-auth",
+      "headRefOid": "aeea35ee5ee128b3ad53956073fb1d79ebc779cd",
+      "mergedAt": "2026-09-15T02:54:45Z",
+      "number": 43,
+      "title": "Fix CJ MCP admin auth and connector directory",
+      "url": "https://github.com/Victoriosas/autopilot/pull/43"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T02:26:50Z",
+      "headRefName": "codex/cj-mcp-connector-status-ui",
+      "headRefOid": "d972399eab44561e1699731d10238d1a82646b98",
+      "mergedAt": "2026-09-15T02:26:50Z",
+      "number": 42,
+      "title": "UI: show live CJ MCP connector status",
+      "url": "https://github.com/Victoriosas/autopilot/pull/42"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T02:09:08Z",
+      "headRefName": "codex/cj-mcp-readonly-shadow",
+      "headRefOid": "e95816b442e30dc288e10866fb4a41d686602ba6",
+      "mergedAt": "2026-09-15T02:09:08Z",
+      "number": 41,
+      "title": "CJ MCP: add read-only shadow bridge",
+      "url": "https://github.com/Victoriosas/autopilot/pull/41"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T01:54:28Z",
+      "headRefName": "codex/cj-auth-doc-hardening",
+      "headRefOid": "481b93c9aca702f8916b579ec7eb550efb5ead8f",
+      "mergedAt": "2026-09-15T01:54:28Z",
+      "number": 40,
+      "title": "CJ: harden token and rate-limit handling from official docs",
+      "url": "https://github.com/Victoriosas/autopilot/pull/40"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T01:42:24Z",
+      "headRefName": "codex/multilingual-cj-search",
+      "headRefOid": "cea0017eb6b3399972853b4ae538e05372376ae4",
+      "mergedAt": "2026-09-15T01:42:24Z",
+      "number": 39,
+      "title": "Autopilot: optimizar búsquedas CJ escritas en español",
+      "url": "https://github.com/Victoriosas/autopilot/pull/39"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T01:18:19Z",
+      "headRefName": "codex/frontend-truthful-status",
+      "headRefOid": "f120c5909c573107f99ae45cb6685d287ecfb223",
+      "mergedAt": "2026-09-15T01:18:19Z",
+      "number": 38,
+      "title": "UI: mostrar estado real de Autopilot V4",
+      "url": "https://github.com/Victoriosas/autopilot/pull/38"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T01:14:23Z",
+      "headRefName": "codex/frontend-shadow-console",
+      "headRefOid": "c154af7f33a1da876efb01b90b5ffbe0307f76e4",
+      "mergedAt": "2026-09-15T01:14:23Z",
+      "number": 37,
+      "title": "Autopilot V4: frontend Shadow console with real CJ execution",
+      "url": "https://github.com/Victoriosas/autopilot/pull/37"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T00:57:14Z",
+      "headRefName": "codex/market-evidence-web-plugin",
+      "headRefOid": "f066ae6e4a9f79a39baad3cbd0cbb992e504fc05",
+      "mergedAt": "2026-09-15T00:57:14Z",
+      "number": 36,
+      "title": "Autopilot v4: fast single-search Market Evidence on OpenRouter",
+      "url": "https://github.com/Victoriosas/autopilot/pull/36"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T00:53:09Z",
+      "headRefName": "codex/market-evidence-runtime-window",
+      "headRefOid": "b8a1e85f70ad22dc15e490ea4e4c3ae01e0e6570",
+      "mergedAt": "2026-09-15T00:53:09Z",
+      "number": 35,
+      "title": "Autopilot v4: bounded runtime window for shadow market research",
+      "url": "https://github.com/Victoriosas/autopilot/pull/35"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T00:47:38Z",
+      "headRefName": "codex/market-evidence-openrouter-fallback",
+      "headRefOid": "cb89ea67283bf00fb4047068aef75a44ee49b64c",
+      "mergedAt": "2026-09-15T00:47:38Z",
+      "number": 34,
+      "title": "Autopilot v4: OpenRouter fallback for grounded market evidence",
+      "url": "https://github.com/Victoriosas/autopilot/pull/34"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T00:40:32Z",
+      "headRefName": "codex/market-evidence-victoriosa-filter",
+      "headRefOid": "f9c172bbddc9d8189ffe30e1fedd9f2dc4811a83",
+      "mergedAt": "2026-09-15T00:40:32Z",
+      "number": 33,
+      "title": "Autopilot v4: grounded market evidence and Victoriosa catalog filter",
+      "url": "https://github.com/Victoriosas/autopilot/pull/33"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-15T00:20:11Z",
+      "headRefName": "codex/uruguay-shadow-economic-policy",
+      "headRefOid": "8e52d867a7aabb372e9fd538840e62085a76ca4b",
+      "mergedAt": "2026-09-15T00:20:11Z",
+      "number": 32,
+      "title": "Autopilot v4: Uruguay shadow economic policy",
+      "url": "https://github.com/Victoriosas/autopilot/pull/32"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T23:42:50Z",
+      "headRefName": "codex/shadow-once-capability-id",
+      "headRefOid": "769fffabf37d177ca65636deb44aa852aca56906",
+      "mergedAt": "2026-09-14T23:42:50Z",
+      "number": 31,
+      "title": "Autopilot v4: invoke one-time shadow run by capability ID",
+      "url": "https://github.com/Victoriosas/autopilot/pull/31"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T23:38:09Z",
+      "headRefName": "codex/fix-shadow-once-migration",
+      "headRefOid": "8f07e00e8d519c507fd6901940a1c5973930ac91",
+      "mergedAt": "2026-09-14T23:38:08Z",
+      "number": 30,
+      "title": "Fix one-time shadow authorization migration and DB coverage",
+      "url": "https://github.com/Victoriosas/autopilot/pull/30"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T23:34:26Z",
+      "headRefName": "codex/production-shadow-once",
+      "headRefOid": "3c85cd8f901c72517cc647784d4bb390e77223da",
+      "mergedAt": "2026-09-14T23:34:26Z",
+      "number": 29,
+      "title": "Autopilot v4: one-time production shadow run authorization",
+      "url": "https://github.com/Victoriosas/autopilot/pull/29"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T23:24:32Z",
+      "headRefName": "codex/cj-live-evidence-pipeline",
+      "headRefOid": "97dcdda6f12d367dc14890598ec0fa09c492cb23",
+      "mergedAt": "2026-09-14T23:24:32Z",
+      "number": 28,
+      "title": "Autopilot v4: enrich CJ sourcing with live variant and freight evidence",
+      "url": "https://github.com/Victoriosas/autopilot/pull/28"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T22:52:52Z",
+      "headRefName": "codex/supabase-preflight-audit",
+      "headRefOid": "ecaf9026502b0cbc497111948c5ae6e51f3ba1ca",
+      "mergedAt": "2026-09-14T22:52:52Z",
+      "number": 27,
+      "title": "docs(supabase): record Autopilot V4 migration preflight",
+      "url": "https://github.com/Victoriosas/autopilot/pull/27"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T22:52:07Z",
+      "headRefName": "codex/autopilot-v4-durable-orchestrator",
+      "headRefOid": "9fbb3ece31cfedf0693ad3db15bb3b31d8051cb6",
+      "mergedAt": "2026-09-14T22:52:07Z",
+      "number": 26,
+      "title": "Autopilot v4: remove redundant sourcing polling",
+      "url": "https://github.com/Victoriosas/autopilot/pull/26"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T22:15:46Z",
+      "headRefName": "codex/autopilot-v4-durable-orchestrator",
+      "headRefOid": "05e4c479b7f354e251805b1177516d89d698224a",
+      "mergedAt": "2026-09-14T22:15:46Z",
+      "number": 25,
+      "title": "Autopilot v4: durable sourcing orchestrator and shadow mode",
+      "url": "https://github.com/Victoriosas/autopilot/pull/25"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T22:22:11Z",
+      "headRefName": "feat/editorial-hero-reference",
+      "headRefOid": "914f63f4325cdf696e38f5476f39369fdecbd2b1",
+      "mergedAt": "2026-09-12T22:22:11Z",
+      "number": 24,
+      "title": "Port editorial Victoriosa visuals from supplied reference",
+      "url": "https://github.com/Victoriosas/autopilot/pull/24"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T22:12:09Z",
+      "headRefName": "codex/editorial-warm-storefront",
+      "headRefOid": "f0347ffd31edadc7edc27bee94856e32011ad1f4",
+      "mergedAt": "2026-09-12T22:12:09Z",
+      "number": 23,
+      "title": "Warm editorial storefront styling inspired by Victoriosa reference",
+      "url": "https://github.com/Victoriosas/autopilot/pull/23"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T22:05:37Z",
+      "headRefName": "codex/editorial-empty-catalog-hero",
+      "headRefOid": "055b224f4ffc1fde0f87d67b3b9e9325fdbd5d80",
+      "mergedAt": "2026-09-12T22:05:37Z",
+      "number": 22,
+      "title": "Editorial empty-catalog state for Victoriosa storefront",
+      "url": "https://github.com/Victoriosas/autopilot/pull/22"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T21:57:11Z",
+      "headRefName": "codex/commercial-surface-and-governed-publish",
+      "headRefOid": "beb78e72d3429801993170bbe4ff6d3b0de29ca9",
+      "mergedAt": "2026-09-12T21:57:11Z",
+      "number": 21,
+      "title": "Commercial storefront facade and governed auto-publication",
+      "url": "https://github.com/Victoriosas/autopilot/pull/21"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T21:20:56Z",
+      "headRefName": "codex/cj-sourcing-control-plane",
+      "headRefOid": "73a1b5894e682558d27c43e0a417e020d2443594",
+      "mergedAt": "2026-09-12T21:20:56Z",
+      "number": 20,
+      "title": "Expose authenticated CJ sourcing in production control plane",
+      "url": "https://github.com/Victoriosas/autopilot/pull/20"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T20:25:22Z",
+      "headRefName": "codex/release-hardening",
+      "headRefOid": "44741077d8a28fbea25f7e91407d66fb844b9a8a",
+      "mergedAt": "2026-09-12T20:25:22Z",
+      "number": 19,
+      "title": "Release hardening: payment safety, transactional governance and truthful storefront",
+      "url": "https://github.com/Victoriosas/autopilot/pull/19"
+    },
+    {
+      "baseRefName": "codex/pricing-engine-v2",
+      "closedAt": "2026-09-12T20:09:47Z",
+      "headRefName": "codex/pricing-margin-rounding",
+      "headRefOid": "255cb6fc6f5266caa106243a9a2cc85416ed9e69",
+      "mergedAt": "2026-09-12T20:09:46Z",
+      "number": 18,
+      "title": "Fix pricing rounding to preserve required margins",
+      "url": "https://github.com/Victoriosas/autopilot/pull/18"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T22:16:34Z",
+      "headRefName": "codex/pricing-engine-v2",
+      "headRefOid": "a9255b9569336a0a46dd0067380dd3cdb1335bd1",
+      "mergedAt": null,
+      "number": 17,
+      "title": "Autopilot: pricing, opportunity ranking, council approval + governed publishing",
+      "url": "https://github.com/Victoriosas/autopilot/pull/17"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T03:43:11Z",
+      "headRefName": "codex/vercel-api-supabase-live",
+      "headRefOid": "b028f3ae984ce5fdfc64c8b29eefa16b153ae6b3",
+      "mergedAt": "2026-09-12T03:43:11Z",
+      "number": 16,
+      "title": "Fix Vercel API routing and bind live Supabase",
+      "url": "https://github.com/Victoriosas/autopilot/pull/16"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T03:28:34Z",
+      "headRefName": "codex/vercel-boot-fix",
+      "headRefOid": "4e60923616e0bfe8fdbd49a487c89a84d846e955",
+      "mergedAt": "2026-09-12T03:28:34Z",
+      "number": 15,
+      "title": "Fix Vercel blank page when Supabase env is missing",
+      "url": "https://github.com/Victoriosas/autopilot/pull/15"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T03:24:36Z",
+      "headRefName": "codex/mercadopago-uy",
+      "headRefOid": "241e4ccdb5250f9e00ce9cb7ad0389dac9a4883e",
+      "mergedAt": "2026-09-12T03:24:35Z",
+      "number": 14,
+      "title": "Payments: Mercado Pago Checkout Pro for Uruguay",
+      "url": "https://github.com/Victoriosas/autopilot/pull/14"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T03:15:57Z",
+      "headRefName": "codex/data-truth-revenue-score",
+      "headRefOid": "42e312d31bab424425e60f14e02b66be6c6ba2b8",
+      "mergedAt": "2026-09-12T03:15:57Z",
+      "number": 13,
+      "title": "Commerce safety: provenance, Revenue Score and draft-only sourcing",
+      "url": "https://github.com/Victoriosas/autopilot/pull/13"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T03:07:20Z",
+      "headRefName": "codex/payment-hardening",
+      "headRefOid": "57c8706fe7cf96a2fd7f14d8ae297cdd5df877e7",
+      "mergedAt": "2026-09-12T03:07:20Z",
+      "number": 12,
+      "title": "Payments v2: server-authoritative checkout and PayPal verification",
+      "url": "https://github.com/Victoriosas/autopilot/pull/12"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T03:05:53Z",
+      "headRefName": "codex/admin-lockdown",
+      "headRefOid": "d2e0425d85df15c4d98ec8b20944dcb744016585",
+      "mergedAt": "2026-09-12T03:05:53Z",
+      "number": 11,
+      "title": "Security: lock legacy Autopilot routes to Supabase admins",
+      "url": "https://github.com/Victoriosas/autopilot/pull/11"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T03:01:26Z",
+      "headRefName": "codex/revenue-sprint-1",
+      "headRefOid": "455a11112efb0ae494c27b9b23832ffc3cdf6374",
+      "mergedAt": "2026-09-12T03:01:26Z",
+      "number": 10,
+      "title": "Revenue Sprint 1: WhatsApp, transfer and Uruguay checkout",
+      "url": "https://github.com/Victoriosas/autopilot/pull/10"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T02:57:48Z",
+      "headRefName": "codex/harden-v4-task-policy",
+      "headRefOid": "369dc77fbbcb06eead5e870b000307a7d37952df",
+      "mergedAt": "2026-09-12T02:57:48Z",
+      "number": 8,
+      "title": "Autopilot v4: harden task policy enforcement",
+      "url": "https://github.com/Victoriosas/autopilot/pull/8"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T02:36:12Z",
+      "headRefName": "agent/agent-activate-v4-control-plane-mount",
+      "headRefOid": "2158c0489199971f7e478244623d4de614389cf1",
+      "mergedAt": "2026-09-12T02:36:12Z",
+      "number": 6,
+      "title": "feat: Mount Autopilot v4 control plane (Issue #4)",
+      "url": "https://github.com/Victoriosas/autopilot/pull/6"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-14T22:16:33Z",
+      "headRefName": "codex/autopilot-core-v4-phase3b",
+      "headRefOid": "f5364ea50197e209110d8ab1a5ab69569ab57333",
+      "mergedAt": null,
+      "number": 5,
+      "title": "Autopilot Core v4 Phase 3B: activation package and OpenCode handoff",
+      "url": "https://github.com/Victoriosas/autopilot/pull/5"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T01:37:08Z",
+      "headRefName": "codex/autopilot-core-v4-phase3",
+      "headRefOid": "e0cbf09a3e7ad6d3bb63f0ee6c6741ef542c9c0b",
+      "mergedAt": "2026-09-12T01:37:08Z",
+      "number": 3,
+      "title": "Autopilot Core v4 Phase 3: secured model routing and telemetry",
+      "url": "https://github.com/Victoriosas/autopilot/pull/3"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T01:21:54Z",
+      "headRefName": "codex/autopilot-core-v4-phase2",
+      "headRefOid": "5e5c47271a6a9e88c77e806c05a34e8dc04fb7b4",
+      "mergedAt": "2026-09-12T01:21:53Z",
+      "number": 2,
+      "title": "Autopilot Core v4 Phase 2: reranking, persistence and CI",
+      "url": "https://github.com/Victoriosas/autopilot/pull/2"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-12T01:15:10Z",
+      "headRefName": "codex/autopilot-core-v4",
+      "headRefOid": "473c624f4a77defbd2466e61e5a18c7c8ee4fac0",
+      "mergedAt": "2026-09-12T01:15:10Z",
+      "number": 1,
+      "title": "Autopilot Core v4: governed agent control plane",
+      "url": "https://github.com/Victoriosas/autopilot/pull/1"
+    }
+  ]
+}

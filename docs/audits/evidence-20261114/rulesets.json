@@ -1,0 +1,24 @@
+{
+  "exit_code": 0,
+  "data": [
+    {
+      "id": 25446201,
+      "name": "Protección main — Victoriosas",
+      "target": "branch",
+      "source_type": "Repository",
+      "source": "Victoriosas/autopilot",
+      "enforcement": "active",
+      "node_id": "RRS_lACqUmVwb3NpdG9yec5RX0AczgGERzk",
+      "_links": {
+        "self": {
+          "href": "https://api.github.com/repos/Victoriosas/autopilot/rulesets/25446201"
+        },
+        "html": {
+          "href": "https://github.com/Victoriosas/autopilot/rules/25446201"
+        }
+      },
+      "created_at": "2026-10-19T22:37:02.274-03:00",
+      "updated_at": "2026-10-19T22:37:02.421-03:00"
+    }
+  ]
+}

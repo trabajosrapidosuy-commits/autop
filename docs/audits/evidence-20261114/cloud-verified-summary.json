@@ -1,0 +1,44 @@
+{
+  "publication_schema": "minimized-v1",
+  "reference_date": "2026-11-14",
+  "method": "historical authenticated metadata and aggregate SELECT; not rerun during this local P0 order",
+  "principal": {
+    "project_ref": "jfjzpwlrhzqbcrvqxhzf",
+    "table_count": 43,
+    "all_observed_tables_rls": true,
+    "knowledge_latest": {
+      "slugs": 17,
+      "ai_approved": 17,
+      "price_approved": 0,
+      "unexpired_ai_approved": 17
+    }
+  },
+  "isolated_ledger": {
+    "project_ref": "juyowvmtluxfetgkckjd",
+    "table_count": 4,
+    "all_observed_tables_rls": true,
+    "runner_minimum_privilege_flags": {
+      "rolname": "autopilot_cloud_runner",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolreplication": false,
+      "rolbypassrls": false
+    },
+    "runner_memberships": 0,
+    "api_table_grant_count": 0
+  },
+  "vercel": {
+    "project_name": "autopilot",
+    "production_sha_at_snapshot": "9d6bbdb5f7c7200fe62463cd904314edbb9f86f0",
+    "state_at_snapshot": "READY"
+  },
+  "camelrun_viki": {
+    "agent_count_at_snapshot": 9,
+    "same_inventory_at_snapshot": true,
+    "loaded_count_at_snapshot": 0,
+    "tools_connected_count_at_snapshot": 0,
+    "durable_client_ids_and_personal_account_ids_published": false
+  },
+  "costs": "not verified; no cloud/model mutation in this P0 follow-up"
+}

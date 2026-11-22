@@ -1,0 +1,221 @@
+[
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": ".github/workflows/plan-cloud.yml",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "9d6bbdb5f7c7200fe62463cd904314edbb9f86f0",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": "docs/AUTOPILOT_STATE.md",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "9d6bbdb5f7c7200fe62463cd904314edbb9f86f0",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": "docs/PLAN_CLOUD.md",
+    "equals_current_main": true,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": "scripts/autopilot-mission.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "25b12155c1cf5e5ededd45135409f5867b7beba7",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": "vercel.json",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "9d6bbdb5f7c7200fe62463cd904314edbb9f86f0",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": "docs/AUTONOMY_CONTINUITY_20261112.md",
+    "equals_current_main": false,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": "src/autopilot/missionContinuation.test.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:autonomy-continuity-20261112",
+    "path": "src/autopilot/missionContinuation.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": ".github/workflows/autopilot-core-v4.yml",
+    "equals_current_main": true,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": ".github/workflows/plan-cloud.yml",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "9d6bbdb5f7c7200fe62463cd904314edbb9f86f0",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "docs/AUTOPILOT_STATE.md",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "678e41a8c98953ff0de5be797913d1cda6660936",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "docs/CODEX_CONTINUATION.json",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "ae785356ad50e94085c8aa1a484510cbfeea05a3",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "docs/PLAN_CLOUD.md",
+    "equals_current_main": false,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "scripts/autopilot-mission.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "src/autopilot/localMissionStore.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "ae785356ad50e94085c8aa1a484510cbfeea05a3",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "vercel.json",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "678e41a8c98953ff0de5be797913d1cda6660936",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "docs/AUTONOMY_CONTINUITY_20261112.md",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "solo una línea vacía final adicional respecto a main; contenido ya conservado",
+    "only_trailing_blank_line": true
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "docs/CLOUD_LEDGER_P0B_20261112.md",
+    "equals_current_main": false,
+    "equals_main_normalized": true,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "idéntico normalizado a main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "src/autopilot/cloudMissionStore.test.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "678e41a8c98953ff0de5be797913d1cda6660936",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "src/autopilot/cloudMissionStore.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "678e41a8c98953ff0de5be797913d1cda6660936",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "src/autopilot/missionContinuation.test.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "solo una línea vacía final adicional respecto a main; contenido ya conservado",
+    "only_trailing_blank_line": true
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "src/autopilot/missionContinuation.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": null,
+    "decision": "CONSERVAR",
+    "reason": "solo una línea vacía final adicional respecto a main; contenido ya conservado",
+    "only_trailing_blank_line": true
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "supabase/staged/cloud_synthetic_ledger_20261112.sql",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "678e41a8c98953ff0de5be797913d1cda6660936",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  },
+  {
+    "root": "WORKTREE:cloud-ledger-adapter-20261112",
+    "path": "tests/cloud-ledger-postgres.test.ts",
+    "equals_current_main": false,
+    "equals_main_normalized": false,
+    "matches_main_history_sha": "72af6a0f520e6607e84ddce488a216888c7f9b2c",
+    "decision": "CONSERVAR",
+    "reason": "contenido conservado en historia de main"
+  }
+]

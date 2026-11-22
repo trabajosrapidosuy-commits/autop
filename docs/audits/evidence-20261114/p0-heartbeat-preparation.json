@@ -1,0 +1,20 @@
+{
+  "observed_utc": "2026-11-15T01:57:29.426099+00:00",
+  "id": "victoriosa-autopilot-6h",
+  "name": "Victoriosa Autopilot 6h",
+  "kind": "heartbeat",
+  "status_observed": "ACTIVE",
+  "cadence": "six hours; unchanged",
+  "existing_configuration_bytes_unchanged": true,
+  "configuration_fingerprint": "072516fe583f4aabd0bf6f11b1dc60bc6db5b3c226d4f80c2d98cc896e50e795",
+  "nonprompt_fields_fingerprint": "c69b2b36bea6ce993058c0b40fe5bed861b63aacf0bc4314c78eb556aca043aa",
+  "private_target_and_raw_schedule_published": false,
+  "action_taken": "read/view and draft text only; no update/create/pause/target/cadence mutation",
+  "canonical_contract_in_main": {
+    "sha": "f2129e9dadf73978b91974d26b39fe0bd297dcb7",
+    "path": "docs/CODEX_LINEAR_CONTINUATION_PROMPT.md",
+    "blob": "0a08a89ae09eed04c5b034406537e3c38830aa4e"
+  },
+  "preparation": "docs/P0_HEARTBEAT_ALIGNMENT_PREPARATION_20261114.md",
+  "future_gate": "review prepared change and explicitly apply only prompt through existing automation tool; preserve all other fields; verify readback; actual execution requires separate observed receipt"
+}
